@@ -21,7 +21,7 @@ promedio ~17,6 %): se venden mucho, pero a pérdida.
 | P005 | Bebidas    | 2.627 | $2.728.636 | **-$365.970** |
 | P009 | Almacén    | 2.856 | $1.829.663 | **-$235.225** |
 
-**Acción:** quitar el descuento o repreciar estos 4 SKU hasta margen ≥ 0.
+**Acción:** quitar el descuento o repreciar estos 4 productos hasta margen ≥ 0.
 **Impacto estimado:** **~$0,91 M/año** _(margen negativo acumulado $1,82 M / 24 meses; supone
 mantener volumen — aun si baja algo al subir precio, sigue siendo mejor que vender a pérdida)._
 
@@ -35,20 +35,20 @@ surtido improductivo.
 **Evidencia** ([`02_baja_rotacion.sql`](./queries/02_baja_rotacion.sql)): P036, P029, P023, P021,
 P003. Capital inmovilizado aproximado (asumiendo 3 meses de cobertura al ritmo actual): **~$79.000**.
 
-**Acción:** liquidar/descontinuar y redirigir espacio y capital a SKUs de alta rotación.
-**Impacto estimado:** **~$79.000 de capital liberado** (one-time) + ~$6.300/año de costo de
+**Acción:** liquidar/descontinuar y redirigir espacio y capital a productos de alta rotación.
+**Impacto estimado:** **~$79.000 de capital liberado** (puntual) + ~$6.300/año de costo de
 oportunidad recuperado _(tasa 8 % anual)._
 
 ---
 
-## 3. Churn de clientes → *ingreso recuperable*
+## 3. Fuga de clientes → *ingreso recuperable*
 
 **Hallazgo:** **156 clientes (21,7 %)** que compraron en 2024 **no volvieron** en 2025.
 
-**Evidencia** ([`03_churn_clientes.sql`](./queries/03_churn_clientes.sql)): ese grupo aportó
+**Evidencia** ([`03_fuga_clientes.sql`](./queries/03_fuga_clientes.sql)): ese grupo aportó
 **$2,45 M de margen en 2024**, hoy perdido.
 
-**Acción:** campaña de win-back priorizada (cupón dirigido, contacto comercial) sobre ese listado.
+**Acción:** campaña de recuperación priorizada (cupón dirigido, contacto comercial) sobre ese listado.
 **Impacto estimado:** **~$0,74 M/año** _(recuperando el 30 % del grupo; supuesto conservador)._
 
 ---
@@ -79,10 +79,10 @@ margen 28,2 %; el cierre total valdría ~$0,78 M/año)._
 
 | Hallazgo | Acción | Impacto $/año | Esfuerzo | Supuesto clave |
 |----------|--------|--------------:|----------|----------------|
-| Productos bajo margen | Repreciar 4 SKU | **$0,91 M** | Bajo | Mantiene volumen |
-| Churn de clientes | Campaña win-back | **$0,74 M** | Medio | Reactiva 30 % |
+| Productos bajo margen | Repreciar 4 productos | **$0,91 M** | Bajo | Mantiene volumen |
+| Fuga de clientes | Campaña de recuperación | **$0,74 M** | Medio | Reactiva 30 % |
 | Brecha sucursal Sur | Replicar mejores prácticas | **$0,39 M** | Medio | Cierra 50 % de la brecha |
-| Baja rotación | Liquidar 5 SKU | $0,006 M + **$79 k** one-time | Bajo | Cobertura 3 meses, tasa 8 % |
+| Baja rotación | Liquidar 5 productos | $0,006 M + **$79 k** puntual | Bajo | Cobertura 3 meses, tasa 8 % |
 
 ### 💰 Impacto total estimado del análisis: **~$2,0 M/año** (+ ~$79 k de capital liberado)
 

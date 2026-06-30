@@ -1,4 +1,4 @@
-sale_id,date,customer_id,product_id,store_id,quantity,unit_price,discount,unit_cost,revenue,cost,margin
+id_venta,fecha,id_cliente,id_producto,id_sucursal,cantidad,precio_unitario,descuento,costo_unitario,ingreso,costo,margen
 15242,2024-01-01,C0775,P026,S03,4,1320.5,0.05,855.0,5282.0,3420.0,1862.0
 15243,2024-01-01,C0775,P032,S03,4,5700.0,0.0,4253.0,22800.0,17012.0,5788.0
 5915,2024-01-01,C0305,P022,S03,4,2060.0,0.0,1410.0,8240.0,5640.0,2600.0

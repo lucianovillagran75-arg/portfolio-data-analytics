@@ -20,14 +20,14 @@ Modelé un **esquema estrella**, el estándar para análisis: una tabla de hecho
 de dimensiones descriptivas.
 
 ```
-fact_sales  (la transacción: qué, cuánto, a qué precio, con qué descuento, a qué costo)
-   ├── dim_customers   (quién compra: segmento, ciudad, región)
-   ├── dim_products    (qué se vende: categoría, costo, precio de lista)
-   └── dim_stores      (dónde se vende: sucursal, región)
+ventas  (la transacción: qué, cuánto, a qué precio, con qué descuento, a qué costo)
+   ├── clientes     (quién compra: segmento, ciudad, región)
+   ├── productos    (qué se vende: categoría, costo, precio de lista)
+   └── sucursales   (dónde se vende: sucursal, región)
 ```
 
 En la tabla de hechos precalculé tres columnas que se usan en casi todo el análisis:
-`revenue` (precio × cantidad), `cost` (costo × cantidad) y `margin` (revenue − cost). Tener el
+`ingreso` (precio × cantidad), `costo` (costo × cantidad) y `margen` (ingreso − costo). Tener el
 margen a nivel de línea es lo que después permite sumarlo por producto, por cliente o por sucursal.
 
 ### Resultado de la Fase 1
@@ -36,7 +36,7 @@ margen a nivel de línea es lo que después permite sumarlo por producto, por cl
 ✅ 4 tablas en esquema estrella (1 hechos + 3 dimensiones)
 ✅ 15.700 líneas de venta sobre 24 meses (ene-2024 a dic-2025)
 ✅ 800 clientes · 37 productos · 5 sucursales
-✅ 4 índices creados (fecha, cliente, producto, sucursal) para performance
+✅ 4 índices creados (fecha, cliente, producto, sucursal) para rendimiento
 ✅ Dataset reproducible con semilla fija: mismos datos en cualquier máquina
 ```
 
@@ -79,11 +79,11 @@ consulta tiene que terminar en una **decisión**, no en un dato. Un número sin 
 
 ### 🩸 Productos vendidos bajo margen
 
-Agrupando el margen por producto, aparecieron **4 SKU con margen total negativo**: se vendían
+Agrupando el margen por producto, aparecieron **4 productos con margen total negativo**: se vendían
 mucho, pero con descuentos del ~17,6 % que los dejaban por debajo del costo. El peor (P020,
 Perfumería) acumulaba **-$730.785**. Se estaban vendiendo a pérdida sin que nadie lo notara.
 
-### 🔁 Churn de clientes
+### 🔁 Fuga de clientes
 
 Comparé los clientes activos en 2024 contra los de 2025 con dos CTEs y un `NOT IN`. Resultado:
 **156 clientes (21,7 %)** que compraban dejaron de hacerlo. Ese grupo había aportado **$2,45 M
@@ -98,16 +98,16 @@ de tráfico sino de tamaño de compra.
 ### 📦 Baja rotación
 
 Como no había tabla de inventario, medí rotación: unidades de los últimos 6 meses por producto.
-**5 SKU** casi no se movían (≤ 1–5 unidades/mes), inmovilizando capital improductivo.
+**5 productos** casi no se movían (≤ 1–5 unidades/mes), inmovilizando capital improductivo.
 
 ### Resultado de la Fase 3
 
 ```
-✅ 4 SKU con margen negativo detectados ($1,82 M acumulado)
-✅ 156 clientes en churn identificados (21,7 %)
+✅ 4 productos con margen negativo detectados ($1,82 M acumulado)
+✅ 156 clientes en fuga identificados (21,7 %)
 ✅ Brecha de ticket de la sucursal Sur cuantificada (-16 %)
-✅ 5 SKU de baja rotación detectados (~$79 k de capital)
-✅ Cada hallazgo validado contra los flags sembrados en los datos
+✅ 5 productos de baja rotación detectados (~$79 k de capital)
+✅ Cada hallazgo validado contra las marcas sembradas en los datos
 ```
 
 ---
@@ -121,10 +121,10 @@ hallazgo a **$/año**, declarando siempre el supuesto para que sea creíble y de
 
 | Hallazgo | Acción | Impacto $/año |
 |---|---|---|
-| Productos bajo margen | Repreciar 4 SKU | $0,91 M |
-| Churn de clientes | Campaña win-back (reactiva 30 %) | $0,74 M |
+| Productos bajo margen | Repreciar 4 productos | $0,91 M |
+| Fuga de clientes | Campaña de recuperación (reactiva 30 %) | $0,74 M |
 | Brecha sucursal Sur | Replicar mejores prácticas (cierra 50 %) | $0,39 M |
-| Baja rotación | Liquidar 5 SKU | $79 k one-time |
+| Baja rotación | Liquidar 5 productos | $79 k puntual |
 
 ### Resultado final
 
@@ -141,10 +141,10 @@ hallazgo a **$/año**, declarando siempre el supuesto para que sea creíble y de
 1. **Perfilar antes de analizar.** La consulta de control evita horas persiguiendo un número
    que no cuadra: si la suma no da, el problema está en la consulta, no en los datos.
 
-2. **El margen a nivel de línea es la palanca.** Precalcular `margin` por transacción hace que
+2. **El margen a nivel de línea es la palanca.** Precalcular `margen` por transacción hace que
    todo el análisis posterior (por producto, cliente o sucursal) sea una simple agregación.
 
-3. **CTEs para pensar por pasos.** Encadenar `WITH` (activos_2024 → activos_2025 → churn) hace
+3. **CTEs para pensar por pasos.** Encadenar `WITH` (activos_2024 → activos_2025 → fugados) hace
    la lógica legible y auditable, en lugar de una subconsulta anidada imposible de leer.
 
 4. **Comparar siempre contra una línea base.** El ticket de la sucursal Sur no significaba nada

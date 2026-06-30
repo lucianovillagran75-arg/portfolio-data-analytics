@@ -1,4 +1,4 @@
-customer_id,customer_name,segment,city,region,signup_date,churn_flag
+id_cliente,nombre_cliente,segmento,ciudad,region,fecha_alta,es_fuga
 C0001,Cliente 0001,Ocasional,Rosario,Centro,2023-08-10,False
 C0002,Cliente 0002,Ocasional,Córdoba,Centro,2025-08-14,False
 C0003,Cliente 0003,Ocasional,Rosario,Centro,2025-03-11,False

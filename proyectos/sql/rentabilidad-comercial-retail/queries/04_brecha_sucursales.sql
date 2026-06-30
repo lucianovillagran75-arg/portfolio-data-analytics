@@ -2,17 +2,17 @@
 -- Lógica: comparar el ticket promedio por sucursal. La brecha de la peor sucursal contra la
 -- mediana de la red es el potencial de mejora si igualara las prácticas del resto.
 WITH por_sucursal AS (
-    SELECT st.store_id,
-           st.store_name,
-           st.region,
-           COUNT(DISTINCT s.customer_id)                        AS clientes,
-           COUNT(DISTINCT s.sale_id)                            AS tickets,
-           ROUND(SUM(s.revenue))                                AS facturacion,
-           ROUND(SUM(s.margin))                                 AS margen,
-           ROUND(SUM(s.revenue) / COUNT(DISTINCT s.sale_id), 2) AS ticket_promedio
-    FROM fact_sales s
-    JOIN dim_stores st USING (store_id)
-    GROUP BY st.store_id
+    SELECT s.id_sucursal,
+           s.nombre_sucursal,
+           s.region,
+           COUNT(DISTINCT v.id_cliente)                        AS clientes,
+           COUNT(DISTINCT v.id_venta)                          AS tickets,
+           ROUND(SUM(v.ingreso))                               AS facturacion,
+           ROUND(SUM(v.margen))                                AS margen,
+           ROUND(SUM(v.ingreso) / COUNT(DISTINCT v.id_venta), 2) AS ticket_promedio
+    FROM ventas v
+    JOIN sucursales s USING (id_sucursal)
+    GROUP BY s.id_sucursal
 )
 SELECT *
 FROM por_sucursal

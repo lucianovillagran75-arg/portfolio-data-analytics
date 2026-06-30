@@ -1,4 +1,4 @@
-store_id,store_name,city,region
+id_sucursal,nombre_sucursal,ciudad,region
 S01,TiendaNova Centro,Córdoba,Centro
 S02,TiendaNova Norte,Salta,Norte
 S03,TiendaNova Litoral,Rosario,Centro

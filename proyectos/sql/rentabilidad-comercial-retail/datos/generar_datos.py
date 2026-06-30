@@ -2,16 +2,16 @@
 Genera el dataset del proyecto "TiendaNova" de forma reproducible (semilla fija).
 
 Salidas (en esta misma carpeta `datos/`):
-  raw/dim_customers.csv
-  raw/dim_products.csv
-  raw/dim_stores.csv
-  raw/fact_sales.csv
+  raw/clientes.csv
+  raw/productos.csv
+  raw/sucursales.csv
+  raw/ventas.csv
   retail.db   (SQLite con las 4 tablas + índices)
 
 El dataset incluye PROBLEMAS DELIBERADOS para descubrir con SQL:
   1. Productos vendidos bajo margen (descuentos que dejan margen negativo).
   2. Productos de baja rotación (capital improductivo).
-  3. Churn de clientes (un grupo deja de comprar a mitad del período).
+  3. Fuga de clientes (un grupo deja de comprar a mitad del período).
   4. Brecha entre sucursales (la región "Sur" rinde por debajo del resto).
 
 Uso:  python generar_datos.py
@@ -25,30 +25,32 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-SEED = 42
-rng = np.random.default_rng(SEED)
+SEMILLA = 42
+rng = np.random.default_rng(SEMILLA)
 
 BASE = Path(__file__).resolve().parent
-RAW = BASE / "raw"
-RAW.mkdir(parents=True, exist_ok=True)
+CRUDOS = BASE / "raw"
+CRUDOS.mkdir(parents=True, exist_ok=True)
 
-START = pd.Timestamp("2024-01-01")
-END = pd.Timestamp("2025-12-31")
+INICIO = pd.Timestamp("2024-01-01")
+FIN = pd.Timestamp("2025-12-31")
 
 
-def build_stores() -> pd.DataFrame:
-    stores = [
+def construir_sucursales() -> pd.DataFrame:
+    sucursales = [
         ("S01", "TiendaNova Centro", "Córdoba", "Centro"),
         ("S02", "TiendaNova Norte", "Salta", "Norte"),
         ("S03", "TiendaNova Litoral", "Rosario", "Centro"),
         ("S04", "TiendaNova Sur", "Bariloche", "Sur"),    # región rezagada
         ("S05", "TiendaNova Cuyo", "Mendoza", "Cuyo"),
     ]
-    return pd.DataFrame(stores, columns=["store_id", "store_name", "city", "region"])
+    return pd.DataFrame(
+        sucursales, columns=["id_sucursal", "nombre_sucursal", "ciudad", "region"]
+    )
 
 
-def build_products() -> pd.DataFrame:
-    categories = {
+def construir_productos() -> pd.DataFrame:
+    categorias = {
         "Bebidas": (300, 1200),
         "Almacén": (200, 1500),
         "Limpieza": (250, 2000),
@@ -56,201 +58,201 @@ def build_products() -> pd.DataFrame:
         "Snacks": (150, 900),
         "Bazar": (500, 6000),
     }
-    rows = []
+    filas = []
     pid = 1
-    for cat, (cost_lo, cost_hi) in categories.items():
+    for cat, (costo_lo, costo_hi) in categorias.items():
         n = rng.integers(6, 9)
         for _ in range(n):
-            unit_cost = float(rng.integers(cost_lo, cost_hi))
-            markup = rng.uniform(1.25, 1.70)
-            list_price = round(unit_cost * markup, -1)
-            rows.append(
+            costo_unitario = float(rng.integers(costo_lo, costo_hi))
+            recargo = rng.uniform(1.25, 1.70)
+            precio_lista = round(costo_unitario * recargo, -1)
+            filas.append(
                 {
-                    "product_id": f"P{pid:03d}",
-                    "product_name": f"{cat} {pid:03d}",
-                    "category": cat,
-                    "unit_cost": round(unit_cost, 2),
-                    "list_price": float(list_price),
+                    "id_producto": f"P{pid:03d}",
+                    "nombre_producto": f"{cat} {pid:03d}",
+                    "categoria": cat,
+                    "costo_unitario": round(costo_unitario, 2),
+                    "precio_lista": float(precio_lista),
                 }
             )
             pid += 1
-    df = pd.DataFrame(rows)
+    df = pd.DataFrame(filas)
 
     # PROBLEMA 1: 4 productos con margen muy fino (se volverán negativos al descontar)
-    thin = rng.choice(df.index, size=4, replace=False)
-    df.loc[thin, "list_price"] = (df.loc[thin, "unit_cost"] * 1.08).round(2)
-    df["thin_margin_flag"] = False
-    df.loc[thin, "thin_margin_flag"] = True
+    fino = rng.choice(df.index, size=4, replace=False)
+    df["es_margen_fino"] = False
+    df.loc[fino, "precio_lista"] = (df.loc[fino, "costo_unitario"] * 1.08).round(2)
+    df.loc[fino, "es_margen_fino"] = True
 
     # PROBLEMA 2: 5 productos de baja rotación (marcados para casi no vender)
-    dead = rng.choice(df.index.difference(thin), size=5, replace=False)
-    df["dead_stock_flag"] = False
-    df.loc[dead, "dead_stock_flag"] = True
+    baja = rng.choice(df.index.difference(fino), size=5, replace=False)
+    df["es_baja_rotacion"] = False
+    df.loc[baja, "es_baja_rotacion"] = True
     return df
 
 
-def build_customers(n: int = 800) -> pd.DataFrame:
-    segments = ["Ocasional", "Minorista", "Mayorista", "VIP"]
+def construir_clientes(n: int = 800) -> pd.DataFrame:
+    segmentos = ["Ocasional", "Minorista", "Mayorista", "VIP"]
     seg_p = [0.45, 0.35, 0.12, 0.08]
-    cities = {
+    ciudades = {
         "Centro": ["Córdoba", "Rosario"],
         "Norte": ["Salta", "Tucumán"],
         "Sur": ["Bariloche", "Neuquén"],
         "Cuyo": ["Mendoza", "San Juan"],
     }
-    regions = list(cities.keys())
+    regiones = list(ciudades.keys())
     region_p = [0.40, 0.20, 0.18, 0.22]
-    rows = []
+    filas = []
     for i in range(1, n + 1):
-        region = rng.choice(regions, p=region_p)
-        city = rng.choice(cities[region])
-        segment = rng.choice(segments, p=seg_p)
-        signup = START + pd.Timedelta(days=int(rng.integers(-540, 600)))
-        rows.append(
+        region = rng.choice(regiones, p=region_p)
+        ciudad = rng.choice(ciudades[region])
+        segmento = rng.choice(segmentos, p=seg_p)
+        alta = INICIO + pd.Timedelta(days=int(rng.integers(-540, 600)))
+        filas.append(
             {
-                "customer_id": f"C{i:04d}",
-                "customer_name": f"Cliente {i:04d}",
-                "segment": segment,
-                "city": city,
+                "id_cliente": f"C{i:04d}",
+                "nombre_cliente": f"Cliente {i:04d}",
+                "segmento": segmento,
+                "ciudad": ciudad,
                 "region": region,
-                "signup_date": signup.date().isoformat(),
+                "fecha_alta": alta.date().isoformat(),
             }
         )
-    df = pd.DataFrame(rows)
+    df = pd.DataFrame(filas)
 
-    # PROBLEMA 3: 18% de los clientes "churnean" (dejan de comprar pasado el mes ~12)
-    churn = rng.choice(df.index, size=int(0.18 * len(df)), replace=False)
-    df["churn_flag"] = False
-    df.loc[churn, "churn_flag"] = True
+    # PROBLEMA 3: 18% de los clientes "se fugan" (dejan de comprar pasado el mes ~12)
+    fuga = rng.choice(df.index, size=int(0.18 * len(df)), replace=False)
+    df["es_fuga"] = False
+    df.loc[fuga, "es_fuga"] = True
     return df
 
 
-def seasonality_factor(ts: pd.Timestamp) -> float:
+def factor_estacional(ts: pd.Timestamp) -> float:
     """Pico en diciembre, valle en febrero; leve crecimiento interanual."""
-    month = ts.month
+    mes = ts.month
     base = {
         1: 0.95, 2: 0.80, 3: 1.00, 4: 1.00, 5: 1.05, 6: 1.05,
         7: 1.10, 8: 1.00, 9: 1.00, 10: 1.05, 11: 1.15, 12: 1.45,
-    }[month]
-    growth = 1.0 + 0.08 * ((ts.year - 2024))
-    return base * growth
+    }[mes]
+    crecimiento = 1.0 + 0.08 * ((ts.year - 2024))
+    return base * crecimiento
 
 
-def build_sales(customers, products, stores) -> pd.DataFrame:
-    seg_orders = {"Ocasional": 4, "Minorista": 14, "Mayorista": 30, "VIP": 40}
-    seg_qty = {"Ocasional": (1, 3), "Minorista": (1, 5), "Mayorista": (5, 25), "VIP": (2, 8)}
+def construir_ventas(clientes, productos, sucursales) -> pd.DataFrame:
+    seg_ordenes = {"Ocasional": 4, "Minorista": 14, "Mayorista": 30, "VIP": 40}
+    seg_cant = {"Ocasional": (1, 3), "Minorista": (1, 5), "Mayorista": (5, 25), "VIP": (2, 8)}
 
-    prod_weight = np.where(products["dead_stock_flag"].values, 0.05, 1.0)
-    prod_weight = prod_weight / prod_weight.sum()
-    region_to_store = stores.set_index("region")["store_id"].to_dict()
+    peso_prod = np.where(productos["es_baja_rotacion"].values, 0.05, 1.0)
+    peso_prod = peso_prod / peso_prod.sum()
+    region_a_sucursal = sucursales.set_index("region")["id_sucursal"].to_dict()
 
-    rows = []
-    sale_id = 1
-    total_days = (END - START).days
+    filas = []
+    id_venta = 1
+    dias_totales = (FIN - INICIO).days
 
-    for _, cust in customers.iterrows():
-        n_orders = rng.poisson(seg_orders[cust["segment"]])
-        if n_orders == 0:
+    for _, cli in clientes.iterrows():
+        n_ordenes = rng.poisson(seg_ordenes[cli["segmento"]])
+        if n_ordenes == 0:
             continue
-        for _ in range(n_orders):
-            day_offset = int(rng.integers(0, total_days + 1))
-            date = START + pd.Timedelta(days=day_offset)
+        for _ in range(n_ordenes):
+            offset_dia = int(rng.integers(0, dias_totales + 1))
+            fecha = INICIO + pd.Timedelta(days=offset_dia)
 
-            if cust["churn_flag"] and day_offset > 365 and rng.random() > 0.05:
+            if cli["es_fuga"] and offset_dia > 365 and rng.random() > 0.05:
                 continue
-            if rng.random() > min(seasonality_factor(date) / 1.45, 1.0):
+            if rng.random() > min(factor_estacional(fecha) / 1.45, 1.0):
                 continue
 
-            if rng.random() < 0.75 and cust["region"] in region_to_store:
-                store_id = region_to_store[cust["region"]]
+            if rng.random() < 0.75 and cli["region"] in region_a_sucursal:
+                id_sucursal = region_a_sucursal[cli["region"]]
             else:
-                store_id = rng.choice(stores["store_id"].values)
+                id_sucursal = rng.choice(sucursales["id_sucursal"].values)
 
-            n_lines = 1 + rng.poisson(1.2)
-            chosen = rng.choice(products.index, size=n_lines, replace=False, p=prod_weight)
-            for pidx in chosen:
-                prod = products.loc[pidx]
-                qlo, qhi = seg_qty[cust["segment"]]
-                qty = int(rng.integers(qlo, qhi + 1))
-                if cust["region"] == "Sur":
-                    qty = max(1, int(qty * 0.6))
+            n_lineas = 1 + rng.poisson(1.2)
+            elegidos = rng.choice(productos.index, size=n_lineas, replace=False, p=peso_prod)
+            for pidx in elegidos:
+                prod = productos.loc[pidx]
+                clo, chi = seg_cant[cli["segmento"]]
+                cantidad = int(rng.integers(clo, chi + 1))
+                if cli["region"] == "Sur":
+                    cantidad = max(1, int(cantidad * 0.6))
 
-                if prod["thin_margin_flag"]:
-                    discount = rng.choice([0.10, 0.15, 0.20, 0.25])
+                if prod["es_margen_fino"]:
+                    descuento = rng.choice([0.10, 0.15, 0.20, 0.25])
                 else:
-                    discount = rng.choice([0.0, 0.0, 0.0, 0.05, 0.10],
-                                          p=[0.55, 0.15, 0.05, 0.15, 0.10])
+                    descuento = rng.choice([0.0, 0.0, 0.0, 0.05, 0.10],
+                                           p=[0.55, 0.15, 0.05, 0.15, 0.10])
 
-                unit_price = round(prod["list_price"] * (1 - discount), 2)
-                rows.append(
+                precio_unitario = round(prod["precio_lista"] * (1 - descuento), 2)
+                filas.append(
                     {
-                        "sale_id": sale_id,
-                        "date": date.date().isoformat(),
-                        "customer_id": cust["customer_id"],
-                        "product_id": prod["product_id"],
-                        "store_id": store_id,
-                        "quantity": qty,
-                        "unit_price": unit_price,
-                        "discount": discount,
-                        "unit_cost": prod["unit_cost"],
+                        "id_venta": id_venta,
+                        "fecha": fecha.date().isoformat(),
+                        "id_cliente": cli["id_cliente"],
+                        "id_producto": prod["id_producto"],
+                        "id_sucursal": id_sucursal,
+                        "cantidad": cantidad,
+                        "precio_unitario": precio_unitario,
+                        "descuento": descuento,
+                        "costo_unitario": prod["costo_unitario"],
                     }
                 )
-                sale_id += 1
+                id_venta += 1
 
-    df = pd.DataFrame(rows)
-    df["revenue"] = (df["unit_price"] * df["quantity"]).round(2)
-    df["cost"] = (df["unit_cost"] * df["quantity"]).round(2)
-    df["margin"] = (df["revenue"] - df["cost"]).round(2)
-    return df.sort_values("date").reset_index(drop=True)
+    df = pd.DataFrame(filas)
+    df["ingreso"] = (df["precio_unitario"] * df["cantidad"]).round(2)
+    df["costo"] = (df["costo_unitario"] * df["cantidad"]).round(2)
+    df["margen"] = (df["ingreso"] - df["costo"]).round(2)
+    return df.sort_values("fecha").reset_index(drop=True)
 
 
-def save_all(customers, products, stores, sales) -> Path:
-    customers.to_csv(RAW / "dim_customers.csv", index=False)
-    products.to_csv(RAW / "dim_products.csv", index=False)
-    stores.to_csv(RAW / "dim_stores.csv", index=False)
-    sales.to_csv(RAW / "fact_sales.csv", index=False)
+def guardar_todo(clientes, productos, sucursales, ventas) -> Path:
+    clientes.to_csv(CRUDOS / "clientes.csv", index=False)
+    productos.to_csv(CRUDOS / "productos.csv", index=False)
+    sucursales.to_csv(CRUDOS / "sucursales.csv", index=False)
+    ventas.to_csv(CRUDOS / "ventas.csv", index=False)
 
-    db_path = BASE / "retail.db"
-    if db_path.exists():
-        db_path.unlink()
-    con = sqlite3.connect(db_path)
+    ruta_db = BASE / "retail.db"
+    if ruta_db.exists():
+        ruta_db.unlink()
+    con = sqlite3.connect(ruta_db)
     try:
-        customers.to_sql("dim_customers", con, index=False)
-        products.to_sql("dim_products", con, index=False)
-        stores.to_sql("dim_stores", con, index=False)
-        sales.to_sql("fact_sales", con, index=False)
+        clientes.to_sql("clientes", con, index=False)
+        productos.to_sql("productos", con, index=False)
+        sucursales.to_sql("sucursales", con, index=False)
+        ventas.to_sql("ventas", con, index=False)
         con.executescript(
             """
-            CREATE INDEX idx_sales_date     ON fact_sales(date);
-            CREATE INDEX idx_sales_customer ON fact_sales(customer_id);
-            CREATE INDEX idx_sales_product  ON fact_sales(product_id);
-            CREATE INDEX idx_sales_store    ON fact_sales(store_id);
+            CREATE INDEX idx_ventas_fecha     ON ventas(fecha);
+            CREATE INDEX idx_ventas_cliente   ON ventas(id_cliente);
+            CREATE INDEX idx_ventas_producto  ON ventas(id_producto);
+            CREATE INDEX idx_ventas_sucursal  ON ventas(id_sucursal);
             """
         )
         con.commit()
     finally:
         con.close()
-    return db_path
+    return ruta_db
 
 
 def main() -> None:
-    print(f"Semilla fija = {SEED}. Generando TiendaNova...")
-    stores = build_stores()
-    products = build_products()
-    customers = build_customers()
-    sales = build_sales(customers, products, stores)
-    db_path = save_all(customers, products, stores, sales)
+    print(f"Semilla fija = {SEMILLA}. Generando TiendaNova...")
+    sucursales = construir_sucursales()
+    productos = construir_productos()
+    clientes = construir_clientes()
+    ventas = construir_ventas(clientes, productos, sucursales)
+    ruta_db = guardar_todo(clientes, productos, sucursales, ventas)
 
     print("Listo. Resumen:")
-    print(f"  Sucursales : {len(stores):>7,}")
-    print(f"  Productos  : {len(products):>7,}  (margen fino: {int(products.thin_margin_flag.sum())}, "
-          f"baja rotación: {int(products.dead_stock_flag.sum())})")
-    print(f"  Clientes   : {len(customers):>7,}  (churn: {int(customers.churn_flag.sum())})")
-    print(f"  Ventas     : {len(sales):>7,}  líneas")
-    print(f"  Facturación: ${sales.revenue.sum():>14,.0f}")
-    print(f"  Margen     : ${sales.margin.sum():>14,.0f}  ({sales.margin.sum()/sales.revenue.sum():.1%})")
-    print(f"  Líneas con margen negativo: {(sales.margin < 0).sum():,}")
-    print(f"  Base SQLite: {db_path}")
+    print(f"  Sucursales : {len(sucursales):>7,}")
+    print(f"  Productos  : {len(productos):>7,}  (margen fino: {int(productos.es_margen_fino.sum())}, "
+          f"baja rotación: {int(productos.es_baja_rotacion.sum())})")
+    print(f"  Clientes   : {len(clientes):>7,}  (fuga: {int(clientes.es_fuga.sum())})")
+    print(f"  Ventas     : {len(ventas):>7,}  líneas")
+    print(f"  Facturación: ${ventas.ingreso.sum():>14,.0f}")
+    print(f"  Margen     : ${ventas.margen.sum():>14,.0f}  ({ventas.margen.sum()/ventas.ingreso.sum():.1%})")
+    print(f"  Líneas con margen negativo: {(ventas.margen < 0).sum():,}")
+    print(f"  Base SQLite: {ruta_db}")
 
 
 if __name__ == "__main__":

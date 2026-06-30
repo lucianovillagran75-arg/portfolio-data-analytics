@@ -1,4 +1,4 @@
-product_id,product_name,category,unit_cost,list_price,thin_margin_flag,dead_stock_flag
+id_producto,nombre_producto,categoria,costo_unitario,precio_lista,es_margen_fino,es_baja_rotacion
 P001,Bebidas 001,Bebidas,996.0,1440.0,False,False
 P002,Bebidas 002,Bebidas,689.0,1080.0,False,False
 P003,Bebidas 003,Bebidas,1072.0,1390.0,False,True

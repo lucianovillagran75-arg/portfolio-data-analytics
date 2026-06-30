@@ -2,16 +2,16 @@
 -- Lógica: productos cuyo margen total acumulado es negativo. El margen perdido es lo que
 -- se recupera dejando de descontar o repreciando.
 WITH por_producto AS (
-    SELECT p.product_id,
-           p.product_name,
-           p.category,
-           SUM(s.quantity)           AS unidades,
-           ROUND(SUM(s.revenue), 2)  AS facturacion,
-           ROUND(SUM(s.margin), 2)   AS margen_total,
-           ROUND(AVG(s.discount), 3) AS descuento_promedio
-    FROM fact_sales s
-    JOIN dim_products p USING (product_id)
-    GROUP BY p.product_id
+    SELECT p.id_producto,
+           p.nombre_producto,
+           p.categoria,
+           SUM(v.cantidad)            AS unidades,
+           ROUND(SUM(v.ingreso), 2)   AS facturacion,
+           ROUND(SUM(v.margen), 2)    AS margen_total,
+           ROUND(AVG(v.descuento), 3) AS descuento_promedio
+    FROM ventas v
+    JOIN productos p USING (id_producto)
+    GROUP BY p.id_producto
 )
 SELECT *,
        ABS(margen_total) AS recuperable_si_se_corrige
