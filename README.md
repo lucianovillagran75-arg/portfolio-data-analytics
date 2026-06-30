@@ -12,7 +12,7 @@ Cada proyecto está documentado con contexto real, metodología y resultados med
 | Carpeta | Herramienta | Estado |
 |---|---|---|
 | [`proyectos/excel/`](./proyectos/excel/) | Microsoft Excel | 🟢 Activo |
-| [`proyectos/python/`](./proyectos/python/) | Python | 🔜 Próximamente |
+| [`proyectos/python/`](./proyectos/python/) | Python | 🟢 Activo |
 | [`proyectos/sql/`](./proyectos/sql/) | SQL | 🟢 Activo |
 | [`proyectos/power-bi/`](./proyectos/power-bi/) | Power BI | 🔜 Próximamente |
 | [`proyectos/n8n/`](./proyectos/n8n/) | Automatización n8n | 🔜 Próximamente |
@@ -28,7 +28,7 @@ misma base, cómo el mismo stack resuelve problemas reales en cada área. (✅ p
 | Sector | SQL | Python | Power BI | Excel | n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Logística y Cadena de Suministro** | 🔜 | 🔜 | 🔜 | ✅ | 🔜 |
-| **Comercial / Retail** | ✅ | 🔜 | 🔜 | 🔜 | — |
+| **Comercial / Retail** | ✅ | ✅ | 🔜 | 🔜 | — |
 | **Finanzas** | 🔜 | 🔜 | 🔜 | 🔜 | — |
 | **Recursos Humanos** | 🔜 | 🔜 | 🔜 | 🔜 | — |
 | **Operaciones** | 🔜 | 🔜 | 🔜 | 🔜 | 🔜 |
@@ -36,6 +36,7 @@ misma base, cómo el mismo stack resuelve problemas reales en cada área. (✅ p
 
 > ✅ **Logística** — [Sistema de Control de Inventario FMCG (Excel)](./proyectos/excel/logistica-inventario-fmcg/)
 > ✅ **Comercial** — [Análisis de Rentabilidad Comercial (SQL)](./proyectos/sql/rentabilidad-comercial-retail/)
+> ✅ **Comercial** — [Automatización del Reporte Comercial + RFM (Python)](./proyectos/python/automatizacion-reporte-comercial-rfm/)
 
 ---
 

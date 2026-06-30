@@ -5,7 +5,9 @@ en el **impacto de negocio** (horas ahorradas, errores evitados, dinero recupera
 
 ## Proyectos
 
-> 🔜 Próximo proyecto en desarrollo.
+| Proyecto | Sector | Qué resuelve | Impacto |
+|---|---|---|---|
+| [**Automatización del Reporte Comercial + RFM**](./automatizacion-reporte-comercial-rfm/) | Comercial / Retail | Reemplaza el reporte mensual manual y segmenta clientes (RFM) | **~$1,0 M/año** |
 
 ## Roadmap por sector
 

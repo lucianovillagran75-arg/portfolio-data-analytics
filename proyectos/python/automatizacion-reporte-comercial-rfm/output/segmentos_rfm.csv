@@ -1,0 +1,777 @@
+id_cliente,recencia,frecuencia,monto,margen,R,F,M,FM,segmento,accion
+C0022,2,56,553464.21,159171.21,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0034,3,51,2023519.87,650261.87,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0036,15,81,651817.8,166211.8,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0062,5,41,863185.85,253039.85,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0071,4,59,1420833.72,324416.72,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0075,4,39,1342598.76,414741.76,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0077,5,70,649676.28,170158.28,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0085,6,49,1509357.04,399965.04,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0087,8,49,1038683.36,298858.36,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0092,12,63,608314.56,169415.56,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0108,1,59,1617954.06,432067.06,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0113,15,74,874674.04,266258.04,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0114,3,55,1815134.34,530669.34,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0134,3,78,458060.93,136060.93,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0158,1,47,1643840.09,468569.09,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0170,3,37,221999.57,65230.57,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0171,6,47,1349644.33,360545.33,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0175,12,74,621562.59,156159.59,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0192,10,49,781214.39,234884.38999999998,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0197,11,56,1686830.0,462424.0,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0218,11,68,397422.64,106596.64,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0228,6,40,865946.85,223254.85,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0253,3,52,774653.28,222944.28,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0260,5,42,1417329.93,471102.93,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0291,2,58,1697786.98,505892.98,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0292,12,60,1659781.3,463566.3,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0305,1,72,652541.28,188322.28,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0311,14,80,827222.51,238433.51,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0319,4,76,313016.52,83091.52,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0335,12,40,1699423.18,469555.18,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0346,14,48,954514.86,303448.86,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0355,17,63,618495.06,176596.06,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0376,17,58,492341.66,120027.66,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0398,2,81,880605.4,257264.4,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0400,6,58,1670624.9,483261.9,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0420,2,48,1190303.83,332516.83,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0442,12,48,1199401.6,386509.6,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0444,1,40,1155352.61,324004.61,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0451,11,58,1994446.29,543507.29,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0458,7,59,745611.66,220608.66,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0509,3,48,349187.0,100254.0,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0522,13,35,1254283.75,372214.75,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0523,16,63,329707.0,90223.0,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0524,9,55,564599.4400000001,148484.44,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0533,3,83,2555779.42,696022.42,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0542,10,46,1495515.29,392182.29,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0549,2,73,753880.4,216554.4,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0555,1,62,569834.44,166433.44,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0564,12,50,434824.86,95352.86,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0568,6,46,1051405.91,267537.91,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0603,5,56,1630035.94,471404.94,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0618,7,44,429857.83999999997,114898.84,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0628,3,68,625853.45,162564.45,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0630,6,60,517158.72,145433.72,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0639,11,47,998214.03,302117.03,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0640,10,99,488125.19,128584.19,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0665,15,77,667928.73,197550.73,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0689,4,69,418244.82,126722.82,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0707,13,69,1789891.61,526329.61,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0712,5,56,502426.67,145464.67,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0715,4,76,852485.53,230625.53,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0736,1,53,980625.96,288397.96,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0762,1,56,1361018.21,337629.21,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0782,12,71,368257.06,98313.06,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0790,13,61,349556.22,96027.22,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0800,9,46,343133.75,104915.75,5,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0013,9,16,131152.96,39550.96,5,3,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0015,7,30,199485.83000000002,52658.83,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0041,1,25,201258.9,59201.9,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0048,12,19,153991.21,41873.21,5,3,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0052,15,34,185803.01,56068.01,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0084,17,24,171385.15,49401.15,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0120,1,24,441171.23,135235.23,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0125,8,25,315476.99,80718.99,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0131,6,23,133715.5,32892.5,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0142,15,34,97360.17,22482.170000000002,5,5,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0168,1,35,203578.33000000002,51427.33,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0180,7,27,176180.97,51259.97,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0187,16,35,199806.16,56440.16,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0208,3,25,59314.89,17310.89,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0252,14,38,189890.04,54065.04,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0256,8,31,129454.7,38408.7,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0259,6,20,88748.8,25673.8,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0265,7,29,148588.95,44095.95,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0280,13,29,195149.24,54809.24,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0298,6,26,157054.07,45361.07,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0300,5,23,126294.13,31198.13,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0308,14,25,158741.45,50198.45,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0312,3,36,203058.43,62298.43,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0332,14,36,204700.12,53974.12,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0344,10,30,1454645.08,433258.08,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0354,15,26,139049.18,40111.18,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0363,7,26,180070.62,52454.62,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0397,1,21,138914.16,32950.16,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0411,4,25,195184.11,62407.11,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0424,5,33,155055.82,41342.82,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0431,13,26,152267.58,31494.58,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0437,16,33,173601.02,41890.02,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0443,11,29,976791.16,295890.16000000003,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0471,7,37,209485.93,62516.93,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0500,13,26,125245.08,37348.08,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0532,10,25,169190.71,45848.71,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0537,1,35,145159.39,40810.39,5,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0546,7,31,244628.0,75536.0,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0561,9,30,143489.48,47243.479999999996,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0569,10,20,57094.03,15775.03,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0574,15,22,126387.72,31351.72,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0575,7,27,137769.24,37440.24,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0586,5,22,146919.07,49561.07,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0609,8,29,92955.37,28103.37,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0633,5,27,221579.18,70339.18,5,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0646,2,19,134838.93,36066.93,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0658,15,26,100336.45,28213.45,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0659,5,23,160209.68,49075.68,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0716,13,21,126470.7,37801.7,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0735,4,29,184201.29,46762.29,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0789,10,25,44428.16,10000.16,5,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0798,2,23,136227.72,37373.72,5,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0056,5,19,97236.42,32115.42,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0080,14,15,84196.62,19247.62,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0145,16,19,99521.31,25689.31,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0161,15,17,63405.020000000004,17083.02,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0181,1,19,78771.15,19662.15,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0245,7,18,58231.74,15733.74,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0288,12,11,62253.42,17693.42,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0389,12,11,44554.8,13097.8,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0463,12,11,56041.74,14466.74,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0512,6,10,54296.26,11459.26,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0596,5,19,89592.0,26576.0,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0624,12,15,80775.58,18613.58,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0637,8,13,65164.4,15735.4,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0651,6,17,88514.82,19775.82,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0668,15,15,58800.0,20512.0,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0795,1,14,85328.04000000001,23274.04,5,3,3,3,Leales,Upsell y recompensas por lealtad
+C0081,1,13,19625.37,5305.37,5,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0091,15,6,16399.28,4912.28,5,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0099,2,5,22549.0,6861.0,5,1,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0117,6,10,25919.56,5834.5599999999995,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0268,6,8,16547.21,3694.21,5,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0371,17,4,23190.0,6715.0,5,1,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0383,6,8,29391.5,8247.5,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0579,4,7,12020.0,3630.0,5,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0590,16,7,22547.54,5289.54,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0602,11,7,20320.0,5500.0,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0718,13,6,43474.020000000004,13340.02,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0724,11,7,38827.0,10916.0,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0740,12,7,26779.37,8112.37,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0744,2,6,12312.02,3193.02,5,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0772,15,5,10066.32,2768.32,5,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0773,13,9,28430.5,9526.5,5,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0009,7,3,5439.5,1643.5,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0219,4,4,12616.85,1559.85,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0323,13,5,14996.0,4471.0,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0403,17,1,4950.0,1857.0,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0615,7,3,5118.18,1040.18,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0663,11,1,1026.0,245.0,5,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0044,23,53,1769745.15,517161.14999999997,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0051,21,70,885738.38,248280.38,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0060,18,64,1014865.13,299236.13,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0096,36,34,250943.44,70800.44,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0112,22,57,1651076.47,505170.47,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0116,22,56,1657910.82,468494.82,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0127,40,47,251642.63,75424.63,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0154,25,52,514571.64,148616.64,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0216,27,46,1195161.98,367967.98,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0233,27,50,1536516.08,484019.08,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0236,45,37,1091662.13,273613.13,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0270,29,46,754187.8,195140.8,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0316,21,48,554710.14,150317.14,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0336,23,61,689782.32,194276.32,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0339,34,82,815972.62,226262.62,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0359,25,41,1335648.98,382686.98,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0362,25,68,2131459.14,592326.14,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0367,18,60,1791876.96,451565.96,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0379,27,65,1811976.49,518848.49,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0413,39,71,2108064.43,576784.43,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0423,26,62,606794.59,181506.59,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0436,21,59,1383763.4,404758.4,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0447,18,82,826892.41,224305.41,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0455,17,60,593276.32,166412.32,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0477,42,45,789545.98,198430.98,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0491,43,45,733943.88,214251.88,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0499,18,44,675888.12,190808.12,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0519,19,52,1850072.1,540737.1,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0554,33,38,949298.62,275056.62,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0557,18,46,893512.38,266278.38,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0567,34,55,499328.15,155307.15,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0576,38,56,330018.28,94726.28,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0599,22,51,534145.88,151626.88,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0600,38,55,1236213.09,366928.08999999997,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0601,24,35,223549.83,64223.83,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0641,46,57,313100.76,87143.76,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0737,26,44,248634.33,72643.33,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0747,18,44,224547.65,64284.65,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0757,31,34,623081.65,182838.65,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0765,18,54,1317708.84,396014.84,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0766,26,37,1000185.25,234308.25,4,5,5,5,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0010,47,23,89706.69,24243.69,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0030,25,32,116417.17,31868.17,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0031,20,31,92685.39,25275.39,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0033,44,22,149823.55,44765.55,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0054,31,24,152109.45,39710.45,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0106,47,22,109281.92,28522.92,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0107,20,29,187969.19,54305.19,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0129,37,24,155918.88,44162.880000000005,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0143,41,26,192457.54,50334.54,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0146,41,20,124511.09,35039.09,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0157,19,21,106873.73,28600.73,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0172,47,21,112541.51999999999,34128.520000000004,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0177,40,26,157856.91,36021.909999999996,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0179,38,20,281826.79,67666.79000000001,4,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0182,33,20,127483.07,29640.07,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0185,35,14,137688.5,38383.5,4,3,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0186,26,25,177319.34,52391.34,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0194,21,28,164983.9,39607.9,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0206,43,22,68147.74,15511.74,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0210,21,18,145542.04,49760.04,4,3,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0239,29,30,162210.44,53780.44,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0250,32,28,1029131.38,282322.38,4,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0257,25,26,130453.86,44470.86,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0266,27,25,94884.89,21638.89,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0271,39,22,123930.87,39109.87,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0272,29,17,143712.63,36940.63,4,3,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0326,27,37,106224.86,30533.86,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0356,29,26,129565.8,35418.8,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0386,24,31,188930.8,58993.8,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0414,21,23,184107.45,57968.45,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0448,24,31,231906.72,67368.72,4,4,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0450,23,36,187950.71,54899.71,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0474,19,32,196295.16,43589.16,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0476,23,20,76597.26,21810.26,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0489,35,23,146345.88,43859.88,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0493,23,34,153551.85,45430.85,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0502,29,36,187841.57,50594.57,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0520,26,23,119919.43,29427.43,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0528,37,19,591652.94,185801.94,4,3,5,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0551,22,21,76454.72,22241.72,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0588,22,25,164979.96,49644.96,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0616,28,22,150810.44,42460.44,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0629,30,23,137174.17,43591.17,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0642,34,33,164242.43,44233.43,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0647,26,35,212324.73,60314.729999999996,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0690,25,31,145709.88,30164.88,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0732,20,39,191324.88,50241.88,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0733,19,30,179710.82,58902.82,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0738,41,25,179195.05000000002,53962.05,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0746,22,21,106148.11,28859.11,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0755,19,26,99998.05,21793.05,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0764,36,23,91365.64,26657.64,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0775,26,19,105149.9,24321.9,4,4,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0796,26,20,86903.59999999999,23204.6,4,4,3,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0797,29,34,221317.6,64877.6,4,5,4,4,Campeones,Fidelizar: programa VIP y acceso anticipado
+C0004,45,14,73379.39,21306.39,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0057,40,16,66034.81,16910.81,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0079,38,11,47322.84,12806.84,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0095,19,11,55244.44,12672.44,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0211,42,13,87301.08,22750.08,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0214,37,17,83214.41,22895.41,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0289,40,11,71320.0,24293.0,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0322,46,14,91915.58,24075.58,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0328,30,14,57245.33,16010.33,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0373,32,17,72965.8,21811.8,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0378,24,13,81932.9,24552.9,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0381,31,14,61256.54,18367.54,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0439,37,13,70293.0,22262.0,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0543,18,16,56980.29,20225.29,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0655,25,13,45502.0,12591.0,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0664,35,16,76237.0,23097.0,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0700,18,12,46665.52,11355.52,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0702,19,11,46777.8,12344.8,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0734,43,16,58370.69,16699.69,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0768,30,16,73617.87,13845.869999999999,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0784,31,15,85978.97,27231.97,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0792,44,13,75025.37,20361.37,4,3,3,3,Leales,Upsell y recompensas por lealtad
+C0049,35,11,35395.770000000004,10421.77,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0050,32,9,35166.8,10255.8,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0053,23,5,21801.5,5869.5,4,1,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0063,28,9,24925.0,7942.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0135,33,6,26822.5,9256.5,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0174,27,13,37558.63,10696.630000000001,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0183,44,7,32576.0,11081.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0201,38,8,22784.78,6490.78,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0232,20,9,15707.79,4770.79,4,2,1,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0235,37,10,27812.53,7543.53,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0242,42,9,21857.0,6959.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0358,19,10,36340.5,11001.5,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0407,19,6,34773.0,10997.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0429,21,5,45077.16,9740.16,4,1,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0440,20,9,27885.0,9120.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0481,44,7,43652.01,14157.01,4,2,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0482,42,8,29967.0,8532.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0496,25,13,35219.5,10343.5,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0506,42,8,27050.0,8217.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0565,30,10,36039.04,10012.04,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0581,26,10,34400.8,10856.8,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0598,18,7,19968.39,5294.389999999999,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0613,30,9,67390.89,9849.89,4,2,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0670,20,8,72297.0,24258.0,4,2,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0672,27,11,37111.770000000004,12042.77,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0676,40,9,84916.5,26416.5,4,2,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0691,20,17,41325.58,9833.58,4,3,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0723,30,6,53222.0,15494.0,4,2,3,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0743,26,8,22385.0,8014.0,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0781,36,6,17564.54,3304.54,4,2,2,2,Potenciales,Incentivar la segunda compra (frecuencia)
+C0140,28,4,8830.0,2550.0,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0434,42,4,10216.5,3723.5,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0475,38,4,14412.0,3923.0,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0479,36,3,5788.0,1956.0,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0531,36,2,15525.0,4868.0,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0597,21,5,10405.54,2167.54,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0758,25,4,6900.0,2521.0,4,1,1,1,Potenciales,Incentivar la segunda compra (frecuencia)
+C0159,51,55,1405343.32,401001.32,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0188,116,42,1375477.09,365626.08999999997,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0215,51,63,537804.9,146193.9,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0237,69,34,225901.86,67419.86,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0238,64,49,903687.17,265719.17,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0249,67,90,881855.84,233042.84,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0282,79,34,661879.56,189029.56,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0283,66,79,830058.33,240552.33,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0382,60,44,853411.08,267067.08,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0449,56,53,1381158.46,356152.46,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0505,91,51,1410194.52,414620.52,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0585,73,55,242511.0,62409.0,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0634,53,69,1281233.07,380465.07,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0679,67,48,1264626.44,361358.44,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0708,91,73,659728.73,195276.73,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0745,61,58,255262.41,61539.41,3,5,5,5,Leales,Upsell y recompensas por lealtad
+C0002,64,21,101506.02,25492.02,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0012,54,22,126287.81,30502.809999999998,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0017,81,31,153645.9,40362.9,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0020,77,17,114987.28,37351.28,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0023,122,27,182786.27,50936.27,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0025,92,25,116912.47,28228.47,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0045,66,20,126825.2,39365.2,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0089,60,18,122595.57,30199.57,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0109,49,22,130006.87,43148.87,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0124,79,21,121530.0,31918.0,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0144,107,22,214732.97,66095.97,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0166,67,24,94605.62,24603.62,3,4,3,4,Leales,Upsell y recompensas por lealtad
+C0169,117,24,137058.84,39451.84,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0193,83,27,129327.43,40793.43,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0217,61,16,102110.11,27188.11,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0241,88,32,197178.9,51922.9,3,5,4,4,Leales,Upsell y recompensas por lealtad
+C0247,79,21,107646.47,21810.47,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0258,120,27,141602.0,37415.0,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0278,52,39,153608.59,47050.59,3,5,4,4,Leales,Upsell y recompensas por lealtad
+C0294,68,25,476612.36,137475.36,3,4,5,4,Leales,Upsell y recompensas por lealtad
+C0313,99,21,151026.16,44145.159999999996,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0317,68,18,154381.8,46666.8,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0321,54,22,124812.22,38050.22,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0331,116,22,154102.9,49514.9,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0334,71,21,120143.06,33863.06,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0338,53,25,55900.729999999996,15595.73,3,4,3,4,Leales,Upsell y recompensas por lealtad
+C0340,63,26,156283.15,46217.15,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0342,64,21,108540.78,26951.78,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0357,59,24,163442.51,46109.51,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0370,61,30,163907.05,46063.05,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0384,83,26,129604.24,43106.24,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0387,61,25,156182.99,40739.99,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0401,108,17,101449.2,24308.2,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0409,48,20,68168.02,15687.02,3,4,3,4,Leales,Upsell y recompensas por lealtad
+C0412,65,20,203322.91999999998,64012.92,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0426,52,28,136029.41,35371.41,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0452,72,32,137039.85,35109.85,3,5,4,4,Leales,Upsell y recompensas por lealtad
+C0460,67,30,194414.28,58525.28,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0470,56,20,137452.79,40268.79,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0486,100,20,170499.85,55372.85,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0494,78,26,114046.94,30704.94,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0541,74,31,195662.4,63114.4,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0550,93,27,144133.8,41103.8,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0553,65,26,130405.28,39473.28,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0570,60,22,107080.27,35461.270000000004,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0605,73,25,168204.62,44590.62,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0606,56,27,111587.81,17228.81,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0619,112,27,201475.31,51712.31,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0643,89,21,119931.58,33112.58,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0704,95,16,388589.25,106650.25,3,3,5,4,Leales,Upsell y recompensas por lealtad
+C0709,58,24,134261.22,44151.22,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0730,92,17,110237.31,35087.31,3,3,4,4,Leales,Upsell y recompensas por lealtad
+C0742,105,28,170053.14,51606.14,3,4,4,4,Leales,Upsell y recompensas por lealtad
+C0783,76,21,93781.4,22408.4,3,4,3,4,Leales,Upsell y recompensas por lealtad
+C0018,91,16,93342.73999999999,22314.739999999998,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0121,76,13,68450.31,18411.309999999998,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0122,75,14,55607.44,14177.44,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0141,74,16,99795.42,28985.42,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0155,49,17,84526.01,18562.01,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0221,54,19,63420.46,13463.46,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0276,97,11,64193.51,21108.510000000002,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0286,101,17,51634.0,15297.0,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0301,52,11,51019.51,15866.51,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0324,87,19,79073.17,24955.17,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0341,111,18,93110.7,24544.7,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0393,59,13,56735.49,14458.49,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0408,50,19,81459.0,24966.0,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0425,102,14,46731.02,12414.02,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0435,56,16,84673.33,21123.33,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0445,99,14,49231.53,13437.53,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0465,104,10,83191.97,19353.97,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0518,103,17,95245.72,30903.72,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0578,75,15,78156.81,14682.81,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0584,64,13,53027.29,12077.29,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0591,118,15,79980.15,12489.15,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0617,63,17,91495.0,28827.0,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0695,58,12,56548.07,10350.07,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0701,78,11,48637.5,13447.5,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0752,116,12,47887.380000000005,11839.380000000001,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0778,71,14,46774.01,12556.01,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0793,81,13,67454.38,17794.38,3,3,3,3,Leales,Upsell y recompensas por lealtad
+C0006,53,6,23381.02,6956.02,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0029,60,9,30539.0,8911.0,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0058,98,6,22761.54,5722.54,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0066,94,10,50333.06,14360.06,3,2,3,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0076,95,7,19942.8,6582.8,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0082,49,5,19524.0,6315.0,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0138,60,8,17617.97,3849.97,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0148,73,6,18571.46,4198.46,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0149,81,7,39910.0,11538.0,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0151,55,7,10542.5,2637.5,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0167,74,8,36108.07,9148.07,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0189,93,6,19109.22,4731.219999999999,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0230,72,15,20200.92,5246.92,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0279,58,5,22389.58,3785.58,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0325,65,13,40563.46,12257.46,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0366,89,5,37535.0,10551.0,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0368,122,7,24099.82,6273.82,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0480,80,7,32801.95,8253.95,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0488,71,7,20536.52,6295.52,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0503,91,8,33936.0,11381.0,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0507,75,3,23310.0,6411.0,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0508,56,8,48911.0,13222.0,3,2,3,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0514,60,9,38168.9,11758.9,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0516,76,8,11667.34,2478.34,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0517,73,11,36888.55,7953.55,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0548,53,7,13965.279999999999,2485.2799999999997,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0556,80,12,37045.0,11794.0,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0560,63,8,42450.0,15382.0,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0572,85,9,57618.83,11445.83,3,2,3,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0610,70,11,24541.6,6052.6,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0612,122,5,29307.260000000002,10281.26,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0626,80,4,40722.0,14976.0,3,1,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0644,99,8,53499.58,16381.58,3,2,3,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0662,72,10,22570.27,4755.27,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0680,57,10,20836.309999999998,5045.3099999999995,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0688,69,8,26259.1,5128.1,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0714,101,12,28262.32,7084.32,3,3,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0719,104,9,40916.06,8463.06,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0721,49,7,30861.22,7901.22,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0726,56,6,9840.76,3026.76,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0739,86,7,57707.0,17121.0,3,2,3,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0750,92,7,20002.5,6232.5,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0756,50,5,18041.46,3028.46,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0767,105,6,10108.0,2705.0,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0787,55,8,8245.21,2379.21,3,2,1,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0791,92,9,18325.0,5267.0,3,2,2,2,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0001,90,4,12140.0,3663.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0019,52,2,3340.0,1054.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0163,100,4,10086.52,1773.52,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0327,105,5,16243.369999999999,3462.37,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0365,67,5,11270.0,3154.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0377,115,3,12241.0,4476.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0390,105,4,14610.27,4680.27,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0459,69,4,9438.69,2073.69,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0611,119,4,15612.87,2521.87,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0669,64,3,9830.0,3658.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0713,112,4,11052.0,2992.0,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0729,63,2,2162.8,-193.2,3,1,1,1,Necesitan atención,Ofertas reactivadoras antes de que se enfríen
+C0032,159,41,888390.9299999999,272591.93,2,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0248,149,50,452368.98,124180.98,2,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0498,152,37,624635.52,169820.52,2,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0511,180,42,1674724.18,505996.18,2,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0657,281,42,409083.99,123215.99,2,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0005,252,16,159472.5,49819.5,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0008,145,15,100706.5,32799.5,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0038,177,20,111910.35,31055.35,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0086,133,23,119657.7,35336.7,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0093,309,23,107594.33,22769.33,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0164,135,21,137457.86,44410.86,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0202,127,20,104350.39,28920.39,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0267,335,22,577490.58,138026.58000000002,2,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0315,133,17,119589.02,32113.02,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0343,148,15,103502.62,27776.62,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0374,197,23,209393.72,49638.72,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0406,280,17,134035.41,30963.41,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0441,131,31,830314.57,229414.57,2,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0484,273,22,186477.47,45215.47,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0501,193,20,75551.55,20902.55,2,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0538,216,21,96651.4,27110.4,2,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0558,363,20,106091.1,25910.1,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0583,176,23,525397.53,142544.53,2,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0587,184,17,105579.32,28986.32,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0589,213,26,161280.71,46737.71,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0622,237,23,61384.770000000004,21038.77,2,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0631,246,19,469243.72,123358.72,2,3,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0667,300,13,106429.42,35202.42,2,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0682,163,19,120507.5,31025.5,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0705,147,23,160841.18,54085.18,2,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0710,346,15,401970.11,104730.11,2,3,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0748,267,12,318466.24,80443.24,2,3,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0751,309,19,68129.61,18153.61,2,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0007,159,16,58460.09,13280.09,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0021,215,17,52470.01,12057.01,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0026,127,15,69522.89,20868.89,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0037,133,11,49350.0,17022.0,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0040,166,12,46033.36,11924.36,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0098,357,14,85127.0,30363.0,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0105,147,17,57783.55,15034.55,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0128,221,16,75851.85,17561.85,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0190,157,17,74095.92,19759.92,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0246,133,15,73844.42,20738.42,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0263,197,14,75382.87,18176.87,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0330,211,16,90891.02,20332.02,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0348,154,13,86615.36,25397.36,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0461,143,16,85450.41,19037.41,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0473,244,16,62135.27,13814.27,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0492,128,15,51113.68,14146.68,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0513,205,10,53364.52,16692.52,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0515,176,12,53458.04,14631.04,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0582,129,12,49855.84,14729.84,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0592,127,14,66468.21,18962.21,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0660,238,14,52003.8,15892.8,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0727,167,14,53307.16,15595.16,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0728,189,10,44634.08,12114.08,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0763,139,12,66859.79,22275.79,2,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0788,130,19,36061.17,4730.17,2,4,2,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0003,135,10,33548.72,10350.720000000001,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0043,163,9,33829.78,8673.779999999999,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0046,202,10,41660.81,9024.81,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0047,334,10,51810.0,18350.0,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0055,148,6,15010.0,3714.0,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0065,175,4,18482.38,2753.38,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0068,246,7,13214.26,3311.26,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0069,139,11,42086.64,12302.64,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0102,313,9,10141.67,3103.67,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0119,297,9,31600.0,10880.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0126,238,7,16342.0,6032.0,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0133,262,8,66511.91,19595.91,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0147,252,7,14579.5,5210.5,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0152,185,4,20100.0,7624.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0156,366,10,52142.520000000004,16604.52,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0195,170,6,33446.5,10327.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0198,255,7,20867.31,4949.3099999999995,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0199,223,10,51861.57,13527.57,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0203,129,9,37445.11,10426.11,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0209,233,9,52630.369999999995,15561.369999999999,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0212,186,10,42318.0,14405.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0213,218,8,22174.93,5654.93,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0227,123,6,32974.5,10055.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0229,257,8,18631.760000000002,5142.76,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0287,205,6,14760.0,4654.0,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0290,220,8,11123.76,2780.76,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0295,144,5,39692.5,14024.5,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0299,159,9,22895.9,5702.9,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0309,194,12,35532.0,11582.0,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0318,200,10,21743.5,7121.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0329,342,10,41843.22,10964.220000000001,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0351,296,13,37204.77,6129.77,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0352,204,8,22944.32,6445.32,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0353,125,6,33398.36,11223.36,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0375,310,12,16335.21,4802.21,2,3,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0380,306,4,29170.0,11060.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0388,155,10,38086.52,10985.52,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0415,271,6,14566.29,2750.29,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0416,130,8,35864.0,11053.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0419,242,4,17590.0,5624.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0421,199,6,14658.310000000001,2327.31,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0422,205,15,39976.0,12747.0,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0428,227,2,22005.0,4938.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0457,157,7,27492.260000000002,7508.26,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0466,154,5,26282.0,8516.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0468,124,9,14265.630000000001,3990.63,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0472,124,8,39829.31,11672.31,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0490,293,8,18555.04,4823.04,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0526,345,7,21065.510000000002,2495.51,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0529,233,5,19242.0,6269.0,2,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0535,199,11,38216.71,10386.71,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0571,136,6,15119.0,4546.0,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0593,132,7,39036.0,11357.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0614,191,10,28608.04,4021.04,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0620,229,6,13675.0,4637.0,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0648,315,7,52075.6,13200.6,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0654,209,5,21830.0,7852.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0661,238,9,33876.5,7580.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0674,309,6,47724.0,15580.0,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0684,134,8,20065.0,7187.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0692,275,7,33622.5,9628.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0699,247,12,24508.93,6297.93,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0703,130,7,25082.2,7445.2,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0711,152,5,26557.5,6179.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0722,321,9,88302.6,24240.6,2,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0725,131,9,26266.0,8078.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0741,358,14,37690.61,10838.61,2,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0749,246,6,19371.5,6384.5,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0770,318,6,15453.72,3543.7200000000003,2,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0786,291,8,20508.0,6056.0,2,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0027,214,3,10430.0,3727.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0064,265,3,9754.0,2851.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0067,327,2,6530.0,2360.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0070,310,3,11561.0,4310.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0104,171,5,13977.0,4204.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0130,240,5,8682.5,2699.5,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0220,177,4,12552.54,2560.54,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0243,218,4,9290.0,2706.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0244,133,2,8790.0,2825.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0275,159,5,11515.0,4255.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0293,264,3,12286.0,3806.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0296,233,2,14370.0,3660.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0310,169,4,8482.869999999999,1083.87,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0394,143,2,1800.0,582.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0404,202,4,16818.19,3494.19,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0405,242,3,9880.0,2751.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0427,362,3,13780.0,4492.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0432,136,3,4070.5,1502.5,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0469,309,4,12949.0,4963.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0527,242,3,14749.0,4084.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0540,183,1,2160.0,782.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0547,167,1,2490.0,1015.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0559,142,4,9730.0,2622.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0580,346,1,1390.0,535.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0683,190,3,6652.5,2252.5,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0685,226,2,13790.0,3467.0,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0698,215,4,8414.52,1978.52,2,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0418,384,40,666704.33,178891.33,1,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0694,389,38,439055.02999999997,135863.03,1,5,5,5,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0110,463,13,110795.95,23696.95,1,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0115,383,23,126694.43,34139.43,1,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0118,370,25,556930.49,108726.49,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0173,426,27,855335.51,236968.51,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0204,410,19,108680.15,32344.15,1,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0264,390,20,309720.53,92482.53,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0269,424,31,325303.72,82769.72,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0349,527,21,111389.61,27207.61,1,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0417,377,22,62702.51,13871.51,1,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0462,367,24,129280.33,24129.329999999998,1,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0483,425,22,303028.07,81151.07,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0497,401,31,151512.42,38470.42,1,4,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0504,413,24,525363.4299999999,146153.43,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0545,522,11,153745.19,43409.19,1,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0645,370,23,737413.06,181991.06,1,4,5,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0696,368,19,65911.56,19221.56,1,4,3,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0759,382,15,105775.59,32156.59,1,3,4,4,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0073,394,11,51154.020000000004,14289.02,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0176,515,14,74709.42,21045.42,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0361,381,13,91302.0,23537.0,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0446,380,12,61401.49,15392.49,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0478,366,15,75312.12,15684.12,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0525,390,16,72160.87,20764.87,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0539,372,16,97040.76,28562.760000000002,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0754,444,11,59914.130000000005,17227.13,1,3,3,3,En riesgo,Campaña de recuperación URGENTE (cupón dirigido)
+C0011,657,4,19157.42,4991.42,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0016,409,5,19220.0,6093.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0024,405,6,43834.0,12271.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0028,367,7,38865.36,12340.36,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0039,414,8,24651.08,4654.08,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0042,380,3,38527.0,14227.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0059,422,5,22376.5,7424.5,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0074,413,6,10622.0,3481.0,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0078,383,7,17914.739999999998,4864.74,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0094,727,3,22150.0,8168.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0097,378,10,92910.0,27641.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0111,411,6,38917.5,11538.5,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0132,599,3,19507.0,4747.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0136,368,4,19995.58,6184.58,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0139,402,10,78095.13,24360.129999999997,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0150,450,7,40740.59,11141.59,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0178,460,4,31490.0,10917.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0184,403,8,19691.5,6928.5,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0191,386,11,33196.0,10666.0,1,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0200,388,8,84154.58,27671.58,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0226,406,8,44551.82,13503.82,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0251,426,10,65601.0,23638.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0254,402,5,18677.16,4412.16,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0255,427,6,46691.33,11279.33,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0277,383,6,17288.36,3887.36,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0284,516,8,32598.120000000003,3978.12,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0297,454,10,68700.0,20988.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0306,418,10,14710.14,2916.14,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0337,539,5,19616.61,5220.610000000001,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0360,534,5,19912.0,5968.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0364,431,5,26736.0,7800.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0385,432,6,31027.06,7696.06,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0392,372,9,34246.28,8941.28,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0399,390,5,31216.0,11138.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0433,529,8,16808.0,5426.0,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0438,509,7,11439.5,3525.5,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0454,642,4,35647.89,11482.89,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0487,441,6,14432.0,4634.0,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0510,407,7,58536.0,21060.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0544,460,8,41676.0,11358.0,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0577,499,10,41994.02,14749.02,1,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0594,460,9,98718.08,25900.08,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0621,434,7,12260.7,2450.7,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0623,453,9,54962.4,13341.4,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0632,381,11,16140.0,5278.0,1,3,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0649,557,6,34710.0,9708.0,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0650,376,6,33177.54,7372.54,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0656,451,8,29267.0,9835.0,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0673,434,9,44316.0,13508.0,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0681,377,7,25212.8,8041.8,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0706,455,5,8351.720000000001,1695.72,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0720,498,4,18817.5,6571.5,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0753,378,3,39735.0,12413.0,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0761,580,7,16252.31,3616.31,1,2,1,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0769,609,3,25078.72,7167.719999999999,1,1,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0774,402,8,34901.13,10033.13,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0779,425,6,49938.58,13868.58,1,2,3,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0780,431,11,35739.0,12113.0,1,3,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0785,669,5,33075.51,9408.51,1,2,2,2,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0014,507,5,15206.5,4601.5,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0061,544,3,10800.0,4025.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0083,424,4,12806.98,1171.98,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0090,633,1,6180.0,1950.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0100,450,3,11740.0,4010.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0101,606,3,9435.5,3319.5,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0123,662,4,7209.82,1388.82,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0137,371,3,8208.0,2259.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0153,490,3,4608.77,417.77,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0162,505,2,2910.0,1140.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0165,407,3,10332.0,3609.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0196,533,4,8896.0,2627.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0222,476,3,15573.880000000001,2760.88,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0231,403,1,2460.0,914.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0240,456,4,9012.0,2556.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0261,418,5,13120.86,3837.86,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0262,704,2,5280.0,1412.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0273,461,2,10110.0,3210.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0274,496,2,6550.04,1644.04,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0281,612,5,12940.0,3754.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0302,473,1,12930.0,3090.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0303,704,3,5615.0,1477.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0307,653,2,15525.0,4868.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0314,580,1,4350.0,1389.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0320,618,5,6968.5,1945.5,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0333,411,1,840.0,300.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0345,630,1,17100.0,4341.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0347,391,4,5853.67,1656.67,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0369,515,2,9130.0,3431.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0372,403,3,4908.77,415.77,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0391,382,1,1392.77,-219.23,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0396,471,2,15130.0,4786.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0410,606,2,8193.0,2868.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0430,598,2,4831.13,962.13,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0453,713,3,6880.0,2116.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0464,603,3,8250.5,2614.5,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0467,459,5,11097.0,3512.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0485,532,5,13032.8,3290.8,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0495,447,2,5577.54,-410.46000000000004,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0521,631,5,13317.0,4069.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0530,488,5,16609.34,4717.34,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0534,371,2,17010.0,6376.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0536,417,1,1440.0,570.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0552,474,1,4320.0,1710.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0562,648,3,8770.0,1812.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0563,392,4,10039.0,2327.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0573,385,3,8805.06,1960.06,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0595,644,2,2230.0,835.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0607,523,4,10604.880000000001,1530.88,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0608,475,1,2250.0,819.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0627,441,4,10873.72,2715.7200000000003,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0635,380,2,4657.42,928.42,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0636,392,3,7817.049999999999,984.05,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0638,568,1,7505.0,2579.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0652,481,4,3770.0299999999997,343.03000000000003,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0653,416,4,16237.6,2939.6,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0666,512,4,13651.58,2209.58,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0675,468,3,5968.0,1939.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0678,419,4,7745.17,1523.17,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0686,433,4,10835.310000000001,3.3099999999999454,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0687,572,2,3240.0,1176.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0693,612,2,4356.0,1384.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0717,523,1,4470.0,1710.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0731,678,2,3179.73,-601.27,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0760,630,1,1450.0,463.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0771,615,1,7900.0,2974.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0776,609,2,13973.0,4044.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0794,624,2,3816.0,1158.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir
+C0799,675,1,4950.0,1857.0,1,1,1,1,Hibernando / Perdidos,Recuperación de bajo costo; no sobreinvertir

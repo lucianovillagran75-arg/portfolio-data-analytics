@@ -10,7 +10,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 |---|---|---|
 | [`excel/`](./excel/) | Microsoft Excel | 1 activo |
 | [`sql/`](./sql/) | SQL | 1 activo |
-| [`python/`](./python/) | Python | En desarrollo |
+| [`python/`](./python/) | Python | 1 activo |
 | [`power-bi/`](./power-bi/) | Power BI | En desarrollo |
 | [`n8n/`](./n8n/) | Automatización n8n | En desarrollo |
 | [`integraciones/`](./integraciones/) | Multi-herramienta | En desarrollo |
@@ -22,7 +22,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 | Sector | SQL | Python | Power BI | Excel | n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Logística y Cadena de Suministro** | 🔜 | 🔜 | 🔜 | ✅ | 🔜 |
-| **Comercial / Retail** | ✅ | 🔜 | 🔜 | 🔜 | — |
+| **Comercial / Retail** | ✅ | ✅ | 🔜 | 🔜 | — |
 | **Finanzas** | 🔜 | 🔜 | 🔜 | 🔜 | — |
 | **Recursos Humanos** | 🔜 | 🔜 | 🔜 | 🔜 | — |
 | **Operaciones** | 🔜 | 🔜 | 🔜 | 🔜 | 🔜 |
@@ -32,6 +32,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 
 - ✅ **Logística** — [Sistema de Control de Inventario FMCG](./excel/logistica-inventario-fmcg/) · Excel
 - ✅ **Comercial / Retail** — [Análisis de Rentabilidad Comercial](./sql/rentabilidad-comercial-retail/) · SQL
+- ✅ **Comercial / Retail** — [Automatización del Reporte Comercial + RFM](./python/automatizacion-reporte-comercial-rfm/) · Python
 
 ---
 *Última actualización: Junio 2026*
