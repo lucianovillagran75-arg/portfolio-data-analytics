@@ -15,15 +15,34 @@ Cada proyecto está documentado con contexto real, metodología y resultados med
 | [`proyectos/python/`](./proyectos/python/) | Python | 🔜 Próximamente |
 | [`proyectos/sql/`](./proyectos/sql/) | SQL | 🟢 Activo |
 | [`proyectos/power-bi/`](./proyectos/power-bi/) | Power BI | 🔜 Próximamente |
-| [`proyectos/n8n/`](./proyectos/n8n/) | n8n Automation | 🔜 Próximamente |
+| [`proyectos/n8n/`](./proyectos/n8n/) | Automatización n8n | 🔜 Próximamente |
 | [`proyectos/integraciones/`](./proyectos/integraciones/) | Multi-herramienta | 🔜 Próximamente |
+
+---
+
+## 🧭 Matriz del portfolio — Herramientas × Sectores
+
+Cada herramienta se aplica a distintos **sectores de un negocio**. La idea es mostrar, sobre una
+misma base, cómo el mismo stack resuelve problemas reales en cada área. (✅ publicado · 🔜 planificado)
+
+| Sector | SQL | Python | Power BI | Excel | n8n |
+|---|:---:|:---:|:---:|:---:|:---:|
+| **Logística y Cadena de Suministro** | 🔜 | 🔜 | 🔜 | ✅ | 🔜 |
+| **Comercial / Retail** | ✅ | 🔜 | 🔜 | 🔜 | — |
+| **Finanzas** | 🔜 | 🔜 | 🔜 | 🔜 | — |
+| **Recursos Humanos** | 🔜 | 🔜 | 🔜 | 🔜 | — |
+| **Operaciones** | 🔜 | 🔜 | 🔜 | 🔜 | 🔜 |
+| **Mantenimiento** | 🔜 | 🔜 | 🔜 | 🔜 | — |
+
+> ✅ **Logística** — [Sistema de Control de Inventario FMCG (Excel)](./proyectos/excel/logistica-inventario-fmcg/)
+> ✅ **Comercial** — [Análisis de Rentabilidad Comercial (SQL)](./proyectos/sql/rentabilidad-comercial-retail/)
 
 ---
 
 ## 🚀 Proyecto destacado
 
 ### 📦 Sistema de Control de Inventario — Distribuidora FMCG
-> Excel Avanzado · Logística · Supply Chain
+> Excel Avanzado · Logística · Cadena de Suministro
 
 Herramienta completa para gestión de inventario de 75 SKUs que detecta stock muerto, quiebres inminentes y oportunidades de reducción de costos.
 

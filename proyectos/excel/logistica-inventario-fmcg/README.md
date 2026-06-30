@@ -1,7 +1,7 @@
 # 📦 Sistema de Control de Inventario — Distribuidora FMCG
 
 > **Herramienta:** Microsoft Excel Avanzado
-> **Sector:** Logística / Supply Chain
+> **Sector:** Logística / Cadena de Suministro
 > **Contexto:** Distribuidora de productos de consumo masivo (FMCG)
 > **Período:** Enero – Junio 2025 · 75 SKUs · 3 categorías
 
@@ -93,4 +93,4 @@ La metodología es escalable: el mismo sistema funciona con 75, 300 o 1.000 SKUs
 
 ---
 
-*Datos simulados con distribuciones realistas del sector FMCG · Portfolio de Logística & Supply Chain Analytics*
+*Datos simulados con distribuciones realistas del sector FMCG · Portfolio de Logística y Cadena de Suministro · Analítica*
