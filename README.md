@@ -1,6 +1,6 @@
 # 👋 Hola, soy Luciano Villagran
 
-**Analista de Datos | Logística & Supply Chain | Buenos Aires, Argentina**
+**Analista de Datos | Logistica y cadena de suministros | Tucuman, Argentina**
 
 Portfolio de proyectos personales de análisis de datos, automatización y optimización operativa.
 Cada proyecto está documentado con contexto real, metodología y resultados medibles.
