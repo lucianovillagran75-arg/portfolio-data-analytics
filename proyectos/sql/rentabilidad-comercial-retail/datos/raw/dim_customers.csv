@@ -1,0 +1,801 @@
+customer_id,customer_name,segment,city,region,signup_date,churn_flag
+C0001,Cliente 0001,Ocasional,Rosario,Centro,2023-08-10,False
+C0002,Cliente 0002,Ocasional,Córdoba,Centro,2025-08-14,False
+C0003,Cliente 0003,Ocasional,Rosario,Centro,2025-03-11,False
+C0004,Cliente 0004,Minorista,Córdoba,Centro,2022-11-30,False
+C0005,Cliente 0005,Minorista,San Juan,Cuyo,2023-10-19,False
+C0006,Cliente 0006,Ocasional,Mendoza,Cuyo,2023-07-26,False
+C0007,Cliente 0007,Minorista,Córdoba,Centro,2024-09-11,False
+C0008,Cliente 0008,Minorista,Córdoba,Centro,2025-06-13,False
+C0009,Cliente 0009,Ocasional,Bariloche,Sur,2023-01-15,False
+C0010,Cliente 0010,Minorista,Córdoba,Centro,2024-06-01,False
+C0011,Cliente 0011,Ocasional,Córdoba,Centro,2023-07-31,False
+C0012,Cliente 0012,Minorista,San Juan,Cuyo,2023-12-13,False
+C0013,Cliente 0013,Minorista,Mendoza,Cuyo,2023-05-03,False
+C0014,Cliente 0014,Ocasional,Tucumán,Norte,2022-10-08,True
+C0015,Cliente 0015,Minorista,Mendoza,Cuyo,2024-09-19,False
+C0016,Cliente 0016,Minorista,Córdoba,Centro,2024-03-24,True
+C0017,Cliente 0017,Minorista,Mendoza,Cuyo,2024-01-22,False
+C0018,Cliente 0018,Minorista,Tucumán,Norte,2022-12-16,False
+C0019,Cliente 0019,Ocasional,Neuquén,Sur,2024-11-19,False
+C0020,Cliente 0020,Minorista,Córdoba,Centro,2023-02-09,False
+C0021,Cliente 0021,Ocasional,Córdoba,Centro,2023-01-25,False
+C0022,Cliente 0022,VIP,Rosario,Centro,2025-08-11,False
+C0023,Cliente 0023,Minorista,Rosario,Centro,2023-06-11,False
+C0024,Cliente 0024,Minorista,Mendoza,Cuyo,2023-12-24,True
+C0025,Cliente 0025,Minorista,Rosario,Centro,2024-08-13,True
+C0026,Cliente 0026,Minorista,Mendoza,Cuyo,2024-03-19,True
+C0027,Cliente 0027,Ocasional,Córdoba,Centro,2024-03-22,False
+C0028,Cliente 0028,Ocasional,Tucumán,Norte,2023-08-28,True
+C0029,Cliente 0029,Ocasional,San Juan,Cuyo,2023-06-19,False
+C0030,Cliente 0030,Minorista,Rosario,Centro,2022-11-22,False
+C0031,Cliente 0031,Minorista,Bariloche,Sur,2025-06-14,False
+C0032,Cliente 0032,Mayorista,Rosario,Centro,2025-07-25,False
+C0033,Cliente 0033,Minorista,Córdoba,Centro,2024-03-24,False
+C0034,Cliente 0034,Mayorista,Mendoza,Cuyo,2025-07-12,False
+C0035,Cliente 0035,Ocasional,Mendoza,Cuyo,2024-06-17,True
+C0036,Cliente 0036,VIP,Rosario,Centro,2023-02-01,False
+C0037,Cliente 0037,Ocasional,Córdoba,Centro,2025-07-19,True
+C0038,Cliente 0038,Minorista,San Juan,Cuyo,2025-02-28,False
+C0039,Cliente 0039,Minorista,San Juan,Cuyo,2023-12-27,True
+C0040,Cliente 0040,Minorista,Bariloche,Sur,2023-10-20,True
+C0041,Cliente 0041,Minorista,Córdoba,Centro,2023-09-16,False
+C0042,Cliente 0042,Ocasional,Mendoza,Cuyo,2022-08-15,True
+C0043,Cliente 0043,Ocasional,Mendoza,Cuyo,2024-11-07,False
+C0044,Cliente 0044,Mayorista,Salta,Norte,2022-08-30,False
+C0045,Cliente 0045,Minorista,Córdoba,Centro,2023-07-10,False
+C0046,Cliente 0046,Ocasional,Tucumán,Norte,2025-06-09,False
+C0047,Cliente 0047,Ocasional,Córdoba,Centro,2022-07-30,False
+C0048,Cliente 0048,Minorista,Rosario,Centro,2025-06-01,False
+C0049,Cliente 0049,Ocasional,Tucumán,Norte,2025-03-21,False
+C0050,Cliente 0050,Minorista,Neuquén,Sur,2025-02-05,False
+C0051,Cliente 0051,VIP,Córdoba,Centro,2022-10-10,False
+C0052,Cliente 0052,Minorista,Córdoba,Centro,2024-02-09,False
+C0053,Cliente 0053,Ocasional,San Juan,Cuyo,2025-07-08,False
+C0054,Cliente 0054,Minorista,Rosario,Centro,2022-12-25,False
+C0055,Cliente 0055,Ocasional,Rosario,Centro,2024-11-09,False
+C0056,Cliente 0056,Minorista,Mendoza,Cuyo,2023-02-01,False
+C0057,Cliente 0057,Minorista,San Juan,Cuyo,2024-07-02,False
+C0058,Cliente 0058,Ocasional,Rosario,Centro,2023-06-03,False
+C0059,Cliente 0059,Ocasional,San Juan,Cuyo,2023-07-26,False
+C0060,Cliente 0060,Mayorista,Neuquén,Sur,2024-11-14,False
+C0061,Cliente 0061,Ocasional,Tucumán,Norte,2025-05-31,False
+C0062,Cliente 0062,Mayorista,Bariloche,Sur,2023-05-18,False
+C0063,Cliente 0063,Ocasional,Córdoba,Centro,2025-08-16,False
+C0064,Cliente 0064,Ocasional,San Juan,Cuyo,2025-04-10,False
+C0065,Cliente 0065,Ocasional,Salta,Norte,2023-02-14,False
+C0066,Cliente 0066,Ocasional,Rosario,Centro,2025-05-18,False
+C0067,Cliente 0067,Ocasional,Rosario,Centro,2024-04-28,False
+C0068,Cliente 0068,Ocasional,Córdoba,Centro,2024-09-25,False
+C0069,Cliente 0069,Ocasional,Córdoba,Centro,2023-11-11,False
+C0070,Cliente 0070,Ocasional,Neuquén,Sur,2025-02-08,False
+C0071,Cliente 0071,Mayorista,Salta,Norte,2024-12-29,False
+C0072,Cliente 0072,Ocasional,Rosario,Centro,2025-04-18,False
+C0073,Cliente 0073,Minorista,Córdoba,Centro,2025-06-25,True
+C0074,Cliente 0074,Ocasional,Córdoba,Centro,2025-05-30,False
+C0075,Cliente 0075,Mayorista,Rosario,Centro,2022-11-08,False
+C0076,Cliente 0076,Ocasional,Mendoza,Cuyo,2025-02-18,False
+C0077,Cliente 0077,VIP,San Juan,Cuyo,2023-07-10,False
+C0078,Cliente 0078,Minorista,Neuquén,Sur,2024-06-11,True
+C0079,Cliente 0079,Minorista,Rosario,Centro,2023-07-13,False
+C0080,Cliente 0080,Minorista,San Juan,Cuyo,2024-12-19,False
+C0081,Cliente 0081,Ocasional,Bariloche,Sur,2022-09-17,False
+C0082,Cliente 0082,Ocasional,Salta,Norte,2024-05-28,False
+C0083,Cliente 0083,Ocasional,Córdoba,Centro,2024-10-27,False
+C0084,Cliente 0084,Minorista,Córdoba,Centro,2023-04-04,False
+C0085,Cliente 0085,Mayorista,Mendoza,Cuyo,2025-03-09,False
+C0086,Cliente 0086,Minorista,Córdoba,Centro,2025-07-08,False
+C0087,Cliente 0087,Mayorista,Neuquén,Sur,2024-03-31,False
+C0088,Cliente 0088,Ocasional,Neuquén,Sur,2023-01-27,False
+C0089,Cliente 0089,Minorista,Rosario,Centro,2024-02-03,False
+C0090,Cliente 0090,Minorista,Rosario,Centro,2024-07-04,True
+C0091,Cliente 0091,Ocasional,Bariloche,Sur,2024-02-26,False
+C0092,Cliente 0092,VIP,Rosario,Centro,2023-01-19,False
+C0093,Cliente 0093,Minorista,Tucumán,Norte,2025-08-19,False
+C0094,Cliente 0094,Ocasional,San Juan,Cuyo,2024-10-09,False
+C0095,Cliente 0095,Minorista,Rosario,Centro,2023-01-17,False
+C0096,Cliente 0096,Minorista,Salta,Norte,2024-01-03,False
+C0097,Cliente 0097,Minorista,Salta,Norte,2025-05-23,True
+C0098,Cliente 0098,Minorista,Tucumán,Norte,2022-12-15,False
+C0099,Cliente 0099,Ocasional,Rosario,Centro,2024-10-09,False
+C0100,Cliente 0100,Ocasional,Bariloche,Sur,2025-05-25,False
+C0101,Cliente 0101,Ocasional,Neuquén,Sur,2024-10-28,False
+C0102,Cliente 0102,Ocasional,Neuquén,Sur,2025-01-01,False
+C0103,Cliente 0103,Ocasional,Córdoba,Centro,2025-07-09,False
+C0104,Cliente 0104,Ocasional,Mendoza,Cuyo,2024-10-27,False
+C0105,Cliente 0105,Minorista,Bariloche,Sur,2025-06-25,False
+C0106,Cliente 0106,Minorista,San Juan,Cuyo,2022-12-16,False
+C0107,Cliente 0107,Minorista,Mendoza,Cuyo,2025-02-28,False
+C0108,Cliente 0108,Mayorista,Rosario,Centro,2025-04-05,False
+C0109,Cliente 0109,Minorista,Rosario,Centro,2022-08-15,False
+C0110,Cliente 0110,Minorista,Rosario,Centro,2024-10-10,True
+C0111,Cliente 0111,Minorista,Rosario,Centro,2023-07-04,True
+C0112,Cliente 0112,Mayorista,Córdoba,Centro,2024-10-28,False
+C0113,Cliente 0113,VIP,Rosario,Centro,2022-08-29,False
+C0114,Cliente 0114,Mayorista,Rosario,Centro,2022-08-28,False
+C0115,Cliente 0115,Minorista,Mendoza,Cuyo,2022-12-12,True
+C0116,Cliente 0116,Mayorista,Rosario,Centro,2025-03-20,False
+C0117,Cliente 0117,Ocasional,Córdoba,Centro,2025-03-09,False
+C0118,Cliente 0118,Mayorista,Rosario,Centro,2023-06-04,True
+C0119,Cliente 0119,Ocasional,Rosario,Centro,2023-01-04,False
+C0120,Cliente 0120,Mayorista,Bariloche,Sur,2025-07-12,False
+C0121,Cliente 0121,Ocasional,Mendoza,Cuyo,2024-08-10,False
+C0122,Cliente 0122,Minorista,San Juan,Cuyo,2025-02-28,False
+C0123,Cliente 0123,Ocasional,San Juan,Cuyo,2023-12-12,False
+C0124,Cliente 0124,Minorista,Córdoba,Centro,2024-03-16,False
+C0125,Cliente 0125,Mayorista,Neuquén,Sur,2023-12-03,True
+C0126,Cliente 0126,Ocasional,Bariloche,Sur,2022-07-27,False
+C0127,Cliente 0127,VIP,Bariloche,Sur,2024-11-10,False
+C0128,Cliente 0128,Minorista,Rosario,Centro,2022-07-14,False
+C0129,Cliente 0129,Minorista,Mendoza,Cuyo,2023-10-22,False
+C0130,Cliente 0130,Ocasional,Córdoba,Centro,2023-09-12,False
+C0131,Cliente 0131,Minorista,Tucumán,Norte,2023-04-26,False
+C0132,Cliente 0132,Ocasional,Tucumán,Norte,2023-04-19,True
+C0133,Cliente 0133,Minorista,Rosario,Centro,2024-03-13,True
+C0134,Cliente 0134,VIP,Neuquén,Sur,2023-01-06,False
+C0135,Cliente 0135,Ocasional,Salta,Norte,2025-05-16,False
+C0136,Cliente 0136,Ocasional,Córdoba,Centro,2025-06-24,False
+C0137,Cliente 0137,Ocasional,Córdoba,Centro,2024-12-21,True
+C0138,Cliente 0138,Ocasional,Neuquén,Sur,2022-12-31,False
+C0139,Cliente 0139,Minorista,Córdoba,Centro,2024-05-25,True
+C0140,Cliente 0140,Ocasional,Córdoba,Centro,2024-01-05,False
+C0141,Cliente 0141,Minorista,Córdoba,Centro,2023-08-13,False
+C0142,Cliente 0142,Minorista,Neuquén,Sur,2024-05-09,False
+C0143,Cliente 0143,Minorista,Rosario,Centro,2023-08-04,False
+C0144,Cliente 0144,Minorista,Tucumán,Norte,2024-03-01,True
+C0145,Cliente 0145,Minorista,Salta,Norte,2024-04-06,False
+C0146,Cliente 0146,Minorista,San Juan,Cuyo,2024-10-23,False
+C0147,Cliente 0147,Ocasional,San Juan,Cuyo,2024-02-21,False
+C0148,Cliente 0148,Ocasional,Tucumán,Norte,2022-09-11,False
+C0149,Cliente 0149,Ocasional,Mendoza,Cuyo,2022-10-06,False
+C0150,Cliente 0150,Ocasional,Córdoba,Centro,2024-10-20,False
+C0151,Cliente 0151,Ocasional,Bariloche,Sur,2023-11-19,False
+C0152,Cliente 0152,Ocasional,San Juan,Cuyo,2024-09-25,False
+C0153,Cliente 0153,Ocasional,Bariloche,Sur,2024-02-09,True
+C0154,Cliente 0154,VIP,Mendoza,Cuyo,2023-12-04,False
+C0155,Cliente 0155,Minorista,Rosario,Centro,2022-12-21,False
+C0156,Cliente 0156,Minorista,Rosario,Centro,2023-07-25,True
+C0157,Cliente 0157,Minorista,Córdoba,Centro,2023-12-24,False
+C0158,Cliente 0158,Mayorista,Córdoba,Centro,2025-05-24,False
+C0159,Cliente 0159,Mayorista,Tucumán,Norte,2025-01-08,False
+C0160,Cliente 0160,Ocasional,Rosario,Centro,2025-02-24,False
+C0161,Cliente 0161,Minorista,Córdoba,Centro,2022-08-25,False
+C0162,Cliente 0162,Ocasional,Salta,Norte,2023-06-24,True
+C0163,Cliente 0163,Ocasional,Mendoza,Cuyo,2024-06-29,False
+C0164,Cliente 0164,Minorista,Córdoba,Centro,2025-08-17,False
+C0165,Cliente 0165,Ocasional,Tucumán,Norte,2023-05-12,True
+C0166,Cliente 0166,Minorista,Mendoza,Cuyo,2024-04-04,False
+C0167,Cliente 0167,Minorista,Neuquén,Sur,2024-06-08,False
+C0168,Cliente 0168,Minorista,Córdoba,Centro,2025-04-09,False
+C0169,Cliente 0169,Minorista,Mendoza,Cuyo,2024-03-06,False
+C0170,Cliente 0170,Minorista,San Juan,Cuyo,2023-11-13,False
+C0171,Cliente 0171,Mayorista,Tucumán,Norte,2023-09-21,False
+C0172,Cliente 0172,Minorista,Salta,Norte,2024-02-19,False
+C0173,Cliente 0173,Mayorista,Córdoba,Centro,2024-06-26,True
+C0174,Cliente 0174,Ocasional,Rosario,Centro,2023-07-05,False
+C0175,Cliente 0175,VIP,Córdoba,Centro,2024-09-04,False
+C0176,Cliente 0176,Minorista,Córdoba,Centro,2024-04-15,True
+C0177,Cliente 0177,Minorista,Córdoba,Centro,2024-02-29,False
+C0178,Cliente 0178,Minorista,San Juan,Cuyo,2025-04-07,True
+C0179,Cliente 0179,Mayorista,Bariloche,Sur,2024-02-17,False
+C0180,Cliente 0180,Minorista,San Juan,Cuyo,2023-12-17,False
+C0181,Cliente 0181,Minorista,Rosario,Centro,2025-01-17,False
+C0182,Cliente 0182,Minorista,Salta,Norte,2023-10-28,False
+C0183,Cliente 0183,Ocasional,San Juan,Cuyo,2025-01-31,False
+C0184,Cliente 0184,Ocasional,Neuquén,Sur,2022-07-15,False
+C0185,Cliente 0185,Minorista,Córdoba,Centro,2025-07-12,False
+C0186,Cliente 0186,Minorista,Mendoza,Cuyo,2023-07-15,False
+C0187,Cliente 0187,Minorista,Tucumán,Norte,2024-07-19,False
+C0188,Cliente 0188,Mayorista,Salta,Norte,2023-05-09,False
+C0189,Cliente 0189,Ocasional,San Juan,Cuyo,2022-09-10,False
+C0190,Cliente 0190,Ocasional,Córdoba,Centro,2025-06-05,False
+C0191,Cliente 0191,Minorista,Neuquén,Sur,2022-07-19,True
+C0192,Cliente 0192,Mayorista,Neuquén,Sur,2023-09-18,False
+C0193,Cliente 0193,Minorista,Córdoba,Centro,2023-04-02,False
+C0194,Cliente 0194,Minorista,Rosario,Centro,2023-05-05,False
+C0195,Cliente 0195,Ocasional,Rosario,Centro,2024-09-14,False
+C0196,Cliente 0196,Ocasional,Neuquén,Sur,2023-10-26,True
+C0197,Cliente 0197,Mayorista,Rosario,Centro,2025-05-03,False
+C0198,Cliente 0198,Ocasional,Salta,Norte,2022-11-17,False
+C0199,Cliente 0199,Ocasional,Mendoza,Cuyo,2024-08-22,False
+C0200,Cliente 0200,Minorista,Córdoba,Centro,2023-11-06,True
+C0201,Cliente 0201,Ocasional,San Juan,Cuyo,2024-12-09,False
+C0202,Cliente 0202,Minorista,Córdoba,Centro,2023-02-07,False
+C0203,Cliente 0203,Minorista,Neuquén,Sur,2022-09-16,False
+C0204,Cliente 0204,Minorista,Mendoza,Cuyo,2023-08-06,True
+C0205,Cliente 0205,Ocasional,Córdoba,Centro,2023-08-13,False
+C0206,Cliente 0206,Minorista,Córdoba,Centro,2025-07-11,False
+C0207,Cliente 0207,Ocasional,Rosario,Centro,2025-04-16,False
+C0208,Cliente 0208,Minorista,Neuquén,Sur,2025-07-31,False
+C0209,Cliente 0209,Ocasional,Mendoza,Cuyo,2024-04-08,False
+C0210,Cliente 0210,Minorista,Mendoza,Cuyo,2025-08-04,False
+C0211,Cliente 0211,Minorista,Tucumán,Norte,2022-08-07,False
+C0212,Cliente 0212,Ocasional,Córdoba,Centro,2023-01-28,False
+C0213,Cliente 0213,Ocasional,Mendoza,Cuyo,2022-09-17,False
+C0214,Cliente 0214,Minorista,San Juan,Cuyo,2024-07-02,False
+C0215,Cliente 0215,VIP,Salta,Norte,2024-05-11,False
+C0216,Cliente 0216,Mayorista,San Juan,Cuyo,2023-05-10,False
+C0217,Cliente 0217,Minorista,Rosario,Centro,2023-07-09,False
+C0218,Cliente 0218,VIP,Bariloche,Sur,2024-12-14,False
+C0219,Cliente 0219,Ocasional,Tucumán,Norte,2025-06-13,False
+C0220,Cliente 0220,Ocasional,Rosario,Centro,2022-09-06,False
+C0221,Cliente 0221,Minorista,Córdoba,Centro,2023-05-06,False
+C0222,Cliente 0222,Ocasional,Rosario,Centro,2025-03-07,False
+C0223,Cliente 0223,Ocasional,Córdoba,Centro,2025-04-28,True
+C0224,Cliente 0224,Ocasional,Rosario,Centro,2024-01-20,False
+C0225,Cliente 0225,Ocasional,Salta,Norte,2023-06-05,True
+C0226,Cliente 0226,Ocasional,Mendoza,Cuyo,2022-11-13,True
+C0227,Cliente 0227,Ocasional,Tucumán,Norte,2023-10-20,False
+C0228,Cliente 0228,Mayorista,Mendoza,Cuyo,2024-03-04,False
+C0229,Cliente 0229,Ocasional,Córdoba,Centro,2025-05-17,False
+C0230,Cliente 0230,Ocasional,Bariloche,Sur,2024-11-04,False
+C0231,Cliente 0231,Ocasional,Mendoza,Cuyo,2024-01-25,False
+C0232,Cliente 0232,Ocasional,Bariloche,Sur,2024-05-28,False
+C0233,Cliente 0233,Mayorista,Córdoba,Centro,2022-10-20,False
+C0234,Cliente 0234,Ocasional,Córdoba,Centro,2023-01-01,True
+C0235,Cliente 0235,Ocasional,Bariloche,Sur,2022-10-19,False
+C0236,Cliente 0236,Mayorista,Tucumán,Norte,2024-01-24,False
+C0237,Cliente 0237,Minorista,Mendoza,Cuyo,2023-12-13,False
+C0238,Cliente 0238,Mayorista,Bariloche,Sur,2023-06-06,False
+C0239,Cliente 0239,Minorista,Mendoza,Cuyo,2025-07-17,False
+C0240,Cliente 0240,Ocasional,San Juan,Cuyo,2024-10-23,True
+C0241,Cliente 0241,Minorista,Rosario,Centro,2022-11-15,False
+C0242,Cliente 0242,Ocasional,Rosario,Centro,2024-07-03,False
+C0243,Cliente 0243,Ocasional,Córdoba,Centro,2024-10-25,False
+C0244,Cliente 0244,Ocasional,Córdoba,Centro,2024-07-30,False
+C0245,Cliente 0245,Minorista,Neuquén,Sur,2025-02-05,False
+C0246,Cliente 0246,Minorista,Mendoza,Cuyo,2023-04-05,False
+C0247,Cliente 0247,Minorista,Córdoba,Centro,2022-09-16,False
+C0248,Cliente 0248,VIP,Salta,Norte,2023-05-08,True
+C0249,Cliente 0249,VIP,Córdoba,Centro,2024-04-28,False
+C0250,Cliente 0250,Mayorista,Rosario,Centro,2022-10-21,False
+C0251,Cliente 0251,Minorista,Tucumán,Norte,2023-02-02,True
+C0252,Cliente 0252,Minorista,Córdoba,Centro,2022-12-07,False
+C0253,Cliente 0253,Mayorista,Bariloche,Sur,2023-02-11,False
+C0254,Cliente 0254,Ocasional,Salta,Norte,2025-03-02,False
+C0255,Cliente 0255,Minorista,Rosario,Centro,2023-02-06,True
+C0256,Cliente 0256,Minorista,Rosario,Centro,2024-03-08,False
+C0257,Cliente 0257,Minorista,Tucumán,Norte,2024-10-05,False
+C0258,Cliente 0258,Minorista,Tucumán,Norte,2025-06-18,False
+C0259,Cliente 0259,Minorista,Mendoza,Cuyo,2023-11-09,False
+C0260,Cliente 0260,Mayorista,Córdoba,Centro,2024-07-28,False
+C0261,Cliente 0261,Ocasional,Bariloche,Sur,2023-08-24,False
+C0262,Cliente 0262,Ocasional,Rosario,Centro,2025-05-23,True
+C0263,Cliente 0263,Ocasional,San Juan,Cuyo,2023-08-04,False
+C0264,Cliente 0264,Mayorista,Bariloche,Sur,2024-07-15,True
+C0265,Cliente 0265,Minorista,Salta,Norte,2024-07-23,False
+C0266,Cliente 0266,Minorista,San Juan,Cuyo,2023-11-28,False
+C0267,Cliente 0267,Mayorista,Mendoza,Cuyo,2025-03-17,True
+C0268,Cliente 0268,Ocasional,Rosario,Centro,2023-11-13,False
+C0269,Cliente 0269,VIP,Rosario,Centro,2025-08-09,True
+C0270,Cliente 0270,Mayorista,Bariloche,Sur,2024-06-25,False
+C0271,Cliente 0271,Minorista,Córdoba,Centro,2024-04-21,False
+C0272,Cliente 0272,Minorista,Tucumán,Norte,2024-04-26,False
+C0273,Cliente 0273,Ocasional,Tucumán,Norte,2023-07-30,True
+C0274,Cliente 0274,Ocasional,Córdoba,Centro,2023-07-23,False
+C0275,Cliente 0275,Ocasional,Bariloche,Sur,2022-08-06,False
+C0276,Cliente 0276,Ocasional,Rosario,Centro,2023-12-31,False
+C0277,Cliente 0277,Ocasional,San Juan,Cuyo,2024-01-05,False
+C0278,Cliente 0278,Minorista,Córdoba,Centro,2022-09-13,False
+C0279,Cliente 0279,Ocasional,Córdoba,Centro,2022-07-19,False
+C0280,Cliente 0280,Minorista,Mendoza,Cuyo,2024-08-15,False
+C0281,Cliente 0281,Ocasional,Córdoba,Centro,2022-12-11,False
+C0282,Cliente 0282,Mayorista,Bariloche,Sur,2024-12-06,False
+C0283,Cliente 0283,VIP,San Juan,Cuyo,2023-08-18,False
+C0284,Cliente 0284,Ocasional,Rosario,Centro,2025-06-17,True
+C0285,Cliente 0285,Ocasional,Salta,Norte,2025-01-25,True
+C0286,Cliente 0286,Minorista,Neuquén,Sur,2024-02-23,False
+C0287,Cliente 0287,Ocasional,Córdoba,Centro,2022-11-08,False
+C0288,Cliente 0288,Minorista,Tucumán,Norte,2024-10-30,False
+C0289,Cliente 0289,Ocasional,Córdoba,Centro,2022-11-13,False
+C0290,Cliente 0290,Ocasional,Neuquén,Sur,2024-05-27,False
+C0291,Cliente 0291,Mayorista,Rosario,Centro,2024-10-15,False
+C0292,Cliente 0292,Mayorista,Córdoba,Centro,2024-06-13,False
+C0293,Cliente 0293,Ocasional,Salta,Norte,2023-02-06,False
+C0294,Cliente 0294,Mayorista,Bariloche,Sur,2024-04-24,False
+C0295,Cliente 0295,Minorista,Rosario,Centro,2024-10-07,False
+C0296,Cliente 0296,Ocasional,Córdoba,Centro,2022-08-20,False
+C0297,Cliente 0297,Minorista,San Juan,Cuyo,2023-07-19,True
+C0298,Cliente 0298,Minorista,Tucumán,Norte,2023-10-01,False
+C0299,Cliente 0299,Ocasional,Tucumán,Norte,2023-08-24,False
+C0300,Cliente 0300,Minorista,Mendoza,Cuyo,2025-02-15,False
+C0301,Cliente 0301,Minorista,Rosario,Centro,2025-07-08,False
+C0302,Cliente 0302,Ocasional,Córdoba,Centro,2023-09-16,True
+C0303,Cliente 0303,Ocasional,Mendoza,Cuyo,2025-05-18,False
+C0304,Cliente 0304,Ocasional,Tucumán,Norte,2024-03-03,False
+C0305,Cliente 0305,VIP,Rosario,Centro,2022-12-19,False
+C0306,Cliente 0306,Minorista,Neuquén,Sur,2025-02-20,True
+C0307,Cliente 0307,Ocasional,Mendoza,Cuyo,2024-04-07,False
+C0308,Cliente 0308,Minorista,Córdoba,Centro,2024-07-28,False
+C0309,Cliente 0309,Minorista,Neuquén,Sur,2025-02-07,False
+C0310,Cliente 0310,Ocasional,Mendoza,Cuyo,2023-06-02,False
+C0311,Cliente 0311,VIP,Rosario,Centro,2023-05-25,False
+C0312,Cliente 0312,Minorista,Córdoba,Centro,2025-01-04,False
+C0313,Cliente 0313,Minorista,Córdoba,Centro,2024-01-27,False
+C0314,Cliente 0314,Ocasional,Mendoza,Cuyo,2023-10-24,True
+C0315,Cliente 0315,Minorista,Tucumán,Norte,2024-07-29,False
+C0316,Cliente 0316,VIP,Tucumán,Norte,2024-02-29,False
+C0317,Cliente 0317,Minorista,Córdoba,Centro,2025-08-07,False
+C0318,Cliente 0318,Ocasional,Rosario,Centro,2023-06-05,False
+C0319,Cliente 0319,VIP,Neuquén,Sur,2023-12-08,False
+C0320,Cliente 0320,Ocasional,Neuquén,Sur,2023-08-25,False
+C0321,Cliente 0321,Minorista,Rosario,Centro,2023-10-02,False
+C0322,Cliente 0322,Minorista,Salta,Norte,2024-05-12,False
+C0323,Cliente 0323,Ocasional,San Juan,Cuyo,2023-02-11,False
+C0324,Cliente 0324,Ocasional,Rosario,Centro,2023-12-21,False
+C0325,Cliente 0325,Ocasional,Córdoba,Centro,2023-07-15,False
+C0326,Cliente 0326,Minorista,Neuquén,Sur,2023-06-22,False
+C0327,Cliente 0327,Ocasional,Córdoba,Centro,2023-01-11,False
+C0328,Cliente 0328,Ocasional,San Juan,Cuyo,2025-05-16,False
+C0329,Cliente 0329,Ocasional,Rosario,Centro,2024-11-29,False
+C0330,Cliente 0330,Minorista,Córdoba,Centro,2025-05-17,False
+C0331,Cliente 0331,Minorista,Rosario,Centro,2024-03-23,False
+C0332,Cliente 0332,Minorista,San Juan,Cuyo,2024-11-05,False
+C0333,Cliente 0333,Ocasional,Bariloche,Sur,2024-10-05,False
+C0334,Cliente 0334,Minorista,Rosario,Centro,2024-03-21,False
+C0335,Cliente 0335,Mayorista,Salta,Norte,2025-07-11,False
+C0336,Cliente 0336,VIP,Tucumán,Norte,2025-03-01,False
+C0337,Cliente 0337,Minorista,Rosario,Centro,2024-09-20,True
+C0338,Cliente 0338,Ocasional,Bariloche,Sur,2025-01-17,False
+C0339,Cliente 0339,VIP,Mendoza,Cuyo,2023-07-05,False
+C0340,Cliente 0340,Minorista,San Juan,Cuyo,2025-08-19,False
+C0341,Cliente 0341,Minorista,Neuquén,Sur,2024-06-22,False
+C0342,Cliente 0342,Minorista,Córdoba,Centro,2024-07-01,False
+C0343,Cliente 0343,Minorista,Córdoba,Centro,2023-08-27,False
+C0344,Cliente 0344,Mayorista,Córdoba,Centro,2023-06-06,False
+C0345,Cliente 0345,Ocasional,Rosario,Centro,2022-08-23,True
+C0346,Cliente 0346,Mayorista,Mendoza,Cuyo,2023-04-03,False
+C0347,Cliente 0347,Ocasional,Bariloche,Sur,2022-11-18,True
+C0348,Cliente 0348,Ocasional,Mendoza,Cuyo,2025-06-22,False
+C0349,Cliente 0349,Minorista,Salta,Norte,2025-04-05,True
+C0350,Cliente 0350,Ocasional,San Juan,Cuyo,2025-06-13,False
+C0351,Cliente 0351,Ocasional,Mendoza,Cuyo,2024-01-03,False
+C0352,Cliente 0352,Ocasional,Neuquén,Sur,2024-09-27,False
+C0353,Cliente 0353,Ocasional,Rosario,Centro,2024-02-07,False
+C0354,Cliente 0354,Minorista,Tucumán,Norte,2025-01-02,False
+C0355,Cliente 0355,VIP,San Juan,Cuyo,2022-08-15,False
+C0356,Cliente 0356,Minorista,Rosario,Centro,2022-11-21,False
+C0357,Cliente 0357,Minorista,Rosario,Centro,2023-01-28,False
+C0358,Cliente 0358,Minorista,Córdoba,Centro,2024-11-25,False
+C0359,Cliente 0359,Mayorista,Mendoza,Cuyo,2025-05-07,False
+C0360,Cliente 0360,Ocasional,Tucumán,Norte,2023-04-04,False
+C0361,Cliente 0361,Minorista,San Juan,Cuyo,2023-03-20,True
+C0362,Cliente 0362,Mayorista,Rosario,Centro,2025-05-18,False
+C0363,Cliente 0363,Minorista,Córdoba,Centro,2023-05-25,False
+C0364,Cliente 0364,Ocasional,Córdoba,Centro,2022-10-16,True
+C0365,Cliente 0365,Ocasional,Bariloche,Sur,2023-07-30,False
+C0366,Cliente 0366,Ocasional,San Juan,Cuyo,2022-08-09,False
+C0367,Cliente 0367,Mayorista,Mendoza,Cuyo,2024-03-31,False
+C0368,Cliente 0368,Ocasional,San Juan,Cuyo,2023-11-04,False
+C0369,Cliente 0369,Ocasional,Bariloche,Sur,2023-07-18,False
+C0370,Cliente 0370,Minorista,Tucumán,Norte,2024-10-01,False
+C0371,Cliente 0371,Ocasional,Córdoba,Centro,2024-06-21,False
+C0372,Cliente 0372,Ocasional,Bariloche,Sur,2024-11-22,False
+C0373,Cliente 0373,Ocasional,Córdoba,Centro,2022-08-29,False
+C0374,Cliente 0374,VIP,Rosario,Centro,2025-03-09,True
+C0375,Cliente 0375,Ocasional,Bariloche,Sur,2025-05-21,False
+C0376,Cliente 0376,VIP,Mendoza,Cuyo,2025-07-03,False
+C0377,Cliente 0377,Ocasional,Rosario,Centro,2023-12-31,False
+C0378,Cliente 0378,Minorista,Rosario,Centro,2022-07-17,False
+C0379,Cliente 0379,Mayorista,Tucumán,Norte,2023-09-05,False
+C0380,Cliente 0380,Ocasional,Rosario,Centro,2025-06-05,False
+C0381,Cliente 0381,Ocasional,Tucumán,Norte,2023-06-03,False
+C0382,Cliente 0382,Mayorista,Bariloche,Sur,2023-08-11,False
+C0383,Cliente 0383,Ocasional,Rosario,Centro,2022-12-07,False
+C0384,Cliente 0384,Minorista,Rosario,Centro,2024-07-07,False
+C0385,Cliente 0385,Ocasional,Rosario,Centro,2022-07-20,False
+C0386,Cliente 0386,Minorista,Mendoza,Cuyo,2024-12-13,False
+C0387,Cliente 0387,Minorista,Mendoza,Cuyo,2025-02-10,False
+C0388,Cliente 0388,Ocasional,Mendoza,Cuyo,2023-08-01,False
+C0389,Cliente 0389,Ocasional,Salta,Norte,2023-06-18,False
+C0390,Cliente 0390,Ocasional,Rosario,Centro,2023-10-25,False
+C0391,Cliente 0391,Ocasional,Salta,Norte,2022-10-06,True
+C0392,Cliente 0392,Ocasional,Mendoza,Cuyo,2023-08-05,True
+C0393,Cliente 0393,Ocasional,Córdoba,Centro,2023-08-04,False
+C0394,Cliente 0394,Ocasional,Bariloche,Sur,2025-01-08,False
+C0395,Cliente 0395,Ocasional,San Juan,Cuyo,2024-11-14,True
+C0396,Cliente 0396,Minorista,Córdoba,Centro,2023-10-17,True
+C0397,Cliente 0397,Minorista,Mendoza,Cuyo,2022-11-04,False
+C0398,Cliente 0398,VIP,Tucumán,Norte,2023-11-26,False
+C0399,Cliente 0399,Ocasional,Salta,Norte,2023-12-25,False
+C0400,Cliente 0400,Mayorista,Tucumán,Norte,2025-05-29,False
+C0401,Cliente 0401,Minorista,Mendoza,Cuyo,2024-03-06,False
+C0402,Cliente 0402,Ocasional,Mendoza,Cuyo,2025-01-13,True
+C0403,Cliente 0403,Ocasional,Salta,Norte,2024-07-25,False
+C0404,Cliente 0404,Ocasional,Córdoba,Centro,2025-01-05,False
+C0405,Cliente 0405,Ocasional,Tucumán,Norte,2024-08-08,False
+C0406,Cliente 0406,Minorista,Salta,Norte,2023-09-15,True
+C0407,Cliente 0407,Ocasional,San Juan,Cuyo,2024-12-07,False
+C0408,Cliente 0408,Minorista,Salta,Norte,2023-09-20,False
+C0409,Cliente 0409,Minorista,Bariloche,Sur,2023-09-04,False
+C0410,Cliente 0410,Ocasional,Córdoba,Centro,2024-03-07,False
+C0411,Cliente 0411,Minorista,Córdoba,Centro,2025-07-18,False
+C0412,Cliente 0412,Minorista,Córdoba,Centro,2024-11-20,False
+C0413,Cliente 0413,Mayorista,Rosario,Centro,2025-07-20,False
+C0414,Cliente 0414,Minorista,Tucumán,Norte,2025-08-14,False
+C0415,Cliente 0415,Ocasional,Mendoza,Cuyo,2022-11-05,False
+C0416,Cliente 0416,Ocasional,Tucumán,Norte,2024-06-11,False
+C0417,Cliente 0417,Minorista,Bariloche,Sur,2022-10-12,True
+C0418,Cliente 0418,Mayorista,Bariloche,Sur,2023-04-09,True
+C0419,Cliente 0419,Ocasional,Salta,Norte,2024-04-17,False
+C0420,Cliente 0420,Mayorista,Rosario,Centro,2025-08-09,False
+C0421,Cliente 0421,Ocasional,Salta,Norte,2024-08-14,False
+C0422,Cliente 0422,Minorista,Bariloche,Sur,2023-03-11,True
+C0423,Cliente 0423,VIP,San Juan,Cuyo,2024-12-28,False
+C0424,Cliente 0424,Minorista,Rosario,Centro,2025-07-10,False
+C0425,Cliente 0425,Ocasional,Rosario,Centro,2023-09-27,False
+C0426,Cliente 0426,Minorista,Tucumán,Norte,2024-07-06,False
+C0427,Cliente 0427,Ocasional,Neuquén,Sur,2025-06-09,False
+C0428,Cliente 0428,Ocasional,Salta,Norte,2025-04-09,True
+C0429,Cliente 0429,Ocasional,San Juan,Cuyo,2024-09-21,False
+C0430,Cliente 0430,Ocasional,Mendoza,Cuyo,2025-06-15,False
+C0431,Cliente 0431,Minorista,Tucumán,Norte,2024-04-30,False
+C0432,Cliente 0432,Ocasional,Bariloche,Sur,2024-12-27,False
+C0433,Cliente 0433,Minorista,Rosario,Centro,2025-07-09,True
+C0434,Cliente 0434,Ocasional,Rosario,Centro,2024-04-24,False
+C0435,Cliente 0435,Ocasional,Córdoba,Centro,2024-02-13,False
+C0436,Cliente 0436,Mayorista,Tucumán,Norte,2023-10-25,False
+C0437,Cliente 0437,Minorista,Rosario,Centro,2025-08-12,False
+C0438,Cliente 0438,Ocasional,Neuquén,Sur,2022-12-09,False
+C0439,Cliente 0439,Minorista,Córdoba,Centro,2023-09-04,False
+C0440,Cliente 0440,Ocasional,San Juan,Cuyo,2023-02-26,False
+C0441,Cliente 0441,Mayorista,Rosario,Centro,2023-09-26,True
+C0442,Cliente 0442,Mayorista,Mendoza,Cuyo,2025-05-14,False
+C0443,Cliente 0443,Mayorista,Córdoba,Centro,2025-06-12,False
+C0444,Cliente 0444,Mayorista,Salta,Norte,2025-03-29,False
+C0445,Cliente 0445,Ocasional,Rosario,Centro,2025-08-10,False
+C0446,Cliente 0446,Ocasional,Mendoza,Cuyo,2024-12-28,False
+C0447,Cliente 0447,VIP,Córdoba,Centro,2023-02-22,False
+C0448,Cliente 0448,Minorista,Mendoza,Cuyo,2024-03-17,False
+C0449,Cliente 0449,Mayorista,San Juan,Cuyo,2023-08-26,False
+C0450,Cliente 0450,Minorista,Rosario,Centro,2023-06-17,False
+C0451,Cliente 0451,Mayorista,Tucumán,Norte,2023-03-12,False
+C0452,Cliente 0452,Minorista,Neuquén,Sur,2023-12-12,False
+C0453,Cliente 0453,Ocasional,Córdoba,Centro,2023-02-17,False
+C0454,Cliente 0454,Ocasional,Córdoba,Centro,2024-04-17,False
+C0455,Cliente 0455,VIP,Tucumán,Norte,2025-02-16,False
+C0456,Cliente 0456,Ocasional,Rosario,Centro,2025-03-16,True
+C0457,Cliente 0457,Ocasional,Mendoza,Cuyo,2023-09-20,False
+C0458,Cliente 0458,VIP,San Juan,Cuyo,2022-08-25,False
+C0459,Cliente 0459,Ocasional,Córdoba,Centro,2025-06-07,False
+C0460,Cliente 0460,Minorista,Córdoba,Centro,2023-08-29,False
+C0461,Cliente 0461,Minorista,Tucumán,Norte,2025-01-02,False
+C0462,Cliente 0462,Minorista,Mendoza,Cuyo,2024-07-22,True
+C0463,Cliente 0463,Ocasional,San Juan,Cuyo,2022-11-14,False
+C0464,Cliente 0464,Ocasional,Córdoba,Centro,2024-06-16,True
+C0465,Cliente 0465,Minorista,Rosario,Centro,2022-11-27,False
+C0466,Cliente 0466,Ocasional,Rosario,Centro,2023-02-06,True
+C0467,Cliente 0467,Ocasional,Neuquén,Sur,2025-01-16,False
+C0468,Cliente 0468,Ocasional,Bariloche,Sur,2024-10-02,False
+C0469,Cliente 0469,Ocasional,Rosario,Centro,2024-05-11,False
+C0470,Cliente 0470,Minorista,Salta,Norte,2025-06-11,False
+C0471,Cliente 0471,Minorista,Mendoza,Cuyo,2024-02-14,False
+C0472,Cliente 0472,Ocasional,Salta,Norte,2024-10-23,False
+C0473,Cliente 0473,Minorista,Rosario,Centro,2024-06-05,False
+C0474,Cliente 0474,Minorista,Mendoza,Cuyo,2024-01-24,False
+C0475,Cliente 0475,Ocasional,Tucumán,Norte,2025-01-08,False
+C0476,Cliente 0476,Minorista,Neuquén,Sur,2025-05-04,False
+C0477,Cliente 0477,Mayorista,Bariloche,Sur,2024-12-04,False
+C0478,Cliente 0478,Minorista,Rosario,Centro,2024-12-12,True
+C0479,Cliente 0479,Ocasional,San Juan,Cuyo,2024-05-22,False
+C0480,Cliente 0480,Minorista,Mendoza,Cuyo,2022-08-31,False
+C0481,Cliente 0481,Ocasional,Tucumán,Norte,2024-05-21,False
+C0482,Cliente 0482,Ocasional,Rosario,Centro,2023-09-09,False
+C0483,Cliente 0483,Mayorista,Neuquén,Sur,2024-10-21,True
+C0484,Cliente 0484,VIP,Córdoba,Centro,2025-01-09,True
+C0485,Cliente 0485,Ocasional,Córdoba,Centro,2023-07-18,True
+C0486,Cliente 0486,Minorista,San Juan,Cuyo,2023-01-19,False
+C0487,Cliente 0487,Ocasional,Rosario,Centro,2024-12-23,True
+C0488,Cliente 0488,Ocasional,Córdoba,Centro,2023-04-19,False
+C0489,Cliente 0489,Minorista,Córdoba,Centro,2025-02-09,False
+C0490,Cliente 0490,Minorista,Rosario,Centro,2023-04-09,True
+C0491,Cliente 0491,Mayorista,Neuquén,Sur,2023-03-01,False
+C0492,Cliente 0492,Ocasional,Mendoza,Cuyo,2023-08-01,False
+C0493,Cliente 0493,Minorista,Córdoba,Centro,2023-08-05,False
+C0494,Cliente 0494,Minorista,Córdoba,Centro,2023-01-25,False
+C0495,Cliente 0495,Ocasional,Córdoba,Centro,2022-07-26,True
+C0496,Cliente 0496,Ocasional,Córdoba,Centro,2025-05-01,False
+C0497,Cliente 0497,VIP,Bariloche,Sur,2023-08-30,True
+C0498,Cliente 0498,Mayorista,Bariloche,Sur,2024-06-19,False
+C0499,Cliente 0499,Mayorista,Neuquén,Sur,2025-02-12,False
+C0500,Cliente 0500,Minorista,San Juan,Cuyo,2024-11-22,False
+C0501,Cliente 0501,Minorista,Córdoba,Centro,2023-12-26,False
+C0502,Cliente 0502,Minorista,Salta,Norte,2024-11-26,False
+C0503,Cliente 0503,Ocasional,San Juan,Cuyo,2024-09-29,False
+C0504,Cliente 0504,Mayorista,Mendoza,Cuyo,2024-12-04,True
+C0505,Cliente 0505,Mayorista,San Juan,Cuyo,2023-01-08,False
+C0506,Cliente 0506,Ocasional,Salta,Norte,2025-02-01,False
+C0507,Cliente 0507,Ocasional,San Juan,Cuyo,2025-08-16,False
+C0508,Cliente 0508,Ocasional,Rosario,Centro,2023-03-21,False
+C0509,Cliente 0509,VIP,Córdoba,Centro,2024-11-28,False
+C0510,Cliente 0510,Minorista,Mendoza,Cuyo,2024-08-12,True
+C0511,Cliente 0511,Mayorista,Córdoba,Centro,2025-07-30,False
+C0512,Cliente 0512,Ocasional,Mendoza,Cuyo,2023-06-16,False
+C0513,Cliente 0513,Ocasional,San Juan,Cuyo,2025-07-08,False
+C0514,Cliente 0514,Ocasional,Mendoza,Cuyo,2022-07-16,False
+C0515,Cliente 0515,Ocasional,Salta,Norte,2024-12-10,False
+C0516,Cliente 0516,Ocasional,Neuquén,Sur,2024-10-28,False
+C0517,Cliente 0517,Ocasional,Rosario,Centro,2024-04-22,False
+C0518,Cliente 0518,Ocasional,San Juan,Cuyo,2023-03-05,False
+C0519,Cliente 0519,Mayorista,Salta,Norte,2024-12-01,False
+C0520,Cliente 0520,Minorista,Córdoba,Centro,2023-01-04,False
+C0521,Cliente 0521,Ocasional,Córdoba,Centro,2024-04-13,False
+C0522,Cliente 0522,Mayorista,Salta,Norte,2024-03-01,False
+C0523,Cliente 0523,VIP,Neuquén,Sur,2023-01-13,False
+C0524,Cliente 0524,VIP,Salta,Norte,2022-09-29,False
+C0525,Cliente 0525,Minorista,Bariloche,Sur,2025-07-19,True
+C0526,Cliente 0526,Ocasional,Salta,Norte,2023-01-24,False
+C0527,Cliente 0527,Ocasional,Salta,Norte,2023-02-14,False
+C0528,Cliente 0528,Mayorista,San Juan,Cuyo,2024-07-04,True
+C0529,Cliente 0529,Ocasional,Córdoba,Centro,2023-05-20,False
+C0530,Cliente 0530,Ocasional,Mendoza,Cuyo,2025-06-04,True
+C0531,Cliente 0531,Ocasional,Mendoza,Cuyo,2023-04-27,False
+C0532,Cliente 0532,Minorista,Córdoba,Centro,2023-11-16,False
+C0533,Cliente 0533,Mayorista,Rosario,Centro,2024-06-09,False
+C0534,Cliente 0534,Ocasional,San Juan,Cuyo,2024-02-26,False
+C0535,Cliente 0535,Ocasional,Mendoza,Cuyo,2022-10-30,False
+C0536,Cliente 0536,Ocasional,Neuquén,Sur,2022-11-25,False
+C0537,Cliente 0537,Minorista,San Juan,Cuyo,2025-07-25,False
+C0538,Cliente 0538,Minorista,Mendoza,Cuyo,2025-08-05,True
+C0539,Cliente 0539,Minorista,San Juan,Cuyo,2024-06-16,True
+C0540,Cliente 0540,Ocasional,Córdoba,Centro,2023-06-26,False
+C0541,Cliente 0541,Minorista,Tucumán,Norte,2025-03-13,False
+C0542,Cliente 0542,Mayorista,Mendoza,Cuyo,2025-01-04,False
+C0543,Cliente 0543,Minorista,Bariloche,Sur,2023-04-24,False
+C0544,Cliente 0544,Minorista,Rosario,Centro,2023-12-09,True
+C0545,Cliente 0545,Mayorista,Neuquén,Sur,2023-01-04,True
+C0546,Cliente 0546,Minorista,Rosario,Centro,2024-07-30,False
+C0547,Cliente 0547,Ocasional,Mendoza,Cuyo,2024-05-21,False
+C0548,Cliente 0548,Ocasional,Mendoza,Cuyo,2024-02-18,False
+C0549,Cliente 0549,VIP,Rosario,Centro,2024-01-08,False
+C0550,Cliente 0550,Minorista,Rosario,Centro,2023-03-03,False
+C0551,Cliente 0551,Minorista,Bariloche,Sur,2025-06-09,False
+C0552,Cliente 0552,Ocasional,Rosario,Centro,2025-05-21,False
+C0553,Cliente 0553,Minorista,Tucumán,Norte,2024-01-01,False
+C0554,Cliente 0554,Mayorista,Córdoba,Centro,2024-11-11,False
+C0555,Cliente 0555,VIP,Córdoba,Centro,2025-03-24,False
+C0556,Cliente 0556,Ocasional,Bariloche,Sur,2024-02-28,False
+C0557,Cliente 0557,Mayorista,Neuquén,Sur,2023-06-14,False
+C0558,Cliente 0558,Minorista,Salta,Norte,2025-01-05,True
+C0559,Cliente 0559,Ocasional,Córdoba,Centro,2023-08-02,False
+C0560,Cliente 0560,Minorista,Neuquén,Sur,2023-09-06,True
+C0561,Cliente 0561,Minorista,Tucumán,Norte,2022-11-27,False
+C0562,Cliente 0562,Ocasional,Bariloche,Sur,2022-07-29,True
+C0563,Cliente 0563,Ocasional,San Juan,Cuyo,2025-07-21,True
+C0564,Cliente 0564,VIP,Rosario,Centro,2023-01-19,False
+C0565,Cliente 0565,Ocasional,San Juan,Cuyo,2025-02-07,False
+C0566,Cliente 0566,Ocasional,Córdoba,Centro,2023-02-08,True
+C0567,Cliente 0567,VIP,Córdoba,Centro,2022-10-17,False
+C0568,Cliente 0568,Mayorista,Córdoba,Centro,2024-10-24,False
+C0569,Cliente 0569,Minorista,Neuquén,Sur,2023-10-19,False
+C0570,Cliente 0570,Minorista,Neuquén,Sur,2025-06-14,False
+C0571,Cliente 0571,Ocasional,Tucumán,Norte,2023-01-17,False
+C0572,Cliente 0572,Minorista,Córdoba,Centro,2024-12-16,False
+C0573,Cliente 0573,Ocasional,Córdoba,Centro,2025-01-06,False
+C0574,Cliente 0574,Minorista,Rosario,Centro,2024-07-15,False
+C0575,Cliente 0575,Minorista,Rosario,Centro,2023-03-02,False
+C0576,Cliente 0576,Minorista,Córdoba,Centro,2024-07-20,False
+C0577,Cliente 0577,Minorista,Rosario,Centro,2023-04-19,True
+C0578,Cliente 0578,Minorista,Salta,Norte,2023-11-29,False
+C0579,Cliente 0579,Ocasional,Neuquén,Sur,2023-07-18,False
+C0580,Cliente 0580,Minorista,Neuquén,Sur,2024-06-03,True
+C0581,Cliente 0581,Ocasional,Salta,Norte,2023-11-18,False
+C0582,Cliente 0582,Ocasional,Córdoba,Centro,2025-02-13,False
+C0583,Cliente 0583,Mayorista,Rosario,Centro,2023-12-20,True
+C0584,Cliente 0584,Minorista,Neuquén,Sur,2024-03-17,False
+C0585,Cliente 0585,VIP,Bariloche,Sur,2025-06-03,False
+C0586,Cliente 0586,Minorista,Salta,Norte,2025-08-21,False
+C0587,Cliente 0587,Minorista,Rosario,Centro,2024-08-10,False
+C0588,Cliente 0588,Minorista,Mendoza,Cuyo,2024-04-05,False
+C0589,Cliente 0589,Minorista,Mendoza,Cuyo,2024-05-11,False
+C0590,Cliente 0590,Ocasional,Córdoba,Centro,2024-05-09,False
+C0591,Cliente 0591,Minorista,Salta,Norte,2024-03-15,True
+C0592,Cliente 0592,Minorista,Rosario,Centro,2025-07-26,False
+C0593,Cliente 0593,Ocasional,Mendoza,Cuyo,2023-10-10,False
+C0594,Cliente 0594,Minorista,Rosario,Centro,2023-06-26,True
+C0595,Cliente 0595,Ocasional,Bariloche,Sur,2023-04-20,True
+C0596,Cliente 0596,Minorista,Tucumán,Norte,2024-01-21,False
+C0597,Cliente 0597,Ocasional,San Juan,Cuyo,2024-10-14,False
+C0598,Cliente 0598,Ocasional,Córdoba,Centro,2024-07-07,False
+C0599,Cliente 0599,VIP,San Juan,Cuyo,2022-11-11,False
+C0600,Cliente 0600,Mayorista,Neuquén,Sur,2023-10-11,False
+C0601,Cliente 0601,Minorista,Rosario,Centro,2024-08-09,False
+C0602,Cliente 0602,Ocasional,Rosario,Centro,2023-04-11,False
+C0603,Cliente 0603,Mayorista,San Juan,Cuyo,2024-05-03,False
+C0604,Cliente 0604,Ocasional,Rosario,Centro,2024-07-05,False
+C0605,Cliente 0605,Minorista,Tucumán,Norte,2024-04-26,False
+C0606,Cliente 0606,Minorista,Tucumán,Norte,2025-01-15,False
+C0607,Cliente 0607,Ocasional,Córdoba,Centro,2023-11-12,True
+C0608,Cliente 0608,Ocasional,Mendoza,Cuyo,2022-09-12,False
+C0609,Cliente 0609,Minorista,Bariloche,Sur,2023-01-27,False
+C0610,Cliente 0610,Ocasional,Córdoba,Centro,2023-04-26,False
+C0611,Cliente 0611,Ocasional,Rosario,Centro,2022-07-21,False
+C0612,Cliente 0612,Ocasional,Salta,Norte,2022-08-04,False
+C0613,Cliente 0613,Minorista,Rosario,Centro,2023-03-27,False
+C0614,Cliente 0614,Ocasional,Salta,Norte,2023-12-07,False
+C0615,Cliente 0615,Ocasional,San Juan,Cuyo,2024-03-25,False
+C0616,Cliente 0616,Minorista,Mendoza,Cuyo,2024-08-25,False
+C0617,Cliente 0617,Minorista,Córdoba,Centro,2022-12-17,False
+C0618,Cliente 0618,VIP,Tucumán,Norte,2025-03-29,False
+C0619,Cliente 0619,Minorista,Córdoba,Centro,2024-12-05,False
+C0620,Cliente 0620,Ocasional,Córdoba,Centro,2022-11-06,False
+C0621,Cliente 0621,Ocasional,Bariloche,Sur,2023-07-15,True
+C0622,Cliente 0622,Minorista,Bariloche,Sur,2024-06-29,False
+C0623,Cliente 0623,Minorista,San Juan,Cuyo,2022-08-31,True
+C0624,Cliente 0624,Minorista,Salta,Norte,2024-09-09,False
+C0625,Cliente 0625,Ocasional,Córdoba,Centro,2024-04-25,False
+C0626,Cliente 0626,Ocasional,Salta,Norte,2022-12-16,False
+C0627,Cliente 0627,Ocasional,San Juan,Cuyo,2024-06-02,True
+C0628,Cliente 0628,VIP,Rosario,Centro,2024-02-20,False
+C0629,Cliente 0629,Minorista,Rosario,Centro,2024-10-02,False
+C0630,Cliente 0630,VIP,San Juan,Cuyo,2023-02-13,False
+C0631,Cliente 0631,Mayorista,Rosario,Centro,2022-09-16,True
+C0632,Cliente 0632,Ocasional,Neuquén,Sur,2024-07-06,True
+C0633,Cliente 0633,Minorista,Rosario,Centro,2024-09-25,False
+C0634,Cliente 0634,Mayorista,Bariloche,Sur,2024-02-27,False
+C0635,Cliente 0635,Ocasional,Salta,Norte,2025-06-01,True
+C0636,Cliente 0636,Ocasional,Neuquén,Sur,2025-07-19,False
+C0637,Cliente 0637,Minorista,Córdoba,Centro,2024-05-16,False
+C0638,Cliente 0638,Ocasional,Neuquén,Sur,2025-06-23,False
+C0639,Cliente 0639,Mayorista,Rosario,Centro,2024-12-21,False
+C0640,Cliente 0640,VIP,Bariloche,Sur,2022-11-28,False
+C0641,Cliente 0641,VIP,Bariloche,Sur,2024-03-19,False
+C0642,Cliente 0642,Minorista,Córdoba,Centro,2025-03-13,False
+C0643,Cliente 0643,Minorista,Córdoba,Centro,2024-11-16,False
+C0644,Cliente 0644,Ocasional,Rosario,Centro,2022-08-08,False
+C0645,Cliente 0645,Mayorista,Tucumán,Norte,2022-08-19,True
+C0646,Cliente 0646,Minorista,Mendoza,Cuyo,2023-02-11,False
+C0647,Cliente 0647,Minorista,Mendoza,Cuyo,2023-05-28,False
+C0648,Cliente 0648,Minorista,Córdoba,Centro,2022-12-08,True
+C0649,Cliente 0649,Ocasional,Córdoba,Centro,2023-03-06,True
+C0650,Cliente 0650,Minorista,Salta,Norte,2023-05-12,True
+C0651,Cliente 0651,Minorista,Córdoba,Centro,2023-06-23,False
+C0652,Cliente 0652,Ocasional,Bariloche,Sur,2023-10-24,False
+C0653,Cliente 0653,Minorista,Córdoba,Centro,2023-07-14,True
+C0654,Cliente 0654,Ocasional,Mendoza,Cuyo,2025-03-01,False
+C0655,Cliente 0655,Ocasional,Tucumán,Norte,2024-06-29,False
+C0656,Cliente 0656,Ocasional,Rosario,Centro,2024-10-28,True
+C0657,Cliente 0657,VIP,Mendoza,Cuyo,2023-07-15,True
+C0658,Cliente 0658,Minorista,Bariloche,Sur,2025-05-05,False
+C0659,Cliente 0659,Minorista,Mendoza,Cuyo,2023-05-13,False
+C0660,Cliente 0660,Ocasional,San Juan,Cuyo,2023-08-31,False
+C0661,Cliente 0661,Ocasional,Salta,Norte,2024-12-30,False
+C0662,Cliente 0662,Ocasional,Mendoza,Cuyo,2022-10-06,False
+C0663,Cliente 0663,Ocasional,Mendoza,Cuyo,2022-07-13,False
+C0664,Cliente 0664,Minorista,Mendoza,Cuyo,2022-07-31,True
+C0665,Cliente 0665,VIP,Córdoba,Centro,2025-08-06,False
+C0666,Cliente 0666,Ocasional,Salta,Norte,2024-03-25,False
+C0667,Cliente 0667,Minorista,Mendoza,Cuyo,2025-08-08,False
+C0668,Cliente 0668,Minorista,Rosario,Centro,2024-10-14,False
+C0669,Cliente 0669,Ocasional,Tucumán,Norte,2023-10-24,False
+C0670,Cliente 0670,Minorista,Rosario,Centro,2025-05-14,False
+C0671,Cliente 0671,Ocasional,Rosario,Centro,2023-02-22,False
+C0672,Cliente 0672,Ocasional,Córdoba,Centro,2024-10-01,False
+C0673,Cliente 0673,Minorista,Rosario,Centro,2023-09-07,True
+C0674,Cliente 0674,Ocasional,Córdoba,Centro,2023-06-20,False
+C0675,Cliente 0675,Ocasional,Tucumán,Norte,2022-11-02,False
+C0676,Cliente 0676,Ocasional,Tucumán,Norte,2022-08-26,False
+C0677,Cliente 0677,Ocasional,Rosario,Centro,2024-04-13,True
+C0678,Cliente 0678,Ocasional,Córdoba,Centro,2024-08-21,False
+C0679,Cliente 0679,Mayorista,Rosario,Centro,2025-05-08,False
+C0680,Cliente 0680,Minorista,Neuquén,Sur,2023-10-27,False
+C0681,Cliente 0681,Ocasional,San Juan,Cuyo,2024-03-01,True
+C0682,Cliente 0682,Minorista,Salta,Norte,2024-12-17,False
+C0683,Cliente 0683,Ocasional,Bariloche,Sur,2022-10-01,False
+C0684,Cliente 0684,Ocasional,Rosario,Centro,2025-06-21,False
+C0685,Cliente 0685,Ocasional,Córdoba,Centro,2025-02-03,False
+C0686,Cliente 0686,Ocasional,Córdoba,Centro,2025-05-15,False
+C0687,Cliente 0687,Ocasional,Córdoba,Centro,2023-08-03,True
+C0688,Cliente 0688,Ocasional,Córdoba,Centro,2023-03-24,False
+C0689,Cliente 0689,VIP,Bariloche,Sur,2023-08-14,False
+C0690,Cliente 0690,Minorista,Tucumán,Norte,2025-06-07,False
+C0691,Cliente 0691,Minorista,Bariloche,Sur,2024-10-23,False
+C0692,Cliente 0692,Ocasional,San Juan,Cuyo,2022-11-25,False
+C0693,Cliente 0693,Ocasional,San Juan,Cuyo,2022-09-25,True
+C0694,Cliente 0694,VIP,Rosario,Centro,2023-11-29,True
+C0695,Cliente 0695,Minorista,Rosario,Centro,2022-12-09,False
+C0696,Cliente 0696,Minorista,Bariloche,Sur,2025-01-10,True
+C0697,Cliente 0697,Ocasional,San Juan,Cuyo,2024-11-13,False
+C0698,Cliente 0698,Ocasional,Salta,Norte,2024-07-30,False
+C0699,Cliente 0699,Ocasional,Córdoba,Centro,2025-03-05,False
+C0700,Cliente 0700,Ocasional,Mendoza,Cuyo,2025-03-17,False
+C0701,Cliente 0701,Ocasional,Tucumán,Norte,2024-10-31,False
+C0702,Cliente 0702,Ocasional,Tucumán,Norte,2023-09-09,False
+C0703,Cliente 0703,Ocasional,Rosario,Centro,2024-06-02,False
+C0704,Cliente 0704,Mayorista,Tucumán,Norte,2025-07-14,True
+C0705,Cliente 0705,Minorista,Mendoza,Cuyo,2024-01-27,True
+C0706,Cliente 0706,Ocasional,San Juan,Cuyo,2025-05-31,True
+C0707,Cliente 0707,Mayorista,Rosario,Centro,2023-06-20,False
+C0708,Cliente 0708,VIP,Rosario,Centro,2025-06-15,False
+C0709,Cliente 0709,Minorista,Salta,Norte,2023-05-02,False
+C0710,Cliente 0710,Mayorista,Salta,Norte,2022-07-23,True
+C0711,Cliente 0711,Ocasional,Salta,Norte,2022-09-27,False
+C0712,Cliente 0712,VIP,Rosario,Centro,2023-05-03,False
+C0713,Cliente 0713,Ocasional,Rosario,Centro,2022-11-24,False
+C0714,Cliente 0714,Ocasional,Neuquén,Sur,2023-12-28,False
+C0715,Cliente 0715,VIP,Córdoba,Centro,2024-11-26,False
+C0716,Cliente 0716,Minorista,Mendoza,Cuyo,2024-12-04,False
+C0717,Cliente 0717,Ocasional,Rosario,Centro,2024-05-06,False
+C0718,Cliente 0718,Ocasional,San Juan,Cuyo,2023-07-16,False
+C0719,Cliente 0719,Ocasional,Salta,Norte,2023-06-25,False
+C0720,Cliente 0720,Ocasional,Mendoza,Cuyo,2024-01-05,False
+C0721,Cliente 0721,Ocasional,Rosario,Centro,2022-11-19,False
+C0722,Cliente 0722,Minorista,Rosario,Centro,2023-11-30,True
+C0723,Cliente 0723,Minorista,Mendoza,Cuyo,2023-10-11,False
+C0724,Cliente 0724,Ocasional,Rosario,Centro,2025-06-14,False
+C0725,Cliente 0725,Ocasional,Salta,Norte,2025-02-16,False
+C0726,Cliente 0726,Ocasional,Córdoba,Centro,2024-08-05,False
+C0727,Cliente 0727,Ocasional,Córdoba,Centro,2023-06-25,False
+C0728,Cliente 0728,Ocasional,Rosario,Centro,2024-09-06,False
+C0729,Cliente 0729,Ocasional,Neuquén,Sur,2023-06-05,False
+C0730,Cliente 0730,Minorista,San Juan,Cuyo,2022-11-27,False
+C0731,Cliente 0731,Ocasional,San Juan,Cuyo,2024-09-27,False
+C0732,Cliente 0732,VIP,Bariloche,Sur,2025-01-07,False
+C0733,Cliente 0733,Minorista,Córdoba,Centro,2022-08-13,False
+C0734,Cliente 0734,Minorista,Bariloche,Sur,2022-10-10,False
+C0735,Cliente 0735,Minorista,San Juan,Cuyo,2025-05-31,False
+C0736,Cliente 0736,Mayorista,Neuquén,Sur,2024-02-28,False
+C0737,Cliente 0737,Minorista,Rosario,Centro,2024-09-25,False
+C0738,Cliente 0738,Minorista,Mendoza,Cuyo,2024-01-17,False
+C0739,Cliente 0739,Ocasional,Córdoba,Centro,2024-09-20,True
+C0740,Cliente 0740,Ocasional,Rosario,Centro,2024-01-25,False
+C0741,Cliente 0741,Ocasional,Neuquén,Sur,2023-05-19,False
+C0742,Cliente 0742,Minorista,Mendoza,Cuyo,2024-05-08,False
+C0743,Cliente 0743,Ocasional,Rosario,Centro,2024-09-08,False
+C0744,Cliente 0744,Ocasional,Bariloche,Sur,2025-04-29,False
+C0745,Cliente 0745,VIP,Bariloche,Sur,2023-07-01,False
+C0746,Cliente 0746,Minorista,Tucumán,Norte,2025-03-30,False
+C0747,Cliente 0747,Minorista,Córdoba,Centro,2024-04-08,False
+C0748,Cliente 0748,Mayorista,Salta,Norte,2024-06-13,True
+C0749,Cliente 0749,Ocasional,Rosario,Centro,2022-07-13,False
+C0750,Cliente 0750,Ocasional,Córdoba,Centro,2023-05-19,False
+C0751,Cliente 0751,Minorista,Bariloche,Sur,2024-06-10,True
+C0752,Cliente 0752,Ocasional,Rosario,Centro,2022-08-09,False
+C0753,Cliente 0753,Ocasional,Córdoba,Centro,2023-10-06,False
+C0754,Cliente 0754,Ocasional,Rosario,Centro,2022-12-08,False
+C0755,Cliente 0755,Minorista,Tucumán,Norte,2023-01-02,False
+C0756,Cliente 0756,Ocasional,Mendoza,Cuyo,2024-10-26,False
+C0757,Cliente 0757,Mayorista,Bariloche,Sur,2025-02-13,False
+C0758,Cliente 0758,Ocasional,Salta,Norte,2023-07-15,False
+C0759,Cliente 0759,Minorista,Córdoba,Centro,2025-06-25,True
+C0760,Cliente 0760,Ocasional,Bariloche,Sur,2025-08-12,True
+C0761,Cliente 0761,Ocasional,San Juan,Cuyo,2023-06-17,False
+C0762,Cliente 0762,Mayorista,Córdoba,Centro,2024-10-24,False
+C0763,Cliente 0763,Ocasional,Salta,Norte,2023-05-30,False
+C0764,Cliente 0764,Minorista,Tucumán,Norte,2025-04-18,False
+C0765,Cliente 0765,Mayorista,Rosario,Centro,2025-06-21,False
+C0766,Cliente 0766,Mayorista,Salta,Norte,2022-11-14,False
+C0767,Cliente 0767,Ocasional,Neuquén,Sur,2025-02-07,False
+C0768,Cliente 0768,Minorista,Córdoba,Centro,2023-05-07,True
+C0769,Cliente 0769,Ocasional,Córdoba,Centro,2024-11-28,False
+C0770,Cliente 0770,Ocasional,Córdoba,Centro,2025-01-14,False
+C0771,Cliente 0771,Ocasional,Neuquén,Sur,2023-12-07,True
+C0772,Cliente 0772,Ocasional,San Juan,Cuyo,2023-11-19,False
+C0773,Cliente 0773,Ocasional,Córdoba,Centro,2023-06-11,False
+C0774,Cliente 0774,Ocasional,San Juan,Cuyo,2023-07-27,False
+C0775,Cliente 0775,Minorista,Rosario,Centro,2023-08-05,False
+C0776,Cliente 0776,Ocasional,Rosario,Centro,2023-06-23,False
+C0777,Cliente 0777,Ocasional,San Juan,Cuyo,2023-10-04,True
+C0778,Cliente 0778,Minorista,Córdoba,Centro,2024-06-06,False
+C0779,Cliente 0779,Minorista,San Juan,Cuyo,2023-12-25,True
+C0780,Cliente 0780,Ocasional,San Juan,Cuyo,2024-03-01,True
+C0781,Cliente 0781,Ocasional,Rosario,Centro,2024-03-09,False
+C0782,Cliente 0782,VIP,Neuquén,Sur,2024-01-30,False
+C0783,Cliente 0783,Minorista,Salta,Norte,2023-08-11,False
+C0784,Cliente 0784,Minorista,Córdoba,Centro,2022-12-13,False
+C0785,Cliente 0785,Ocasional,Mendoza,Cuyo,2022-10-30,True
+C0786,Cliente 0786,Ocasional,Bariloche,Sur,2022-12-31,False
+C0787,Cliente 0787,Ocasional,Neuquén,Sur,2022-09-11,False
+C0788,Cliente 0788,Minorista,Neuquén,Sur,2022-09-15,False
+C0789,Cliente 0789,Minorista,Neuquén,Sur,2023-12-25,False
+C0790,Cliente 0790,VIP,Bariloche,Sur,2022-09-15,False
+C0791,Cliente 0791,Ocasional,Neuquén,Sur,2024-08-13,False
+C0792,Cliente 0792,Ocasional,San Juan,Cuyo,2022-07-17,False
+C0793,Cliente 0793,Minorista,Salta,Norte,2025-02-19,False
+C0794,Cliente 0794,Ocasional,Rosario,Centro,2025-03-05,False
+C0795,Cliente 0795,Minorista,Tucumán,Norte,2024-06-17,False
+C0796,Cliente 0796,Minorista,Neuquén,Sur,2025-01-05,False
+C0797,Cliente 0797,Minorista,Tucumán,Norte,2024-12-12,False
+C0798,Cliente 0798,Minorista,Córdoba,Centro,2025-07-27,False
+C0799,Cliente 0799,Ocasional,Neuquén,Sur,2023-10-07,False
+C0800,Cliente 0800,Minorista,Rosario,Centro,2025-04-30,False

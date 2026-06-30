@@ -1,0 +1,6 @@
+store_id,store_name,city,region
+S01,TiendaNova Centro,Córdoba,Centro
+S02,TiendaNova Norte,Salta,Norte
+S03,TiendaNova Litoral,Rosario,Centro
+S04,TiendaNova Sur,Bariloche,Sur
+S05,TiendaNova Cuyo,Mendoza,Cuyo

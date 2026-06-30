@@ -13,7 +13,7 @@ Cada proyecto está documentado con contexto real, metodología y resultados med
 |---|---|---|
 | [`proyectos/excel/`](./proyectos/excel/) | Microsoft Excel | 🟢 Activo |
 | [`proyectos/python/`](./proyectos/python/) | Python | 🔜 Próximamente |
-| [`proyectos/sql/`](./proyectos/sql/) | SQL | 🔜 Próximamente |
+| [`proyectos/sql/`](./proyectos/sql/) | SQL | 🟢 Activo |
 | [`proyectos/power-bi/`](./proyectos/power-bi/) | Power BI | 🔜 Próximamente |
 | [`proyectos/n8n/`](./proyectos/n8n/) | n8n Automation | 🔜 Próximamente |
 | [`proyectos/integraciones/`](./proyectos/integraciones/) | Multi-herramienta | 🔜 Próximamente |
