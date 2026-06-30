@@ -22,21 +22,52 @@ Cada proyecto está documentado con contexto real, metodología y resultados med
 
 ## 🧭 Matriz del portfolio — Herramientas × Sectores
 
-Cada herramienta se aplica a distintos **sectores de un negocio**. La idea es mostrar, sobre una
-misma base, cómo el mismo stack resuelve problemas reales en cada área. (✅ publicado · 🔜 planificado)
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI">
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n">
+</p>
 
-| Sector | SQL | Python | Power BI | Excel | n8n |
+Cada herramienta resuelve problemas reales en distintos **sectores** de un negocio.
+👉 **Hacé clic en un ✅ para ir directo al proyecto.**
+
+| Sector | 🗄️ SQL | 🐍 Python | 📊 Power BI | 📗 Excel | ⚡ n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **Logística y Cadena de Suministro** | 🔜 | 🔜 | 🔜 | ✅ | 🔜 |
-| **Comercial / Retail** | ✅ | ✅ | 🔜 | 🔜 | — |
-| **Finanzas** | 🔜 | 🔜 | 🔜 | 🔜 | — |
-| **Recursos Humanos** | 🔜 | 🔜 | 🔜 | 🔜 | — |
-| **Operaciones** | 🔜 | 🔜 | 🔜 | 🔜 | 🔜 |
-| **Mantenimiento** | 🔜 | 🔜 | 🔜 | 🔜 | — |
+| **🚚 Logística y Cadena de Suministro** | 🟡 | 🟡 | 🟡 | [✅](./proyectos/excel/logistica-inventario-fmcg/) | 🟡 |
+| **🛒 Comercial / Retail** | [✅](./proyectos/sql/rentabilidad-comercial-retail/) | [✅](./proyectos/python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
+| **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
+| **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
+| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |
+| **🔧 Mantenimiento** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 
-> ✅ **Logística** — [Sistema de Control de Inventario FMCG (Excel)](./proyectos/excel/logistica-inventario-fmcg/)
-> ✅ **Comercial** — [Análisis de Rentabilidad Comercial (SQL)](./proyectos/sql/rentabilidad-comercial-retail/)
-> ✅ **Comercial** — [Automatización del Reporte Comercial + RFM (Python)](./proyectos/python/automatizacion-reporte-comercial-rfm/)
+<sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
+
+<details open>
+<summary><b>📂 Proyectos publicados (3)</b> — clic para desplegar / ocultar</summary>
+
+<br>
+
+> ### 📦 Sistema de Control de Inventario FMCG &nbsp;·&nbsp; `Excel`
+> **Sector:** Logística y Cadena de Suministro
+> Gestión de inventario de 75 SKUs que detecta stock muerto y quiebres inminentes.
+> 💰 **Impacto:** $22.473 de capital identificado · −93 % de tiempo de reportería
+> 🔗 [Abrir proyecto →](./proyectos/excel/logistica-inventario-fmcg/)
+
+> ### 🗄️ Análisis de Rentabilidad Comercial &nbsp;·&nbsp; `SQL`
+> **Sector:** Comercial / Retail
+> Detecta fugas de margen, clientes perdidos y brechas entre sucursales.
+> 💰 **Impacto:** ~$2,0 M/año identificados
+> 🔗 [Abrir proyecto →](./proyectos/sql/rentabilidad-comercial-retail/)
+
+> ### 🐍 Automatización del Reporte Comercial + RFM &nbsp;·&nbsp; `Python`
+> **Sector:** Comercial / Retail
+> Reemplaza el reporte mensual manual y segmenta clientes (RFM) para priorizar retención.
+> 💰 **Impacto:** ~$1,0 M/año (horas ahorradas + retención)
+> 🔗 [Abrir proyecto →](./proyectos/python/automatizacion-reporte-comercial-rfm/)
+
+</details>
 
 ---
 

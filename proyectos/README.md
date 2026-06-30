@@ -17,22 +17,34 @@ proyecto se aplica a un **sector** concreto de un negocio.
 
 ## Matriz Herramientas × Sectores
 
-(✅ publicado · 🔜 planificado)
+👉 **Hacé clic en un ✅ para ir directo al proyecto.**
 
-| Sector | SQL | Python | Power BI | Excel | n8n |
+| Sector | 🗄️ SQL | 🐍 Python | 📊 Power BI | 📗 Excel | ⚡ n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **Logística y Cadena de Suministro** | 🔜 | 🔜 | 🔜 | ✅ | 🔜 |
-| **Comercial / Retail** | ✅ | ✅ | 🔜 | 🔜 | — |
-| **Finanzas** | 🔜 | 🔜 | 🔜 | 🔜 | — |
-| **Recursos Humanos** | 🔜 | 🔜 | 🔜 | 🔜 | — |
-| **Operaciones** | 🔜 | 🔜 | 🔜 | 🔜 | 🔜 |
-| **Mantenimiento** | 🔜 | 🔜 | 🔜 | 🔜 | — |
+| **🚚 Logística y Cadena de Suministro** | 🟡 | 🟡 | 🟡 | [✅](./excel/logistica-inventario-fmcg/) | 🟡 |
+| **🛒 Comercial / Retail** | [✅](./sql/rentabilidad-comercial-retail/) | [✅](./python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
+| **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
+| **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
+| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |
+| **🔧 Mantenimiento** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 
-### Proyectos publicados
+<sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
 
-- ✅ **Logística** — [Sistema de Control de Inventario FMCG](./excel/logistica-inventario-fmcg/) · Excel
-- ✅ **Comercial / Retail** — [Análisis de Rentabilidad Comercial](./sql/rentabilidad-comercial-retail/) · SQL
-- ✅ **Comercial / Retail** — [Automatización del Reporte Comercial + RFM](./python/automatizacion-reporte-comercial-rfm/) · Python
+<details open>
+<summary><b>📂 Proyectos publicados (3)</b> — clic para desplegar / ocultar</summary>
+
+<br>
+
+> **📦 Sistema de Control de Inventario FMCG** · `Excel` · _Logística y Cadena de Suministro_
+> 💰 $22.473 de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
+
+> **🗄️ Análisis de Rentabilidad Comercial** · `SQL` · _Comercial / Retail_
+> 💰 ~$2,0 M/año identificados — [Abrir →](./sql/rentabilidad-comercial-retail/)
+
+> **🐍 Automatización del Reporte Comercial + RFM** · `Python` · _Comercial / Retail_
+> 💰 ~$1,0 M/año (horas + retención) — [Abrir →](./python/automatizacion-reporte-comercial-rfm/)
+
+</details>
 
 ---
 *Última actualización: Junio 2026*
