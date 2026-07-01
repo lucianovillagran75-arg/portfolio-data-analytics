@@ -88,6 +88,9 @@ solo dejando de perder lo que ya se estaba perdiendo.
 | [`datos/generar_datos.py`](./datos/generar_datos.py) | Generador reproducible (semilla fija) |
 | [`informe.md`](./informe.md) | Hallazgos completos con supuestos declarados |
 | [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Proceso de construcción fase a fase |
+| [`generar_reporte.py`](./generar_reporte.py) | Script que genera el reporte ejecutivo (DOCX + PDF) |
+
+📄 [Descargar reporte ejecutivo completo (PDF)](./output/Reporte_RentabilidadComercial.pdf)
 
 ---
 
