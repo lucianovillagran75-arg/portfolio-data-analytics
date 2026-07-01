@@ -22,6 +22,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
 from openpyxl.worksheet.table import Table, TableStyleInfo
 from openpyxl.chart import BarChart, LineChart, Reference
+from openpyxl.chart.marker import DataPoint
 from openpyxl.chart.series import SeriesLabel
 from openpyxl.chart.layout import Layout
 
@@ -421,8 +422,8 @@ bar1.add_data(data_b, titles_from_data=True)
 bar1.set_categories(cats1)
 bar1.series[0].graphicalProperties.solidFill = "2E75B6"
 bar1.shape   = 4
-bar1.width   = 18
-bar1.height  = 12
+bar1.width   = 20
+bar1.height  = 14
 
 line1 = LineChart()
 line1.add_data(data_l, titles_from_data=True)
@@ -439,15 +440,16 @@ line1.y_axis.title   = "% Acumulado"
 ws_dash.add_chart(bar1, "B7")
 
 # ── Gráfico 2: OEE por equipo ─────────────────────────────────────────────────
+# Datos auxiliares en columnas 6-7 para no colisionar con datos del Pareto (cols 1-3)
 AUX_ROW2 = 55
-ws_dash.cell(row=AUX_ROW2, column=1, value="Equipo")
-ws_dash.cell(row=AUX_ROW2, column=2, value="OEE %")
+ws_dash.cell(row=AUX_ROW2, column=6, value="Equipo")
+ws_dash.cell(row=AUX_ROW2, column=7, value="OEE %")
 for i, nombre in enumerate(oee_nombres):
-    ws_dash.cell(row=AUX_ROW2+1+i, column=1, value=nombre)
-    ws_dash.cell(row=AUX_ROW2+1+i, column=2, value=round(oee[nombre], 3))
+    ws_dash.cell(row=AUX_ROW2+1+i, column=6, value=nombre)
+    ws_dash.cell(row=AUX_ROW2+1+i, column=7, value=round(oee[nombre], 3))
 
-cats2  = Reference(ws_dash, min_col=1, min_row=AUX_ROW2+1, max_row=AUX_ROW2+len(oee_nombres))
-data_o = Reference(ws_dash, min_col=2, min_row=AUX_ROW2,   max_row=AUX_ROW2+len(oee_nombres))
+cats2  = Reference(ws_dash, min_col=6, min_row=AUX_ROW2+1, max_row=AUX_ROW2+len(oee_nombres))
+data_o = Reference(ws_dash, min_col=7, min_row=AUX_ROW2,   max_row=AUX_ROW2+len(oee_nombres))
 
 bar2 = BarChart()
 bar2.type    = "bar"
@@ -455,19 +457,28 @@ bar2.title   = "OEE por Equipo — Eficiencia General 2024"
 bar2.y_axis.title = "Equipo"
 bar2.x_axis.title = "OEE %"
 bar2.x_axis.numFmt = "0%"
-bar2.x_axis.scaling.min = 0
-bar2.x_axis.scaling.max = 1
+# Escala 60%-100%: la diferencia entre equipos queda visualmente clara
+bar2.x_axis.scaling.min = 0.6
+bar2.x_axis.scaling.max = 1.0
 bar2.add_data(data_o, titles_from_data=True)
 bar2.set_categories(cats2)
-bar2.series[0].graphicalProperties.solidFill = "70AD47"
-bar2.width   = 18
-bar2.height  = 12
+bar2.width   = 22
+bar2.height  = 14
+
+# Colorear cada barra individualmente según nivel OEE
+OEE_COLORS = {"verde": "70AD47", "amarillo": "FFD966", "rojo": "FF6B6B"}
+for i, nombre in enumerate(oee_nombres):
+    v = oee[nombre]
+    color = OEE_COLORS["verde"] if v >= 0.85 else (OEE_COLORS["amarillo"] if v >= 0.65 else OEE_COLORS["rojo"])
+    pt = DataPoint(idx=i)
+    pt.graphicalProperties.solidFill = color
+    bar2.series[0].dPt.append(pt)
 
 ws_dash.add_chart(bar2, "K7")
 
 # Ajustar anchos de columnas del Dashboard
-for i in range(1, 20):
-    ws_dash.column_dimensions[get_column_letter(i)].width = 10
+for i in range(1, 22):
+    ws_dash.column_dimensions[get_column_letter(i)].width = 9
 
 # Nota de ahorro proyectado
 ws_dash.merge_cells("B28:M29")
