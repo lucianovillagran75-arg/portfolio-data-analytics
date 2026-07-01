@@ -94,7 +94,9 @@ El detalle completo, con supuestos, está en [`informe.md`](./informe.md).
 | [`output/figuras/`](./output/figuras/) | Gráficos del reporte |
 | [`informe.md`](./informe.md) · [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Hallazgos y proceso de construcción |
 
-### ▶️ Cómo reproducirlo
+---
+
+## ▶️ Cómo reproducirlo
 
 ```bash
 cd proyectos/python/automatizacion-reporte-comercial-rfm
