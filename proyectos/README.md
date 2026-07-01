@@ -8,7 +8,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 
 | Carpeta | Herramienta | Proyectos |
 |---|---|---|
-| [`excel/`](./excel/) | Microsoft Excel | 1 activo |
+| [`excel/`](./excel/) | Microsoft Excel | 2 activos |
 | [`sql/`](./sql/) | SQL | 1 activo |
 | [`python/`](./python/) | Python | 1 activo |
 | [`power-bi/`](./power-bi/) | Power BI | En desarrollo |
@@ -25,18 +25,21 @@ proyecto se aplica a un **sector** concreto de un negocio.
 | **🛒 Comercial / Retail** | [✅](./sql/rentabilidad-comercial-retail/) | [✅](./python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
 | **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 | **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
-| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |
+| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | [✅](./excel/gestion-paros-productividad-manufactura/) | 🟡 |
 | **🔧 Mantenimiento** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 
 <sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
 
 <details open>
-<summary><b>📂 Proyectos publicados (3)</b> — clic para desplegar / ocultar</summary>
+<summary><b>📂 Proyectos publicados (4)</b> — clic para desplegar / ocultar</summary>
 
 <br>
 
 > **📦 Sistema de Control de Inventario FMCG** · `Excel` · _Logística y Cadena de Suministro_
 > 💰 $22.473 de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
+
+> **📊 Panel de Paros, OEE y Mantenimiento Preventivo** · `Excel + VBA` · _Operaciones / Manufactura_
+> 💰 ~$8,6 M/año recuperables · OEE + Pareto de causas + macro de reporte — [Abrir →](./excel/gestion-paros-productividad-manufactura/)
 
 > **🗄️ Análisis de Rentabilidad Comercial** · `SQL` · _Comercial / Retail_
 > 💰 ~$2,0 M/año identificados — [Abrir →](./sql/rentabilidad-comercial-retail/)

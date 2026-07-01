@@ -39,13 +39,13 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 | **🛒 Comercial / Retail** | [✅](./proyectos/sql/rentabilidad-comercial-retail/) | [✅](./proyectos/python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
 | **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 | **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
-| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |
+| **⚙️ Operaciones** | 🟡 | 🟡 | 🟡 | [✅](./proyectos/excel/gestion-paros-productividad-manufactura/) | 🟡 |
 | **🔧 Mantenimiento** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 
 <sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
 
 <details open>
-<summary><b>📂 Proyectos publicados (3)</b> — clic para desplegar / ocultar</summary>
+<summary><b>📂 Proyectos publicados (4)</b> — clic para desplegar / ocultar</summary>
 
 <br>
 
@@ -54,6 +54,12 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 > Gestión de inventario de 75 SKUs que detecta stock muerto y quiebres inminentes.
 > 💰 **Impacto:** $22.473 de capital identificado · −93 % de tiempo de reportería
 > 🔗 [Abrir proyecto →](./proyectos/excel/logistica-inventario-fmcg/)
+
+> ### 📊 Panel de Paros, OEE y Mantenimiento Preventivo &nbsp;·&nbsp; `Excel + VBA`
+> **Sector:** Operaciones / Manufactura
+> Panel de 4 hojas que calcula OEE, aplica Pareto de causas y automatiza el reporte mensual.
+> 💰 **Impacto:** ~$8,6 M/año recuperables · 64 % del downtime concentrado en 3 equipos
+> 🔗 [Abrir proyecto →](./proyectos/excel/gestion-paros-productividad-manufactura/)
 
 > ### 🗄️ Análisis de Rentabilidad Comercial &nbsp;·&nbsp; `SQL`
 > **Sector:** Comercial / Retail

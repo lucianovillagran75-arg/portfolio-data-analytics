@@ -1,0 +1,9 @@
+﻿id_equipo,nombre_equipo,linea_produccion,costo_hora_parada,fecha_ultimo_service,proximo_service,dias_para_service,intervalo_servicio_dias
+1,CNC Alpha 01,Línea A,10500,2024-08-15,2025-02-11,41,180
+2,CNC Alpha 02,Línea A,10500,2024-09-20,2025-03-19,77,180
+3,Torno CNC 03,Línea B,13200,2024-03-10,2024-07-08,-177,120
+4,Fresadora 04,Línea B,11800,2024-10-05,2025-04-03,92,180
+5,Centro Mec. 05,Línea C,9800,2024-07-22,2024-12-19,-13,150
+6,Torno CNC 06,Línea C,14500,2024-02-18,2024-06-17,-198,120
+7,Rectificadora 07,Línea D,12000,2024-04-30,2024-08-28,-126,120
+8,CNC Delta 08,Línea D,11200,2024-11-10,2025-05-09,128,180

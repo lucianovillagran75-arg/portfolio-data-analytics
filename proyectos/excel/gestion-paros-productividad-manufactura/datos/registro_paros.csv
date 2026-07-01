@@ -1,0 +1,308 @@
+﻿fecha,id_equipo,nombre_equipo,linea,turno,tipo_paro,categoria_causa,causa_detalle,horas_paro,costo_paro
+2024-01-04,4,Fresadora 04,Línea B,Turno 3 (22–06 h),Programado,Programada,Limpieza programada,3.2,37760.0
+2024-01-06,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Operativa,Error de operario,6.4,76800.0
+2024-01-08,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,3.6,52200.0
+2024-01-09,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),No programado,Operativa,Error de operario,5.5,57750.0
+2024-01-09,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Calibración,1.3,18850.0
+2024-01-14,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Error de operario,1.6,18880.0
+2024-01-15,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Falla de variador,6.4,75520.0
+2024-01-16,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,1.6,23200.0
+2024-01-17,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Operativa,Error de operario,0.8,11600.0
+2024-01-19,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Eléctrica,Motor quemado,7.2,75600.0
+2024-01-20,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Operativa,Error de operario,1.8,21600.0
+2024-01-21,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Calibración,1.7,24650.0
+2024-01-24,2,CNC Alpha 02,Línea A,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,1.3,13650.0
+2024-01-24,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,5.0,66000.0
+2024-01-24,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,3.5,42000.0
+2024-01-26,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),Programado,Programada,Limpieza programada,2.8,33600.0
+2024-01-27,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,1.1,15950.0
+2024-01-28,8,CNC Delta 08,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,2.4,26880.0
+2024-01-29,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,1.3,17160.0
+2024-01-29,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Material fuera de especificación,6.8,80240.0
+2024-01-30,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,6.9,91080.0
+2024-01-30,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,2.2,26400.0
+2024-02-02,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,7.5,90000.0
+2024-02-05,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,6.3,91350.0
+2024-02-06,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,2.3,33350.0
+2024-02-08,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Motor quemado,2.7,32400.0
+2024-02-10,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,6.3,75600.0
+2024-02-11,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,2.8,36960.0
+2024-02-11,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,6.3,75600.0
+2024-02-12,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),No programado,Operativa,Error de operario,4.3,45150.0
+2024-02-13,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,7.1,83780.0
+2024-02-13,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Cortocircuito,3.9,56550.0
+2024-02-15,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,3.7,53650.0
+2024-02-16,5,Centro Mec. 05,Línea C,Turno 2 (14–22 h),No programado,Eléctrica,Falla de variador,2.2,21560.0
+2024-02-19,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),Programado,Programada,Limpieza programada,1.2,15840.0
+2024-02-19,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,0.6,8700.0
+2024-02-20,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,8.0,105600.0
+2024-02-21,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,1.7,17850.0
+2024-02-22,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,4.0,52800.0
+2024-02-22,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,4.2,50400.0
+2024-02-25,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Motor quemado,5.2,62400.0
+2024-02-26,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Falla de variador,2.8,36960.0
+2024-02-26,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,5.3,62540.0
+2024-02-27,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,4.6,66700.0
+2024-02-28,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Eléctrica,Motor quemado,7.9,114550.0
+2024-02-29,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Motor quemado,7.4,97680.0
+2024-02-29,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Material fuera de especificación,1.3,15340.0
+2024-03-01,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,6.9,91080.0
+2024-03-01,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,5.5,79750.0
+2024-03-05,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,3.1,36580.0
+2024-03-09,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,4.3,56760.0
+2024-03-09,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Operativa,Error de operario,0.8,7840.0
+2024-03-09,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,2.8,40600.0
+2024-03-09,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),Programado,Programada,Calibración,1.2,14400.0
+2024-03-10,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),Programado,Programada,Calibración,1.0,9800.0
+2024-03-12,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,1.6,18880.0
+2024-03-12,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,1.3,15600.0
+2024-03-13,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Problema en tablero,1.7,16660.0
+2024-03-15,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,1.7,16660.0
+2024-03-17,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),Programado,Programada,Calibración,2.8,29400.0
+2024-03-17,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,4.5,59400.0
+2024-03-17,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Falla de sensor,5.5,53900.0
+2024-03-17,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,7.1,85200.0
+2024-03-19,2,CNC Alpha 02,Línea A,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,3.6,37800.0
+2024-03-19,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Cortocircuito,5.6,73920.0
+2024-03-19,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,2.1,30450.0
+2024-03-21,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,5.9,70800.0
+2024-03-23,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,3.1,40920.0
+2024-03-23,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,2.6,37700.0
+2024-03-24,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,5.4,63720.0
+2024-03-25,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Calibración,1.9,27550.0
+2024-03-25,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Problema en tablero,4.6,55200.0
+2024-03-27,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Desalineación de eje,1.8,21600.0
+2024-03-30,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,7.6,100320.0
+2024-03-30,8,CNC Delta 08,Línea D,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,2.0,22400.0
+2024-04-01,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Fuga hidráulica,5.2,50960.0
+2024-04-02,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Operativa,Error de operario,1.0,13200.0
+2024-04-02,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,7.4,107300.0
+2024-04-03,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,0.8,11600.0
+2024-04-06,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,3.0,39600.0
+2024-04-06,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Operativa,Error de operario,6.3,61740.0
+2024-04-09,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,5.1,53550.0
+2024-04-12,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Fuga hidráulica,6.8,98600.0
+2024-04-14,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,3.7,44400.0
+2024-04-15,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,2.9,34800.0
+2024-04-16,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),No programado,Eléctrica,Problema en tablero,6.4,67200.0
+2024-04-17,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,2.3,27600.0
+2024-04-18,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),No programado,Operativa,Material fuera de especificación,1.8,18900.0
+2024-04-18,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,2.4,34800.0
+2024-04-19,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),Programado,Programada,Calibración,1.5,18000.0
+2024-04-20,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,3.4,44880.0
+2024-04-20,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,2.7,39150.0
+2024-04-21,4,Fresadora 04,Línea B,Turno 2 (14–22 h),Programado,Programada,Limpieza programada,2.5,29500.0
+2024-04-23,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Eléctrica,Motor quemado,5.3,55650.0
+2024-04-23,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,2.0,29000.0
+2024-04-25,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),No programado,Eléctrica,Cortocircuito,5.1,53550.0
+2024-04-25,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,6.9,100050.0
+2024-04-26,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,7.6,100320.0
+2024-04-30,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),Programado,Programada,Calibración,3.2,42240.0
+2024-05-01,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Motor quemado,7.4,87320.0
+2024-05-01,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Limpieza programada,2.7,39150.0
+2024-05-01,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,4.2,50400.0
+2024-05-01,8,CNC Delta 08,Línea D,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,7.1,79520.0
+2024-05-03,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Falla de variador,4.7,56400.0
+2024-05-05,2,CNC Alpha 02,Línea A,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,5.7,59850.0
+2024-05-05,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,5.1,67320.0
+2024-05-05,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,1.2,14400.0
+2024-05-07,2,CNC Alpha 02,Línea A,Turno 2 (14–22 h),No programado,Eléctrica,Motor quemado,7.7,80850.0
+2024-05-07,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,1.4,20300.0
+2024-05-07,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Operativa,Error de operario,4.5,54000.0
+2024-05-08,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Operativa,Error de operario,1.9,25080.0
+2024-05-08,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Fuga hidráulica,6.7,97150.0
+2024-05-10,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,7.5,108750.0
+2024-05-10,8,CNC Delta 08,Línea D,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,3.9,43680.0
+2024-05-11,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,1.6,23200.0
+2024-05-16,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,5.3,69960.0
+2024-05-21,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,1.6,21120.0
+2024-05-21,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,1.0,14500.0
+2024-05-22,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,2.3,33350.0
+2024-05-25,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,3.6,47520.0
+2024-05-25,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,6.9,100050.0
+2024-05-27,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,6.8,80240.0
+2024-05-27,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,7.3,105850.0
+2024-05-27,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,2.3,27600.0
+2024-05-29,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,0.8,8400.0
+2024-05-29,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Fuga hidráulica,3.3,47850.0
+2024-06-02,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,2.9,42050.0
+2024-06-03,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,5.1,60180.0
+2024-06-03,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,6.0,87000.0
+2024-06-07,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,2.6,34320.0
+2024-06-08,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,4.7,68150.0
+2024-06-08,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,0.7,8400.0
+2024-06-09,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Eléctrica,Cortocircuito,7.0,73500.0
+2024-06-10,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,5.3,55650.0
+2024-06-12,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),Programado,Programada,Calibración,4.0,52800.0
+2024-06-16,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Problema en tablero,5.6,67200.0
+2024-06-20,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,6.0,58800.0
+2024-06-20,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Operativa,Error de operario,7.6,110200.0
+2024-06-26,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,5.4,64800.0
+2024-06-27,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Operativa,Error de operario,6.9,72450.0
+2024-06-27,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,0.6,8700.0
+2024-06-29,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,0.6,5880.0
+2024-06-30,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,2.3,30360.0
+2024-06-30,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Falla de variador,3.6,42480.0
+2024-07-01,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,0.6,6300.0
+2024-07-01,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,5.1,61200.0
+2024-07-02,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,4.0,52800.0
+2024-07-06,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Eléctrica,Falla de variador,1.6,19200.0
+2024-07-07,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,3.8,39900.0
+2024-07-07,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,5.4,52920.0
+2024-07-07,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,3.5,50750.0
+2024-07-08,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,3.7,48840.0
+2024-07-08,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,2.6,37700.0
+2024-07-09,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,1.6,21120.0
+2024-07-09,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,2.9,28420.0
+2024-07-10,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Operativa,Error de operario,4.3,45150.0
+2024-07-12,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,5.6,58800.0
+2024-07-13,8,CNC Delta 08,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,2.3,25760.0
+2024-07-15,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,0.8,11600.0
+2024-07-15,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,0.7,8400.0
+2024-07-16,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,7.9,114550.0
+2024-07-18,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,6.3,75600.0
+2024-07-19,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,3.4,33320.0
+2024-07-23,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Desalineación de eje,1.0,11800.0
+2024-07-23,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Cortocircuito,1.9,22800.0
+2024-07-25,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),Programado,Programada,Calibración,3.8,50160.0
+2024-07-26,5,Centro Mec. 05,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,5.4,52920.0
+2024-07-27,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,3.4,49300.0
+2024-07-29,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,7.9,93220.0
+2024-07-29,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,5.9,70800.0
+2024-07-30,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Cortocircuito,7.0,101500.0
+2024-08-01,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,0.5,7250.0
+2024-08-03,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,3.1,40920.0
+2024-08-03,8,CNC Delta 08,Línea D,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,2.2,24640.0
+2024-08-06,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,1.2,17400.0
+2024-08-06,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),Programado,Programada,Calibración,1.7,20400.0
+2024-08-07,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Operativa,Error de operario,4.1,59450.0
+2024-08-10,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,3.3,34650.0
+2024-08-10,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Operativa,Error de operario,4.9,64680.0
+2024-08-10,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desalineación de eje,2.4,34800.0
+2024-08-10,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,6.4,76800.0
+2024-08-16,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,4.9,57820.0
+2024-08-17,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Motor quemado,7.0,92400.0
+2024-08-19,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),Programado,Programada,Calibración,2.1,22050.0
+2024-08-19,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,3.4,49300.0
+2024-08-20,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,4.4,51920.0
+2024-08-21,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,6.7,70350.0
+2024-08-21,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,4.5,47250.0
+2024-08-21,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,3.5,50750.0
+2024-08-21,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,2.1,25200.0
+2024-08-23,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Desalineación de eje,6.4,75520.0
+2024-08-23,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,3.8,55100.0
+2024-08-24,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,4.6,60720.0
+2024-08-25,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,0.7,7350.0
+2024-08-25,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),Programado,Programada,Calibración,3.0,36000.0
+2024-08-25,8,CNC Delta 08,Línea D,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,6.7,75040.0
+2024-08-26,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,2.0,24000.0
+2024-08-28,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,7.6,100320.0
+2024-08-28,8,CNC Delta 08,Línea D,Turno 2 (14–22 h),Programado,Programada,Calibración,1.7,19040.0
+2024-08-31,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,5.2,62400.0
+2024-09-03,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Cortocircuito,3.5,42000.0
+2024-09-08,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,5.7,75240.0
+2024-09-09,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,4.3,51600.0
+2024-09-10,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),No programado,Eléctrica,Falla de variador,6.6,69300.0
+2024-09-10,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,1.5,19800.0
+2024-09-10,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,3.0,43500.0
+2024-09-11,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desalineación de eje,6.4,92800.0
+2024-09-12,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Mecánica,Fuga hidráulica,6.8,71400.0
+2024-09-13,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,7.6,100320.0
+2024-09-14,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Cortocircuito,5.4,71280.0
+2024-09-14,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Calibración,2.9,42050.0
+2024-09-15,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,6.8,98600.0
+2024-09-16,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Eléctrica,Falla de sensor,2.3,33350.0
+2024-09-17,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,0.8,8400.0
+2024-09-17,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Cortocircuito,5.0,66000.0
+2024-09-17,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,6.0,72000.0
+2024-09-19,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Falla de variador,3.8,37240.0
+2024-09-22,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,7.5,99000.0
+2024-09-22,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,0.7,8260.0
+2024-09-23,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,1.3,13650.0
+2024-09-23,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Cortocircuito,1.5,21750.0
+2024-09-23,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Problema en tablero,5.1,61200.0
+2024-09-24,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Operativa,Cambio de herramienta no planificado,5.4,64800.0
+2024-09-25,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Eléctrica,Falla de variador,5.8,60900.0
+2024-09-25,8,CNC Delta 08,Línea D,Turno 3 (22–06 h),No programado,Mecánica,Fuga hidráulica,0.6,6720.0
+2024-09-26,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Fuga hidráulica,4.9,64680.0
+2024-09-27,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,6.6,95700.0
+2024-09-28,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,7.4,107300.0
+2024-09-29,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Eléctrica,Problema en tablero,6.5,68250.0
+2024-09-29,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,4.6,60720.0
+2024-09-29,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,1.5,21750.0
+2024-10-01,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,6.7,97150.0
+2024-10-03,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,7.2,104400.0
+2024-10-06,8,CNC Delta 08,Línea D,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,3.3,36960.0
+2024-10-10,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Operativa,Error de operario,5.9,57820.0
+2024-10-13,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,1.8,23760.0
+2024-10-13,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,5.3,76850.0
+2024-10-17,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Operativa,Cambio de herramienta no planificado,6.8,71400.0
+2024-10-17,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,2.8,36960.0
+2024-10-17,5,Centro Mec. 05,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,6.0,58800.0
+2024-10-18,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,1.4,14700.0
+2024-10-18,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,3.7,48840.0
+2024-10-18,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,5.7,82650.0
+2024-10-18,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Eléctrica,Falla de sensor,5.0,60000.0
+2024-10-19,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,0.5,5900.0
+2024-10-20,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),Programado,Programada,Limpieza programada,3.6,37800.0
+2024-10-20,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,0.7,9240.0
+2024-10-22,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),Programado,Programada,Calibración,1.3,13650.0
+2024-10-22,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,0.6,8700.0
+2024-10-24,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,3.9,56550.0
+2024-10-25,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,6.5,94250.0
+2024-10-26,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Operativa,Error de operario,2.8,33040.0
+2024-10-26,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Mantenimiento preventivo,1.2,17400.0
+2024-10-28,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,2.6,31200.0
+2024-10-30,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desgaste de herramienta,2.4,28800.0
+2024-10-31,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,2.8,29400.0
+2024-10-31,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,4.6,60720.0
+2024-10-31,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,1.1,10780.0
+2024-10-31,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Operativa,Material fuera de especificación,6.5,78000.0
+2024-11-01,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Falla de variador,3.1,37200.0
+2024-11-02,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),Programado,Programada,Limpieza programada,3.0,43500.0
+2024-11-03,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),Programado,Programada,Limpieza programada,2.0,26400.0
+2024-11-05,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,4.3,42140.0
+2024-11-05,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,7.7,111650.0
+2024-11-07,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,1.1,12980.0
+2024-11-07,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Mecánica,Desgaste de herramienta,7.3,87600.0
+2024-11-08,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Falla de sensor,2.7,32400.0
+2024-11-09,2,CNC Alpha 02,Línea A,Turno 3 (22–06 h),No programado,Mecánica,Rotura de correa,3.1,32550.0
+2024-11-09,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Motor quemado,6.7,80400.0
+2024-11-10,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,2.9,38280.0
+2024-11-10,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,1.9,22420.0
+2024-11-11,6,Torno CNC 06,Línea C,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,4.0,58000.0
+2024-11-12,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),No programado,Operativa,Error de operario,6.4,67200.0
+2024-11-12,2,CNC Alpha 02,Línea A,Turno 1 (06–14 h),No programado,Operativa,Material fuera de especificación,6.4,67200.0
+2024-11-15,3,Torno CNC 03,Línea B,Turno 2 (14–22 h),No programado,Eléctrica,Falla de variador,1.5,19800.0
+2024-11-16,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,4.8,63360.0
+2024-11-17,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,4.4,63800.0
+2024-11-18,8,CNC Delta 08,Línea D,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,1.5,16800.0
+2024-11-20,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Desalineación de eje,4.6,55200.0
+2024-11-26,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Eléctrica,Falla de variador,7.1,74550.0
+2024-11-27,1,CNC Alpha 01,Línea A,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,1.6,16800.0
+2024-11-29,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),Programado,Programada,Limpieza programada,2.8,40600.0
+2024-11-30,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,0.9,10800.0
+2024-12-02,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Operativa,Material fuera de especificación,7.2,70560.0
+2024-12-04,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Falla de rodamiento,3.7,53650.0
+2024-12-05,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Problema en tablero,4.6,45080.0
+2024-12-06,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),Programado,Programada,Mantenimiento preventivo,3.7,38850.0
+2024-12-06,5,Centro Mec. 05,Línea C,Turno 1 (06–14 h),Programado,Programada,Calibración,3.0,29400.0
+2024-12-13,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,3.0,43500.0
+2024-12-14,7,Rectificadora 07,Línea D,Turno 3 (22–06 h),No programado,Eléctrica,Falla de sensor,1.1,13200.0
+2024-12-15,6,Torno CNC 06,Línea C,Turno 3 (22–06 h),No programado,Eléctrica,Problema en tablero,2.2,31900.0
+2024-12-15,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),Programado,Programada,Mantenimiento preventivo,2.7,32400.0
+2024-12-16,4,Fresadora 04,Línea B,Turno 1 (06–14 h),No programado,Eléctrica,Falla de sensor,1.8,21240.0
+2024-12-16,5,Centro Mec. 05,Línea C,Turno 2 (14–22 h),Programado,Programada,Calibración,2.9,28420.0
+2024-12-17,3,Torno CNC 03,Línea B,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,3.7,48840.0
+2024-12-18,1,CNC Alpha 01,Línea A,Turno 2 (14–22 h),No programado,Mecánica,Rotura de correa,2.5,26250.0
+2024-12-19,4,Fresadora 04,Línea B,Turno 3 (22–06 h),No programado,Eléctrica,Cortocircuito,5.6,66080.0
+2024-12-21,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Motor quemado,5.6,81200.0
+2024-12-23,4,Fresadora 04,Línea B,Turno 2 (14–22 h),No programado,Mecánica,Falla de rodamiento,3.6,42480.0
+2024-12-24,1,CNC Alpha 01,Línea A,Turno 3 (22–06 h),No programado,Operativa,Error de operario,7.5,78750.0
+2024-12-24,3,Torno CNC 03,Línea B,Turno 3 (22–06 h),No programado,Mecánica,Desgaste de herramienta,4.4,58080.0
+2024-12-24,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Operativa,Cambio de herramienta no planificado,6.6,79200.0
+2024-12-28,7,Rectificadora 07,Línea D,Turno 1 (06–14 h),No programado,Mecánica,Rotura de correa,3.1,37200.0
+2024-12-29,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Eléctrica,Cortocircuito,1.2,17400.0
+2024-12-30,5,Centro Mec. 05,Línea C,Turno 3 (22–06 h),No programado,Mecánica,Desalineación de eje,7.6,74480.0
+2024-12-31,6,Torno CNC 06,Línea C,Turno 1 (06–14 h),No programado,Mecánica,Falla de rodamiento,7.7,111650.0
+2024-12-31,7,Rectificadora 07,Línea D,Turno 2 (14–22 h),No programado,Eléctrica,Falla de sensor,1.1,13200.0
