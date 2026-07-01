@@ -1,9 +1,9 @@
 # 👋 Hola, soy Luciano Villagran
 
-**Analista de Datos | Logistica y cadena de suministros | Tucuman, Argentina**
+**Analista de Datos | Excel · SQL · Python · Power BI · n8n | Tucumán, Argentina**
 
-Portfolio de proyectos personales de análisis de datos, automatización y optimización operativa.
-Cada proyecto está documentado con contexto real, metodología y resultados medibles.
+Portfolio de proyectos de análisis de datos, automatización e inteligencia de negocio aplicados a distintos sectores: Comercial/Retail, Logística, Finanzas, RRHH y Operaciones.
+Cada proyecto está documentado con contexto de negocio, metodología y resultados medibles con impacto económico cuantificado.
 
 ---
 

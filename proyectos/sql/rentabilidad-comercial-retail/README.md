@@ -68,6 +68,8 @@ Todo identificado con SQL, sin invertir en marketing ni en nuevos clientes: solo
 perder margen donde ya se estaba perdiendo. El detalle completo, con supuestos, está en
 [`informe.md`](./informe.md).
 
+![Impacto por hallazgo SQL](./output/impacto_hallazgos.png)
+
 ---
 
 ## 🔧 Técnicas SQL utilizadas

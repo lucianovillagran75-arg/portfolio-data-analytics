@@ -55,6 +55,22 @@ El detalle completo, con supuestos, está en [`informe.md`](./informe.md).
 
 ---
 
+## 📈 Visualizaciones generadas
+
+**Segmentación RFM — distribución de los 776 clientes en 6 segmentos accionables**
+![Segmentación RFM](./output/figuras/segmentos_rfm.png)
+
+**Ventas por sucursal — comparativa de desempeño entre los 5 locales**
+![Ventas por sucursal](./output/figuras/ventas_por_sucursal.png)
+
+**Tendencia mensual de ingresos y margen**
+![Tendencia mensual](./output/figuras/tendencia_mensual.png)
+
+**Distribución de ventas por categoría de producto**
+![Ventas por categoría](./output/figuras/ventas_por_categoria.png)
+
+---
+
 ## 🔧 Técnicas utilizadas
 
 - **ETL con pandas**: `merge` de ventas + clientes + productos + sucursales; período mensual con
