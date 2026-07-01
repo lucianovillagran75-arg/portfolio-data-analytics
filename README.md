@@ -35,7 +35,7 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 
 | Sector | 🗄️ SQL | 🐍 Python | 📊 Power BI | 📗 Excel | ⚡ n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **🚚 Logística y Cadena de Suministro** | 🟡 | 🟡 | 🟡 | [✅](./proyectos/excel/logistica-inventario-fmcg/) | 🟡 |
+| **🚚 Logística y Cadena de Suministro** | 🟡 | [✅](./proyectos/python/optimizacion-inventario-abcxyz/) | 🟡 | [✅](./proyectos/excel/logistica-inventario-fmcg/) | 🟡 |
 | **🛒 Comercial / Retail** | [✅](./proyectos/sql/rentabilidad-comercial-retail/) | [✅](./proyectos/python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
 | **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 | **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
@@ -45,7 +45,7 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 <sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
 
 <details open>
-<summary><b>📂 Proyectos publicados (4)</b> — clic para desplegar / ocultar</summary>
+<summary><b>📂 Proyectos publicados (5)</b> — clic para desplegar / ocultar</summary>
 
 <br>
 
@@ -72,6 +72,12 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 > Reemplaza el reporte mensual manual y segmenta clientes (RFM) para priorizar retención.
 > 💰 **Impacto:** ~$1,0 M/año (horas ahorradas + retención)
 > 🔗 [Abrir proyecto →](./proyectos/python/automatizacion-reporte-comercial-rfm/)
+
+> ### 🐍 Optimización de Inventario — Clasificación ABC-XYZ y Política de Stock &nbsp;·&nbsp; `Python`
+> **Sector:** Logística y Cadena de Suministro
+> Clasifica 120 SKUs en una matriz ABC-XYZ, calcula safety stock estadístico, punto de reorden y EOQ. Identifica capital inmovilizado en sobrestock y ventas en riesgo por quiebres.
+> 💰 **Impacto:** ~$7,0M (capital liberado + ventas recuperadas + ahorros EOQ + automatización)
+> 🔗 [Abrir proyecto →](./proyectos/python/optimizacion-inventario-abcxyz/)
 
 </details>
 

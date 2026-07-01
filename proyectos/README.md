@@ -10,7 +10,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 |---|---|---|
 | [`excel/`](./excel/) | Microsoft Excel | 2 activos |
 | [`sql/`](./sql/) | SQL | 1 activo |
-| [`python/`](./python/) | Python | 1 activo |
+| [`python/`](./python/) | Python | 2 activos |
 | [`power-bi/`](./power-bi/) | Power BI | En desarrollo |
 | [`n8n/`](./n8n/) | Automatización n8n | En desarrollo |
 | [`integraciones/`](./integraciones/) | Multi-herramienta | En desarrollo |
@@ -21,7 +21,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 
 | Sector | 🗄️ SQL | 🐍 Python | 📊 Power BI | 📗 Excel | ⚡ n8n |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **🚚 Logística y Cadena de Suministro** | 🟡 | 🟡 | 🟡 | [✅](./excel/logistica-inventario-fmcg/) | 🟡 |
+| **🚚 Logística y Cadena de Suministro** | 🟡 | [✅](./python/optimizacion-inventario-abcxyz/) | 🟡 | [✅](./excel/logistica-inventario-fmcg/) | 🟡 |
 | **🛒 Comercial / Retail** | [✅](./sql/rentabilidad-comercial-retail/) | [✅](./python/automatizacion-reporte-comercial-rfm/) | 🟡 | 🟡 | — |
 | **💰 Finanzas** | 🟡 | 🟡 | 🟡 | 🟡 | — |
 | **👥 Recursos Humanos** | 🟡 | 🟡 | 🟡 | 🟡 | — |
@@ -31,7 +31,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 <sub>**Leyenda:** ✅ publicado (clic para abrir) · 🟡 planificado · — no aplica</sub>
 
 <details open>
-<summary><b>📂 Proyectos publicados (4)</b> — clic para desplegar / ocultar</summary>
+<summary><b>📂 Proyectos publicados (5)</b> — clic para desplegar / ocultar</summary>
 
 <br>
 
@@ -47,7 +47,10 @@ proyecto se aplica a un **sector** concreto de un negocio.
 > **🐍 Automatización del Reporte Comercial + RFM** · `Python` · _Comercial / Retail_
 > 💰 ~$1,0 M/año (horas + retención) — [Abrir →](./python/automatizacion-reporte-comercial-rfm/)
 
+> **🐍 Optimización de Inventario — Clasificación ABC-XYZ** · `Python` · _Logística y Cadena de Suministro_
+> 💰 ~$7,0M (capital liberado + ventas recuperadas + ahorro EOQ + automatización) — [Abrir →](./python/optimizacion-inventario-abcxyz/)
+
 </details>
 
 ---
-*Última actualización: Junio 2026*
+*Última actualización: Julio 2026*
