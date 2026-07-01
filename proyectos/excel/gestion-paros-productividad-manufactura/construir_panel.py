@@ -21,10 +21,13 @@ from openpyxl.styles import (
 from openpyxl.utils import get_column_letter
 from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
 from openpyxl.worksheet.table import Table, TableStyleInfo
-from openpyxl.chart import BarChart, LineChart, Reference
-from openpyxl.chart.marker import DataPoint
-from openpyxl.chart.series import SeriesLabel
-from openpyxl.chart.layout import Layout
+from openpyxl.drawing.image import Image as XLImage
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from matplotlib.lines import Line2D
+import io
 
 BASE   = os.path.dirname(__file__)
 OUT    = os.path.join(BASE, "output", "Panel_Paros_OEE_Portfolio.xlsx")
@@ -396,85 +399,110 @@ for (titulo, valor, bg_kpi, color_v), col_st in zip(kpis, kpi_col_starts):
     cv.border    = borde_medio()
     ws_dash.row_dimensions[5].height = 40
 
-# ── Gráfico 1: Pareto de equipos ──────────────────────────────────────────────
-# Datos auxiliares en filas ocultas (fila 40+)
-AUX_ROW = 42
-ws_dash.cell(row=AUX_ROW, column=1, value="Equipo")
-ws_dash.cell(row=AUX_ROW, column=2, value="Horas NP")
-ws_dash.cell(row=AUX_ROW, column=3, value="% Acum.")
-for j, er in pareto_eq.iterrows():
-    r = AUX_ROW + 1 + j
-    ws_dash.cell(row=r, column=1, value=er["Equipo"])
-    ws_dash.cell(row=r, column=2, value=round(er["Horas_paro"], 1))
-    ws_dash.cell(row=r, column=3, value=round(er["Pct_acum"], 3))
+# ── Gráfico 1: Pareto de equipos (matplotlib → PNG embebido) ─────────────────
+fig1, ax1 = plt.subplots(figsize=(9, 6))
+fig1.patch.set_facecolor("white")
 
-n_eq   = len(pareto_eq)
-cats1  = Reference(ws_dash, min_col=1, min_row=AUX_ROW+1, max_row=AUX_ROW+n_eq)
-data_b = Reference(ws_dash, min_col=2, min_row=AUX_ROW,   max_row=AUX_ROW+n_eq)
-data_l = Reference(ws_dash, min_col=3, min_row=AUX_ROW,   max_row=AUX_ROW+n_eq)
+equipos_labels = pareto_eq["Equipo"].tolist()
+horas_vals     = pareto_eq["Horas_paro"].tolist()
+pct_acum_vals  = [v * 100 for v in pareto_eq["Pct_acum"].tolist()]
 
-bar1 = BarChart()
-bar1.type    = "col"
-bar1.title   = "Pareto de Equipos — Horas de Paro No Programado"
-bar1.y_axis.title = "Horas"
-bar1.x_axis.title = "Equipo"
-bar1.add_data(data_b, titles_from_data=True)
-bar1.set_categories(cats1)
-bar1.series[0].graphicalProperties.solidFill = "2E75B6"
-bar1.shape   = 4
-bar1.width   = 20
-bar1.height  = 14
+bars1 = ax1.bar(range(len(equipos_labels)), horas_vals,
+                color="#2E75B6", edgecolor="white", linewidth=0.5, zorder=2)
+ax1.set_xticks(range(len(equipos_labels)))
+ax1.set_xticklabels(equipos_labels, rotation=28, ha="right", fontsize=8.5)
+ax1.set_ylabel("Horas de Paro No Programado", fontsize=10)
+ax1.set_xlabel("Equipo", fontsize=10)
+ax1.set_title("Pareto de Equipos — Horas de Paro No Programado",
+              fontsize=11, fontweight="bold", pad=10)
+ax1.yaxis.grid(True, linestyle="--", alpha=0.4, zorder=0)
+ax1.set_axisbelow(True)
+ax1.spines["top"].set_visible(False)
+ax1.spines["right"].set_visible(False)
 
-line1 = LineChart()
-line1.add_data(data_l, titles_from_data=True)
-line1.set_categories(cats1)
-line1.series[0].graphicalProperties.line.solidFill = NARANJA
-line1.series[0].graphicalProperties.line.width = 20000
-bar1 += line1
-bar1.y_axis.axId = 100
-line1.y_axis.axId = 200
-line1.y_axis.crosses = "max"
-line1.y_axis.numFmt  = "0%"
-line1.y_axis.title   = "% Acumulado"
+ax1b = ax1.twinx()
+ax1b.plot(range(len(equipos_labels)), pct_acum_vals,
+          color="#ED7D31", marker="o", linewidth=2.2, markersize=5, zorder=3)
+ax1b.set_ylabel("% Acumulado", fontsize=10, color="#ED7D31")
+ax1b.set_ylim(0, 115)
+ax1b.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"{x:.0f}%"))
+ax1b.tick_params(axis="y", colors="#ED7D31")
+ax1b.axhline(80, color="gray", linestyle="--", linewidth=0.9, alpha=0.55)
+ax1b.text(len(equipos_labels) - 0.4, 82, "80 %", fontsize=8, color="gray")
+ax1b.spines["top"].set_visible(False)
 
-ws_dash.add_chart(bar1, "B7")
+legend_elems1 = [
+    mpatches.Patch(facecolor="#2E75B6", label="Horas NP"),
+    Line2D([0], [0], color="#ED7D31", marker="o", linewidth=2, markersize=5,
+           label="% Acumulado"),
+]
+ax1.legend(handles=legend_elems1, loc="upper right", fontsize=8.5, framealpha=0.85)
+plt.tight_layout()
 
-# ── Gráfico 2: OEE por equipo ─────────────────────────────────────────────────
-# Datos auxiliares en columnas 6-7 para no colisionar con datos del Pareto (cols 1-3)
-AUX_ROW2 = 55
-ws_dash.cell(row=AUX_ROW2, column=6, value="Equipo")
-ws_dash.cell(row=AUX_ROW2, column=7, value="OEE %")
-for i, nombre in enumerate(oee_nombres):
-    ws_dash.cell(row=AUX_ROW2+1+i, column=6, value=nombre)
-    ws_dash.cell(row=AUX_ROW2+1+i, column=7, value=round(oee[nombre], 3))
+buf1 = io.BytesIO()
+fig1.savefig(buf1, format="png", dpi=140, bbox_inches="tight")
+buf1.seek(0)
+plt.close(fig1)
 
-cats2  = Reference(ws_dash, min_col=6, min_row=AUX_ROW2+1, max_row=AUX_ROW2+len(oee_nombres))
-data_o = Reference(ws_dash, min_col=7, min_row=AUX_ROW2,   max_row=AUX_ROW2+len(oee_nombres))
+img1 = XLImage(buf1)
+img1.width  = 530
+img1.height = 360
+ws_dash.add_image(img1, "B7")
 
-bar2 = BarChart()
-bar2.type    = "bar"
-bar2.title   = "OEE por Equipo — Eficiencia General 2024"
-bar2.y_axis.title = "Equipo"
-bar2.x_axis.title = "OEE %"
-bar2.x_axis.numFmt = "0%"
-# Escala 60%-100%: la diferencia entre equipos queda visualmente clara
-bar2.x_axis.scaling.min = 0.6
-bar2.x_axis.scaling.max = 1.0
-bar2.add_data(data_o, titles_from_data=True)
-bar2.set_categories(cats2)
-bar2.width   = 22
-bar2.height  = 14
+# ── Gráfico 2: OEE por equipo (matplotlib → PNG embebido) ────────────────────
+fig2, ax2 = plt.subplots(figsize=(9, 6))
+fig2.patch.set_facecolor("white")
 
-# Colorear cada barra individualmente según nivel OEE
-OEE_COLORS = {"verde": "70AD47", "amarillo": "FFD966", "rojo": "FF6B6B"}
-for i, nombre in enumerate(oee_nombres):
-    v = oee[nombre]
-    color = OEE_COLORS["verde"] if v >= 0.85 else (OEE_COLORS["amarillo"] if v >= 0.65 else OEE_COLORS["rojo"])
-    pt = DataPoint(idx=i)
-    pt.graphicalProperties.solidFill = color
-    bar2.series[0].dPt.append(pt)
+oee_vals_pct = [round(oee[n] * 100, 1) for n in oee_nombres]
+oee_bar_colors = [
+    "#70AD47" if v >= 85 else ("#FFD966" if v >= 65 else "#FF6B6B")
+    for v in oee_vals_pct
+]
 
-ws_dash.add_chart(bar2, "K7")
+# Invertir orden para que el mayor OEE quede arriba
+nombres_rev = list(reversed(oee_nombres))
+vals_rev    = list(reversed(oee_vals_pct))
+colors_rev  = list(reversed(oee_bar_colors))
+
+ax2.barh(range(len(nombres_rev)), vals_rev,
+         color=colors_rev, edgecolor="white", linewidth=0.5, height=0.6, zorder=2)
+ax2.set_yticks(range(len(nombres_rev)))
+ax2.set_yticklabels(nombres_rev, fontsize=9)
+ax2.set_xlim(60, 102)
+ax2.set_xlabel("OEE %", fontsize=10)
+ax2.set_ylabel("Equipo", fontsize=10)
+ax2.set_title("OEE por Equipo — Eficiencia General 2024",
+              fontsize=11, fontweight="bold", pad=10)
+ax2.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"{x:.0f}%"))
+ax2.xaxis.grid(True, linestyle="--", alpha=0.4, zorder=0)
+ax2.set_axisbelow(True)
+ax2.axvline(85, color="#1F4E79", linestyle="--", linewidth=1.1, alpha=0.75)
+ax2.text(85.4, len(nombres_rev) - 0.6, "Objetivo\n85 %",
+         fontsize=7.5, color="#1F4E79", va="top")
+ax2.spines["top"].set_visible(False)
+ax2.spines["right"].set_visible(False)
+
+# Etiquetas de valor al final de cada barra
+for i, val in enumerate(vals_rev):
+    ax2.text(val + 0.4, i, f"{val:.1f}%", va="center", fontsize=8.5, fontweight="bold")
+
+legend_elems2 = [
+    mpatches.Patch(facecolor="#70AD47", label="Excelente (≥ 85 %)"),
+    mpatches.Patch(facecolor="#FFD966", label="Aceptable (65–84 %)"),
+    mpatches.Patch(facecolor="#FF6B6B", label="Bajo (< 65 %)"),
+]
+ax2.legend(handles=legend_elems2, loc="lower right", fontsize=8, framealpha=0.85)
+plt.tight_layout()
+
+buf2 = io.BytesIO()
+fig2.savefig(buf2, format="png", dpi=140, bbox_inches="tight")
+buf2.seek(0)
+plt.close(fig2)
+
+img2 = XLImage(buf2)
+img2.width  = 530
+img2.height = 360
+ws_dash.add_image(img2, "K7")
 
 # Ajustar anchos de columnas del Dashboard
 for i in range(1, 22):
