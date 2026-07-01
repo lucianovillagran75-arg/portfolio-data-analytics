@@ -93,6 +93,8 @@ El detalle con supuestos declarados está en [`informe.md`](./informe.md).
 
 ![Dashboard ABC-XYZ de Inventario](./output/dashboard_inventario.png)
 
+📄 [Descargar reporte ejecutivo completo (PDF)](./output/Reporte_OptimizacionInventario.pdf)
+
 El dashboard muestra:
 1. **Matriz ABC-XYZ** — dónde está cada SKU y cuánto vale cada celda
 2. **Curva Pareto ABC** — concentración del revenue en los primeros 21 SKUs
@@ -126,6 +128,7 @@ El dashboard muestra:
 | [`output/clasificacion_abcxyz.csv`](./output/clasificacion_abcxyz.csv) | 120 SKUs con clase ABC-XYZ, CV y revenue |
 | [`output/politica_inventario.csv`](./output/politica_inventario.csv) | SS, ROP, EOQ, sobrestock y déficit por SKU |
 | [`output/dashboard_inventario.png`](./output/dashboard_inventario.png) | Dashboard ejecutivo de 5 paneles |
+| [`output/Reporte_OptimizacionInventario.pdf`](./output/Reporte_OptimizacionInventario.pdf) | Reporte ejecutivo completo (PDF) |
 | [`informe.md`](./informe.md) | Hallazgos con supuestos y tabla de impacto |
 | [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Proceso de construcción fase a fase |
 
