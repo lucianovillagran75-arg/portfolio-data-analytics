@@ -172,45 +172,79 @@ def resumen_segmentos(rfm_df: pd.DataFrame) -> pd.DataFrame:
 # --------------------------------------------------------------------------- #
 # 6. Exportar (Excel + figuras + CSV)
 # --------------------------------------------------------------------------- #
+# Paleta del portfolio (skills visualizacion-paneles / dashboards-python)
+AZUL_OSC, AZUL_MED, VERDE, ROJO, MORADO = "#1F4E79", "#2E75B6", "#70AD47", "#C00000", "#7030A0"
+
+
+def _ar(x, dec=0):
+    """Número en formato argentino: miles con punto, decimales con coma."""
+    return f"{x:,.{dec}f}".replace(",", "§").replace(".", ",").replace("§", ".")
+
+
 def _grafico_tendencia(kpis: pd.DataFrame) -> None:
     fig, ax = plt.subplots(figsize=(10, 4.5))
+    fig.patch.set_facecolor("white")
     x = range(len(kpis))
-    ax.plot(x, kpis["facturacion"] / 1e6, marker="o", label="Facturación", color="#2563eb")
-    ax.plot(x, kpis["margen"] / 1e6, marker="o", label="Margen", color="#16a34a")
+    ax.plot(x, kpis["facturacion"] / 1e6, marker="o", label="Facturación", color=AZUL_MED, linewidth=2)
+    ax.plot(x, kpis["margen"] / 1e6, marker="o", label="Margen", color=VERDE, linewidth=2)
     ax.set_xticks(list(x))
     ax.set_xticklabels(kpis.index, rotation=45, ha="right", fontsize=8)
-    ax.set_ylabel("Millones $")
-    ax.set_title("Evolución mensual de facturación y margen", fontweight="bold")
-    ax.legend()
+    ax.set_ylabel("Millones de $ ARS")
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"${_ar(v, 1)} M"))
+    ax.set_title("Evolución mensual de facturación y margen", fontweight="bold", color=AZUL_OSC)
+    ax.legend(loc="upper left", framealpha=0.9)
     ax.grid(axis="y", alpha=0.3)
+    ax.set_axisbelow(True)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
     fig.tight_layout()
-    fig.savefig(FIGURAS / "tendencia_mensual.png", dpi=120)
+    fig.savefig(FIGURAS / "tendencia_mensual.png", dpi=140, facecolor="white")
     plt.close(fig)
 
 
 def _grafico_barras(serie: pd.Series, titulo: str, archivo: str, color: str) -> None:
-    fig, ax = plt.subplots(figsize=(8, 4.5))
+    fig, ax = plt.subplots(figsize=(8.5, 4.5))
+    fig.patch.set_facecolor("white")
     serie = serie.sort_values()
-    ax.barh(serie.index.astype(str), serie.values / 1e6, color=color)
-    ax.set_xlabel("Millones $")
-    ax.set_title(titulo, fontweight="bold")
+    vals = serie.values / 1e6
+    ax.barh(serie.index.astype(str), vals, color=color, edgecolor="white", height=0.62, zorder=2)
+    ax.set_xlabel("Millones de $ ARS")
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"${_ar(v, 1)} M"))
+    ax.set_title(titulo, fontweight="bold", color=AZUL_OSC)
+    for i, v in enumerate(vals):
+        ax.text(v * 1.01, i, f"${_ar(v, 1)} M", va="center", ha="left",
+                fontsize=8.5, fontweight="bold", color="#333333")
     ax.grid(axis="x", alpha=0.3)
+    ax.set_axisbelow(True)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    ax.set_xlim(0, vals.max() * 1.16)
     fig.tight_layout()
-    fig.savefig(FIGURAS / archivo, dpi=120)
+    fig.savefig(FIGURAS / archivo, dpi=140, facecolor="white")
     plt.close(fig)
 
 
 def _grafico_segmentos(res_seg: pd.DataFrame) -> None:
-    fig, ax = plt.subplots(figsize=(8, 4.5))
+    fig, ax = plt.subplots(figsize=(8.5, 4.5))
+    fig.patch.set_facecolor("white")
     s = res_seg["clientes"].sort_values()
-    colores = ["#dc2626" if "riesgo" in i.lower() or "perdid" in i.lower()
-               else "#2563eb" for i in s.index]
-    ax.barh(s.index, s.values, color=colores)
-    ax.set_xlabel("Clientes")
-    ax.set_title("Clientes por segmento RFM (rojo = acción prioritaria)", fontweight="bold")
+    colores = [ROJO if ("riesgo" in i.lower() or "perdid" in i.lower()) else AZUL_MED
+               for i in s.index]
+    ax.barh(s.index, s.values, color=colores, edgecolor="white", height=0.62, zorder=2)
+    ax.set_xlabel("Cantidad de clientes")
+    ax.set_title("Clientes por segmento RFM (rojo = acción prioritaria)",
+                 fontweight="bold", color=AZUL_OSC)
+    tope = max(s.values)
+    for i, v in enumerate(s.values):
+        ax.text(v + tope * 0.01, i, f"{int(v)}", va="center", ha="left",
+                fontsize=8.5, fontweight="bold", color="#333333")
     ax.grid(axis="x", alpha=0.3)
+    ax.set_axisbelow(True)
+    for sp in ("top", "right"):
+        ax.spines[sp].set_visible(False)
+    ax.set_xlim(0, tope * 1.12)
     fig.tight_layout()
-    fig.savefig(FIGURAS / "segmentos_rfm.png", dpi=120)
+    fig.savefig(FIGURAS / "segmentos_rfm.png", dpi=140, facecolor="white")
     plt.close(fig)
 
 
@@ -221,9 +255,9 @@ def exportar(kpis, por_suc, por_cat, rfm_df, res_seg) -> Path:
     # Figuras
     _grafico_tendencia(kpis)
     _grafico_barras(por_suc["facturacion"], "Facturación por sucursal",
-                    "ventas_por_sucursal.png", "#2563eb")
+                    "ventas_por_sucursal.png", AZUL_MED)
     _grafico_barras(por_cat["facturacion"], "Facturación por categoría",
-                    "ventas_por_categoria.png", "#7c3aed")
+                    "ventas_por_categoria.png", MORADO)
     _grafico_segmentos(res_seg)
 
     # CSV de segmentos (entregable accionable para el equipo comercial)

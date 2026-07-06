@@ -61,9 +61,14 @@ COLORES_MATRIX = {
 TEXTO_OSCURO = {AZUL_OSC, AZUL_MED, NARANJA, VERDE}
 
 
+def _ar(x: float, dec: int = 0) -> str:
+    """Número en formato argentino: miles con punto, decimales con coma."""
+    return f"{x:,.{dec}f}".replace(",", "§").replace(".", ",").replace("§", ".")
+
+
 def _money(v: float) -> str:
-    """Formato de dinero consistente: millones en M, miles en k."""
-    return f"${v/1e6:.1f}M" if v >= 1e6 else f"${v/1e3:,.0f}k"
+    """Formato de dinero argentino: millones en M, miles en k."""
+    return f"${_ar(v/1e6, 1)}M" if v >= 1e6 else f"${_ar(v/1e3, 0)}k"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -439,9 +444,8 @@ def _panel_kpis(ax, impacto: dict, df: pd.DataFrame):
                 multialignment="center")
 
     # Total
-    total_m = impacto["total"] / 1e6
     ax.text(0.5, -0.06,
-            f"Impacto total estimado del análisis: ${total_m:.1f}M  "
+            f"Impacto total estimado del análisis: {_money(impacto['total'])} ARS  "
             f"(capital liberado + ventas recuperables + ahorros operativos)",
             transform=ax.transAxes, ha="center", va="center",
             fontsize=10, fontweight="bold", color=AZUL_OSC)

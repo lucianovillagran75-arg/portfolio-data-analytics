@@ -36,7 +36,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 <br>
 
 > **📦 Sistema de Control de Inventario FMCG** · `Excel` · _Logística y Cadena de Suministro_
-> 💰 USD 22.473 de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
+> 💰 $22,5 M ARS de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
 
 > **📊 Panel de Paros, OEE y Mantenimiento Preventivo** · `Excel + VBA` · _Operaciones / Manufactura_
 > 💰 ~$8,6 M ARS/año recuperables · OEE + Pareto de causas + macro de reporte — [Abrir →](./excel/gestion-paros-productividad-manufactura/)
@@ -52,7 +52,7 @@ proyecto se aplica a un **sector** concreto de un negocio.
 
 </details>
 
-> 💡 Cifras en **pesos argentinos (ARS)**, salvo el capital del proyecto FMCG (en **USD**). Todas son estimaciones sobre **datos sintéticos** con supuestos declarados en cada `informe.md`.
+> 💡 Todas las cifras están en **pesos argentinos (ARS)** y son estimaciones sobre **datos sintéticos**, con supuestos declarados en cada `informe.md`.
 
 ---
 *Última actualización: Julio 2026*

@@ -20,13 +20,13 @@ En criollo, esto es lo que hice en cada caso:
 
 | Proyecto | En una frase, sin tecnicismos | Beneficio |
 |---|---|---|
-| 📦 **Inventario FMCG** | Ordené el depósito de una distribuidora para que no falten los productos que más se venden ni sobren los que no rotan | Encontré **USD 22.473** de mercadería frenada y bajé el reporte de 5 h a 20 min |
+| 📦 **Inventario FMCG** | Ordené el depósito de una distribuidora para que no falten los productos que más se venden ni sobren los que no rotan | Encontré **$22,5 M ARS** de mercadería frenada y bajé el reporte de 5 h a 20 min |
 | 📊 **Paros y Mantenimiento** | Descubrí qué máquinas de una fábrica paran más y cuánto cuesta cada hora frenada | **~$8,6 M ARS/año** de producción recuperable |
 | 🗄️ **Rentabilidad Comercial** | Encontré productos que se vendían a pérdida y clientes que se estaban yendo sin que nadie lo notara | **~$2,0 M ARS/año** de margen recuperable |
 | 🐍 **Reporte Automático + Clientes** | Reemplacé un reporte que se hacía a mano cada mes y agrupé a los clientes para saber a quién retener | **~$1,0 M ARS/año** (tiempo + clientes retenidos) |
 | 🐍 **Optimización de Inventario** | Calculé cuánto comprar de cada producto para no gastar de más ni quedarme sin stock | **~$7,0 M ARS** entre capital y ventas |
 
-> 💡 **Cómo leer los números:** son **estimaciones sobre datos simulados** (inventados con criterio realista para poder mostrar el método sin usar información confidencial de ninguna empresa). Cada proyecto explica sus supuestos en un archivo `informe.md`. Las cifras están en **pesos argentinos (ARS)**, salvo el capital del proyecto FMCG, que está en **dólares (USD)**.
+> 💡 **Cómo leer los números:** son **estimaciones sobre datos simulados** (inventados con criterio realista para poder mostrar el método sin usar información confidencial de ninguna empresa). Cada proyecto explica sus supuestos en un archivo `informe.md`. Todas las cifras están en **pesos argentinos (ARS)**.
 
 ---
 
@@ -75,7 +75,7 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 > ### 📦 Sistema de Control de Inventario FMCG &nbsp;·&nbsp; `Excel`
 > **Sector:** Logística y Cadena de Suministro
 > Gestión de inventario de 75 productos que detecta faltantes inminentes y mercadería sin rotación.
-> 💰 **Impacto:** USD 22.473 de capital identificado · −93 % de tiempo de reportería
+> 💰 **Impacto:** $22,5 M ARS de capital identificado · −93 % de tiempo de reportería
 > 🔗 [Abrir proyecto →](./proyectos/excel/logistica-inventario-fmcg/)
 
 > ### 📊 Panel de Paros, OEE y Mantenimiento Preventivo &nbsp;·&nbsp; `Excel + VBA`

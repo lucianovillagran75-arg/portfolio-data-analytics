@@ -34,7 +34,7 @@ Desde el inicio se aplicó la convención profesional de Excel:
 ✅ 19 columnas · 309 fórmulas · 0 errores
 ✅ Filtros automáticos activados en todos los encabezados
 ✅ Panel congelado en fila 4 para navegación sin perder headers
-✅ Capital total inmovilizado visible: $64.825 USD
+✅ Capital total inmovilizado visible: $64,8 M ARS (64.825 miles de $)
 ```
 
 ---
@@ -83,7 +83,7 @@ Se aplicaron 10 reglas de formato condicional:
 ✅ 4.517 fórmulas · 0 errores
 ✅ 7 SKUs en quiebre detectados (cobertura < 7 días)
 ✅ 12 SKUs con stock muerto identificados
-✅ $22.473 USD en capital inmovilizado sin rotación
+✅ $22,5 M ARS en capital inmovilizado sin rotación
 ✅ 49 SKUs en niveles óptimos (normal)
 ✅ Clasificación ABC: 15 tipo A · 23 tipo B · 37 tipo C
 ```
@@ -135,8 +135,8 @@ El dashboard es la hoja que un gerente, cliente o reclutador ve primero. Tiene q
 **Header:** Título, período y nota de actualización automática.
 
 **3 KPI Cards:**
-- Capital total inmovilizado: **$64.825 USD**
-- Capital en stock muerto: **$22.473 USD** (34.7% del total)
+- Capital total inmovilizado: **$64,8 M ARS** (64.825 miles de $)
+- Capital en stock muerto: **$22,5 M ARS** (34,7% del total)
 - SKUs en nivel normal: **49 de 75**
 
 **4 Gráficos embebidos:**

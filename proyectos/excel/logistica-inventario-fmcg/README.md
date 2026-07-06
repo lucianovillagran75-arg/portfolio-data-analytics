@@ -38,14 +38,14 @@ Inventario_FMCG_Portfolio.xlsx
 
 | Métrica | Antes | Después | Δ |
 |---|---|---|---|
-| Capital en stock muerto identificado | No medido | **$22.473 USD** | +100% visibilidad |
+| Capital en stock muerto identificado | No medido | **$22,5 M ARS** | +100% visibilidad |
 | Quiebres de stock detectados | 0 (sin sistema) | **7 SKUs alertados** | Acción inmediata |
 | Tiempo de reportería mensual | ~270 min | **~20 min** | **-93%** |
 | SKUs sin visibilidad de estado | 75 | **0** | Panel completo |
 | Alertas automáticas activas | 0 | **4 tipos** | Quiebre/Muerto/Sobre/Crítico |
 | Clasificación ABC disponible | No | **Sí (automática)** | Priorización por percentil |
 
-> 💡 El capital identificado está expresado en **dólares (USD)**. Es una **estimación sobre datos simulados** del sector FMCG.
+> 💡 Importes en **pesos argentinos (ARS)**: la planilla expresa los valores en **miles de $**, por lo que el capital en stock muerto (22.473 miles) equivale a **$22,5 M ARS**. Es una **estimación sobre datos simulados** del sector FMCG.
 
 ---
 

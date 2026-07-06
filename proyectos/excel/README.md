@@ -7,8 +7,8 @@ operativo y logístico.
 
 | Proyecto | Sector | Impacto principal |
 |---|---|---|
-| [`logistica-inventario-fmcg/`](./logistica-inventario-fmcg/) | Logística / Cadena de Suministro | $22.473 de capital inmovilizado identificado · −93% tiempo de reportería |
-| [`gestion-paros-productividad-manufactura/`](./gestion-paros-productividad-manufactura/) | Operaciones / Manufactura | $8,6 M/año recuperables · OEE por equipo · Pareto de causas + macro VBA |
+| [`logistica-inventario-fmcg/`](./logistica-inventario-fmcg/) | Logística / Cadena de Suministro | $22,5 M ARS de capital inmovilizado identificado · −93% tiempo de reportería |
+| [`gestion-paros-productividad-manufactura/`](./gestion-paros-productividad-manufactura/) | Operaciones / Manufactura | $8,6 M ARS/año recuperables · OEE por equipo · Pareto de causas + macro VBA |
 
 ## Roadmap por sector
 

@@ -28,6 +28,11 @@ import matplotlib.patches as mpatches
 BASE   = Path(__file__).resolve().parent
 OUT    = BASE / "output"
 OUT.mkdir(exist_ok=True)
+
+
+def _ar(x, dec=0):
+    """Número en formato argentino: miles con punto, decimales con coma."""
+    return f"{x:,.{dec}f}".replace(",", "§").replace(".", ",").replace("§", ".")
 RUTA_DOCX = OUT / "Reporte_RentabilidadComercial.docx"
 RUTA_PDF  = OUT / "Reporte_RentabilidadComercial.pdf"
 IMG_EXIST = BASE / "output" / "impacto_hallazgos.png"
@@ -154,16 +159,16 @@ def generar_grafico_impacto():
                    edgecolor="white", linewidth=0.5, zorder=2)
     ax.set_yticks(range(len(hallazgos)))
     ax.set_yticklabels(list(reversed(hallazgos)) if False else hallazgos, fontsize=9.5)
-    ax.set_xlabel("Impacto estimado ($M / año)", fontsize=10)
+    ax.set_xlabel("Impacto estimado (millones de $ ARS / año)", fontsize=10)
     ax.set_title("Impacto económico identificado por hallazgo — TiendaNova 2024–2025",
                  fontsize=11, fontweight="bold", color="#1F4E79", pad=10)
-    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"$  {x:.2f}M"))
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"$ {_ar(x, 2)} M"))
     ax.xaxis.grid(True, linestyle="--", alpha=0.35, zorder=0)
     ax.set_axisbelow(True)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     for i, val in enumerate(valores):
-        label = f"${val:.2f}M/año" if val >= 0.05 else f"~$79 k (puntual)"
+        label = f"${_ar(val, 2)} M/año" if val >= 0.05 else f"~${_ar(79, 0)} k (puntual)"
         ax.text(val + 0.01, i, label, va="center", fontsize=9, fontweight="bold",
                 color="#1F4E79")
     ax.axvline(0.91 + 0.74 + 0.39, color="#595959", linestyle=":", linewidth=1, alpha=0.6)
@@ -190,16 +195,16 @@ def generar_grafico_sucursales():
            linewidth=0.5, zorder=2)
     ax.set_xticks(range(len(sucursales)))
     ax.set_xticklabels(sucursales, fontsize=9.5)
-    ax.set_ylabel("Ticket promedio ($)", fontsize=10)
+    ax.set_ylabel("Ticket promedio ($ ARS)", fontsize=10)
     ax.set_title("Ticket promedio por sucursal — TiendaNova 2024–2025\nSucursal Sur: −16 % vs mediana de la red",
                  fontsize=11, fontweight="bold", color="#1F4E79", pad=10)
-    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"${x:,.0f}"))
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"${_ar(x, 0)}"))
     ax.yaxis.grid(True, linestyle="--", alpha=0.35, zorder=0)
     ax.set_axisbelow(True)
     ax.axhline(11267, color="#595959", linestyle="--", linewidth=1.1, alpha=0.6)
-    ax.text(4.5, 11350, "Mediana red\n$11.267", fontsize=8, color="#595959", ha="right")
+    ax.text(4.5, 11350, f"Mediana red\n${_ar(11267, 0)}", fontsize=8, color="#595959", ha="right")
     for i, val in enumerate(tickets):
-        ax.text(i, val + 100, f"${val:,.0f}", ha="center", fontsize=8.5, fontweight="bold",
+        ax.text(i, val + 100, f"${_ar(val, 0)}", ha="center", fontsize=8.5, fontweight="bold",
                 color="#1F4E79")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)

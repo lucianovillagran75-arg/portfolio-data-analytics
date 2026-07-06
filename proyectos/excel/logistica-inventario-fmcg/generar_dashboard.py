@@ -30,6 +30,20 @@ AMAR, ROJO, NARANJA, MORADO = "#FFC000", "#C00000", "#ED7D31", "#7030A0"
 def miles(x):
     return f"{x:,.0f}".replace(",", ".")
 
+# La planilla expresa los importes en MILES de pesos argentinos → ×1.000 = ARS.
+FACTOR_ARS = 1_000
+
+def _ar(x, dec):
+    return f"{x:,.{dec}f}".replace(",", "§").replace(".", ",").replace("§", ".")
+
+def money_ars(v):
+    """Formato de dinero argentino a partir de un monto en ARS."""
+    if v >= 1e6:
+        return f"${_ar(v/1e6, 1)} M"
+    if v >= 1e3:
+        return f"${_ar(v/1e3, 0)} k"
+    return f"${_ar(v, 0)}"
+
 # ── Leer la hoja 'Análisis' (encabezado en la fila 4) ────────────────────────
 import openpyxl
 wb = openpyxl.load_workbook(XLSX, data_only=True)
@@ -54,7 +68,7 @@ df["estado"] = df["Estado Cobertura"].map(estado)
 counts = df["estado"].value_counts()
 n_quiebre = int(counts.get("QUIEBRE", 0))
 n_muerto  = int(counts.get("STOCK MUERTO", 0))
-cap_muerto = df.loc[df["estado"] == "STOCK MUERTO", "Capital Inmovilizado"].sum()
+cap_muerto = df.loc[df["estado"] == "STOCK MUERTO", "Capital Inmovilizado"].sum() * FACTOR_ARS
 n_sku = len(df)
 abc = df["Clasif. ABC"].value_counts().reindex(["A", "B", "C"]).fillna(0)
 
@@ -65,13 +79,13 @@ gs = GridSpec(3, 4, figure=fig, height_ratios=[0.62, 1.15, 1.15], hspace=0.6, ws
 
 fig.text(0.06, 0.955, "Distribuidora FMCG — Panel de Control de Inventario (75 productos)",
          fontsize=17, fontweight="bold", color=AZUL, ha="left")
-fig.text(0.06, 0.925, "Se detectaron 7 productos por quebrar stock y USD 22.473 de capital atrapado en mercadería que no rota",
+fig.text(0.06, 0.925, f"Se detectaron 7 productos por quebrar stock y {money_ars(cap_muerto)} ARS de capital atrapado en mercadería que no rota",
          fontsize=11, color="#7F7F7F", ha="left")
 
 kpis = [("Productos\nanalizados", f"{n_sku}", "#EAF1F8", AZUL),
         ("Por quebrar stock\n(venta en riesgo)", f"{n_quiebre}", "#FDECEA", ROJO),
         ("Sin rotación\n(stock muerto)", f"{n_muerto}", "#F1EAF7", MORADO),
-        ("Capital atrapado\nidentificado", f"USD {miles(cap_muerto)}", "#FEF6E7", "#8B5E00")]
+        ("Capital atrapado\nidentificado", f"{money_ars(cap_muerto)}", "#FEF6E7", "#8B5E00")]
 for i,(t,v,bg,cv) in enumerate(kpis):
     ax = fig.add_subplot(gs[0, i]); ax.axis("off")
     ax.add_patch(plt.Rectangle((0,0),1,1, facecolor=bg, edgecolor="#D9D9D9", lw=1, transform=ax.transAxes))
@@ -106,8 +120,8 @@ ax3.add_patch(plt.Rectangle((0,0),1,1, facecolor="#F0F6FF", edgecolor="#A9C7E8",
 diag = ("QUÉ RESOLVIÓ ESTE PANEL\n"
         "• Antes: 4–5 horas por mes armando el reporte a mano y sin forma de ver qué producto estaba por faltar.\n"
         "• Después: el estado de los 75 productos se ve de un vistazo y el reporte se arma en ~20 minutos (−93 % de tiempo).\n"
-        "• Se identificaron 7 productos por quebrar (venta en riesgo) y USD 22.473 de capital atrapado en mercadería sin rotación.\n"
-        "  Cifras sobre datos sintéticos del sector FMCG; capital expresado en dólares (USD).")
+        f"• Se identificaron 7 productos por quebrar (venta en riesgo) y {money_ars(cap_muerto)} ARS de capital atrapado en mercadería sin rotación.\n"
+        "  Cifras sobre datos sintéticos del sector FMCG · importes en pesos argentinos (la planilla los expresa en miles de $).")
 ax3.text(0.02,0.5, diag, ha="left", va="center", fontsize=9.6, color="#243B53", transform=ax3.transAxes, linespacing=1.5)
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
