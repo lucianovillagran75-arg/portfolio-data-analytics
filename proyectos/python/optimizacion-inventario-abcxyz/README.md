@@ -1,161 +1,144 @@
-# Optimización de Inventario — Clasificación ABC-XYZ y Política de Stock
+# ¿Cuánto pedir de cada producto y cuándo? — Optimización de inventario ABC-XYZ
 
-> **Herramienta:** Python (pandas, numpy, matplotlib)
-> **Sector:** Logística y Cadena de Suministro
-> **Contexto:** Distribuidora "NorteLogix S.A." — 120 SKUs · 5 categorías · 24 meses de historial
-> **Período:** Enero 2023 – Diciembre 2024
+Este proyecto nació de una pregunta que me hago siempre que veo un depósito: **¿por qué a casi todas
+las empresas les sobra justo lo que no venden y les falta justo lo que más venden?** Quise ver si
+podía reemplazar el "pedir a ojo" por una política que dijera, para cada producto, cuánto comprar y
+en qué momento — y ponerle un número a lo que eso vale.
 
----
+Lo armé sobre una distribuidora mayorista ficticia, **NorteLogix S.A.** (120 productos de consumo
+masivo, 24 meses de demanda). Los datos son sintéticos y reproducibles (semilla fija), así que lo
+que valida el proyecto es **el método**, no un caso real.
 
-## El problema
-
-NorteLogix S.A. gestiona 120 SKUs de consumo masivo distribuidos en Bebidas, Lácteos, Snacks,
-Limpieza y Granos. La política de compras la definía el criterio del comprador: pedir más o menos
-cuando "parecía que había poco". Sin un modelo detrás, el resultado era el clásico contrasentido
-de la cadena de suministro:
-
-> *"Tenemos depósitos llenos de productos que casi nadie pide, y nos quedamos sin stock justo
-> de los que más vendemos."*
-
-**El problema tenía dos caras:**
-- **Sobrestock en ítems C-Z** (bajo valor, demanda errática): capital inmovilizado sin trabajar.
-- **Substock en ítems A-X** (alto valor, demanda estable): quiebres justo en los productos que
-  más impacto tienen en el negocio.
-
-El análisis mensual de inventario se hacía en 8 horas de trabajo manual; cualquier error de
-criterio quedaba invisible hasta que el cliente se quejaba o el balance cerraba mal.
+![Panel de inventario ABC-XYZ](./output/dashboard_inventario.png)
 
 ---
 
-## La solución
+## Cómo lo encaré
 
-Construí un modelo de optimización de inventario en Python que reemplaza el criterio "a ojo" por
-una **política estadística y reproducible**, ejecutable en segundos con un solo comando.
+Lo primero fue decidir **cómo clasificar los productos**. La clasificación ABC clásica (ordenar por
+facturación y cortar en 80/95%) es la que usa casi todo el mundo, pero tiene un agujero: te dice qué
+producto **factura** mucho, no qué producto es **difícil de gestionar**. Un producto puede facturar
+alto y ser un dolor de cabeza porque su demanda salta de un mes a otro.
 
-```
-cargar → abc → xyz → safety_stock → rop → eoq → identificar sobrestock/substock → dashboard → impacto
-```
+Por eso le sumé la dimensión **XYZ**, que mide la *variabilidad* de la demanda (coeficiente de
+variación = desvío / promedio). Cruzando las dos me quedó una matriz donde cada producto cae en una
+de 9 celdas:
 
-El modelo hace cuatro cosas que el analista promedio no hace:
+- **A-X** (facturan mucho, demanda estable) → los que **nunca** pueden faltar.
+- **C-Z** (facturan poco, demanda errática) → donde se junta el sobrestock.
 
-| El analista promedio | Este modelo |
-|---|---|
-| Solo ABC (ranking por ventas) | **ABC + XYZ**: valor de facturación × variabilidad de demanda |
-| Stock mínimo "a ojo" | **Safety stock estadístico** (95 % de nivel de servicio, Z = 1,645) |
-| "Pedimos cuando hay poco" | **Punto de reorden** exacto = μ × lead_time + SS |
-| Lote fijo por costumbre | **EOQ** = √(2DS/H) — minimiza el costo total de inventario |
+Con la clasificación lista, para cada producto calculé:
 
-### Qué calcula el modelo para cada SKU
+| Cálculo | Qué responde | Fórmula |
+|---|---|---|
+| **Stock de seguridad** | ¿Cuánto colchón necesito contra la incertidumbre? | `Z · σ · √LT` (servicio 95%, Z=1,645) |
+| **Punto de reorden (ROP)** | ¿En qué nivel disparo la compra? | `μ · LT + stock de seguridad` |
+| **Lote óptimo (EOQ)** | ¿De a cuánto conviene comprar? | `√(2·D·S / H)` |
 
-- **Safety stock**: unidades de colchón contra variabilidad de demanda y lead time.
-- **ROP (reorder point)**: nivel exacto al que hay que emitir la orden de compra.
-- **EOQ (economic order quantity)**: lote óptimo que minimiza la suma de costos de pedido y holding.
-- **Sobrestock**: unidades por encima de ROP + EOQ → capital inmovilizado en $.
-- **Substock**: unidades por debajo del ROP → ventas en riesgo en $.
+Y con eso comparé el stock real contra la política ideal para detectar **exceso** (capital parado)
+y **déficit** (venta en riesgo).
 
 ---
 
-## Resultados
+## Lo que encontré
 
-### Distribución de la matriz ABC-XYZ (120 SKUs)
+Sobre los 120 productos, la matriz quedó así:
 
 | | X (estable) | Y (variable) | Z (errático) |
-|---|---|---|---|
-| **A (alto valor)** | 13 SKUs — prioridad máxima | 7 SKUs | 1 SKU |
-| **B (medio)** | 8 SKUs | 11 SKUs | 2 SKUs |
-| **C (bajo valor)** | 5 SKUs | 33 SKUs | 40 SKUs |
+|---|:--:|:--:|:--:|
+| **A (alto valor)** | 13 | 7 | 1 |
+| **B (medio)** | 8 | 11 | 2 |
+| **C (bajo valor)** | 5 | 33 | 40 |
 
-> Los **AX** son los productos estrella: alta facturación, demanda predecible — los que más duele
-> quedarse sin stock. Los **CZ** son la "cola larga": bajo valor y demanda errática — donde se
-> acumula el sobrestock.
+Lo que más me llamó la atención: **21 productos (los "A") concentran el 80% de la facturación**, y
+casi la mitad del catálogo (los "C-Z") son cola larga que casi no mueve la aguja pero sí ocupa plata
+y espacio. La foto clásica del 80/20, pero puesta en números.
 
-### Impacto económico identificado
+Traducido a dinero:
 
-| Hallazgo | Magnitud | Acción | Impacto |
-|---|---|---|---|
-| Capital inmovilizado en sobrestock (30 SKUs C-Z/C-Y) | 30 SKUs con exceso | Reducir lotes de compra en items C | **$1,1M liberable** |
-| Ventas en riesgo por quiebres (8 SKUs bajo ROP) | 8 SKUs críticos | Reposición urgente A-X/A-Y | **$2,2M en riesgo** |
-| Ahorro en costos de pedido con política EOQ | 120 SKUs | Adoptar lote EOQ vs frecuencia fija mensual | **$3,5M/año** |
-| Automatización del cálculo mensual de stock | 8 h/mes → 30 s | Ejecutar `analisis_abcxyz.py` mensualmente | **$270k/año** |
+| Hallazgo | Detalle | Impacto |
+|---|---|---|
+| Capital parado en sobrestock | 30 productos con exceso sobre su política óptima | **$1,1 M ARS** liberables |
+| Ventas en riesgo por quiebre | 8 productos por debajo del punto de reorden | **$2,2 M ARS** en riesgo |
+| Comprar en lote óptimo (EOQ) | menos órdenes en los ítems lentos, mismo nivel de servicio | **$3,5 M ARS/año** |
+| Automatizar el cálculo mensual | de 8 h de trabajo manual a 30 segundos | **$0,27 M ARS/año** |
 
-### 💰 Impacto total estimado: **~$7,0M**
-
-- $3,3M en capital y ventas recuperables (sobrestock + substock)
-- $3,7M en ahorros recurrentes (EOQ + automatización)
-
-El detalle con supuestos declarados está en [`informe.md`](./informe.md).
+**Impacto total estimado: ~$7,0 M ARS.** El detalle, con cada supuesto declarado, está en
+[`informe.md`](./informe.md).
 
 ---
 
-## Dashboard generado
+## Cómo leo el impacto (y qué asumí)
 
-**Panel de Inventario — 5 visualizaciones en un solo comando**
+No me gusta tirar un número sin decir de dónde sale, así que estos son los supuestos que hay detrás.
+Son discutibles a propósito — un analista tiene que poder defenderlos o cambiarlos:
 
-![Dashboard ABC-XYZ de Inventario](./output/dashboard_inventario.png)
-
-📄 [Descargar reporte ejecutivo completo (PDF)](./output/Reporte_OptimizacionInventario.pdf)
-
-El dashboard muestra:
-1. **Matriz ABC-XYZ** — dónde está cada SKU y cuánto vale cada celda
-2. **Curva Pareto ABC** — concentración del revenue en los primeros 21 SKUs
-3. **Top 10 sobrestock** — SKUs con más capital inmovilizado
-4. **Top 10 riesgo de quiebre** — SKUs bajo su punto de reorden
-5. **KPI boxes** — los 4 impactos económicos en una vista
-
----
-
-## Técnicas utilizadas
-
-- **Clasificación ABC** por revenue acumulado (pandas `groupby` + `cumsum`).
-- **Clasificación XYZ** por coeficiente de variación (CV = σ / μ) de la demanda mensual.
-- **Safety stock estadístico**: `SS = Z × σ × √LT` con nivel de servicio del 95 %.
-- **Reorder point**: `ROP = μ × LT + SS`.
-- **Economic Order Quantity**: `EOQ = √(2DS/H)` donde D = demanda anual, S = costo de pedido,
-  H = costo de holding (25 % del costo unitario).
-- **Identificación de excesos y déficits**: comparación de stock actual vs ROP y ROP + EOQ.
-- **Dashboard de 5 paneles** con matplotlib — colores por clase ABC-XYZ, semáforo rojo/naranja
-  para los SKUs críticos.
-- **Pipeline reproducible**: dos scripts ejecutables de punta a punta, sin pasos manuales.
+- **Nivel de servicio del 95%** (Z = 1,645). Es una decisión de política, no una verdad: subirlo al
+  98% agranda el stock de seguridad (y el capital inmovilizado). Lo dejé plano en 95% para todos,
+  aunque **no es lo ideal** (ver más abajo).
+- **Costo de mantener stock = 25% anual** del costo del producto (almacenamiento + capital + merma).
+  Es el rango habitual del sector; con otro número el EOQ cambia.
+- **Lead time fijo por producto.** En la vida real el proveedor a veces tarda más; ese riesgo hoy no
+  está modelado.
+- **Ahorro de tiempo** valuado a $3.000 ARS/hora del analista, 8 h/mes → 30 s.
 
 ---
 
-## Archivos
+## Limitaciones y qué haría distinto
 
-| Archivo | Descripción |
-|---|---|
-| [`datos/generar_datos.py`](./datos/generar_datos.py) | Generador reproducible (SEED=42) — 3 CSVs |
-| [`src/analisis_abcxyz.py`](./src/analisis_abcxyz.py) | Análisis completo + dashboard + impacto |
-| [`output/clasificacion_abcxyz.csv`](./output/clasificacion_abcxyz.csv) | 120 SKUs con clase ABC-XYZ, CV y revenue |
-| [`output/politica_inventario.csv`](./output/politica_inventario.csv) | SS, ROP, EOQ, sobrestock y déficit por SKU |
-| [`output/dashboard_inventario.png`](./output/dashboard_inventario.png) | Dashboard ejecutivo de 5 paneles |
-| [`output/Reporte_OptimizacionInventario.pdf`](./output/Reporte_OptimizacionInventario.pdf) | Reporte ejecutivo completo (PDF) |
-| [`informe.md`](./informe.md) | Hallazgos con supuestos y tabla de impacto |
-| [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Proceso de construcción fase a fase |
+Si tuviera que llevar esto a una empresa de verdad, hay tres cosas que cambiaría antes:
+
+1. **Nivel de servicio diferenciado por clase.** Usé 95% para todos, pero no tiene sentido cuidar
+   igual un A-X (que no puede faltar) que un C-Z (que casi no se vende). Le pondría **98% a los A-X**
+   y **90% a los C-Z**: más plata donde importa, menos capital atado donde no.
+2. **Demanda con estacionalidad.** El modelo asume una demanda mensual sin patrón. Si el negocio
+   tiene picos (fiestas, verano), el punto de reorden se queda corto en temporada alta.
+3. **Validar sobre datos reales.** Acá probé que el método funciona sobre datos sintéticos. El paso
+   siguiente sería correrlo con el historial real de una distribuidora y ajustar los supuestos.
+
+El EOQ, además, es más confiable en los productos de demanda estable (X/Y) que en los erráticos (Z),
+donde la fórmula empieza a hacer agua — a esos conviene manejarlos con revisión periódica, no con
+lote fijo.
 
 ---
 
-## Cómo reproducirlo
+## Qué muestra el dashboard
+
+El script genera este panel de una sola corrida (arriba):
+
+1. **Salud del inventario** — un dónut que muestra, de un vistazo, cuántos productos están sanos y
+   cuántos necesitan acción (sobrestock o riesgo de quiebre).
+2. **Regla 80/20** — cuánto del catálogo vs cuánto de la facturación aporta cada clase A/B/C.
+3. **Top capital atrapado** — los productos con más plata inmovilizada en sobrestock.
+4. **Top riesgo de quiebre** — los productos por debajo del punto de reorden, a reponer ya.
+5. **Tarjetas de impacto** — los cuatro números económicos en una fila.
+
+📄 También lo dejé como [reporte ejecutivo en PDF](./output/Reporte_OptimizacionInventario.pdf).
+
+---
+
+## Reproducirlo
 
 ```bash
 cd proyectos/python/optimizacion-inventario-abcxyz
-python datos/generar_datos.py     # genera los 3 CSVs (semilla fija)
-python src/analisis_abcxyz.py     # genera dashboard, CSVs de output e impacto
+python datos/generar_datos.py     # genera los 3 CSV (semilla fija SEED=42)
+python src/analisis_abcxyz.py     # clasifica, calcula la política, arma el dashboard y mide el impacto
 ```
 
-Requiere: `pandas`, `numpy`, `matplotlib` (incluidos en `requirements.txt`).
+Requiere `pandas`, `numpy` y `matplotlib` (están en `requirements.txt`).
+
+## Archivos
+
+| Archivo | Qué es |
+|---|---|
+| [`datos/generar_datos.py`](./datos/generar_datos.py) | Generador reproducible de los 3 CSV |
+| [`src/analisis_abcxyz.py`](./src/analisis_abcxyz.py) | El análisis completo: clasificación + política + dashboard + impacto |
+| [`output/clasificacion_abcxyz.csv`](./output/clasificacion_abcxyz.csv) | Los 120 productos con su clase, CV y facturación |
+| [`output/politica_inventario.csv`](./output/politica_inventario.csv) | Stock de seguridad, ROP, EOQ, exceso y déficit por producto |
+| [`output/dashboard_inventario.png`](./output/dashboard_inventario.png) | El panel ejecutivo |
+| [`informe.md`](./informe.md) · [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Hallazgos con supuestos · proceso de construcción |
 
 ---
 
-## Qué demuestra este proyecto
-
-Que la gestión de inventario no es una cuestión de intuición — es estadística aplicada. El mismo
-dataset que el comprador "conocía de memoria" ocultaba $7,0M de oportunidad: capital mal ubicado
-en productos lentos y ventas en riesgo en los productos estrella. El modelo lo detecta en 30
-segundos, genera una política óptima por SKU y la actualiza automáticamente cada mes.
-
-La metodología (ABC-XYZ + safety stock + EOQ) es estándar en supply chain profesional; lo que
-marca la diferencia es implementarla de forma reproducible, automatizada y con impacto cuantificado.
-
----
-
-*Datos simulados con distribuciones realistas del sector distribución · Portfolio de Datos y Analítica*
+*Stack: Python (pandas, numpy, matplotlib). Datos sintéticos del sector distribución, semilla fija
+para que el resultado sea siempre el mismo. Importes en pesos argentinos.*
