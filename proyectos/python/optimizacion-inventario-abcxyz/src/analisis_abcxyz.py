@@ -61,6 +61,11 @@ COLORES_MATRIX = {
 TEXTO_OSCURO = {AZUL_OSC, AZUL_MED, NARANJA, VERDE}
 
 
+def _money(v: float) -> str:
+    """Formato de dinero consistente: millones en M, miles en k."""
+    return f"${v/1e6:.1f}M" if v >= 1e6 else f"${v/1e3:,.0f}k"
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # CARGA
 # ══════════════════════════════════════════════════════════════════════════════
@@ -173,8 +178,14 @@ def medir_impacto(df: pd.DataFrame) -> dict:
 def generar_dashboard(df: pd.DataFrame, impacto: dict) -> None:
     fig = plt.figure(figsize=(18, 15), facecolor="white")
     fig.suptitle(
-        "Panel de Inventario — Análisis ABC-XYZ | NorteLogix S.A. | 2023-2024",
-        fontsize=15, fontweight="bold", color=AZUL_OSC, y=0.98
+        "Panel de Inventario — Análisis ABC-XYZ | NorteLogix S.A.",
+        fontsize=15, fontweight="bold", color=AZUL_OSC, y=0.975
+    )
+    fig.text(
+        0.5, 0.952,
+        f"Impacto total identificado: {_money(impacto['total'])} ARS   ·   "
+        f"120 productos   ·   demanda 2023-2024   ·   datos sintéticos reproducibles",
+        ha="center", fontsize=10.5, color="#666666",
     )
 
     gs = GridSpec(3, 2, figure=fig, hspace=0.60, wspace=0.30,
@@ -262,7 +273,8 @@ def _panel_salud(ax, df):
     ax.text(0, -0.20, "del stock\nsaludable", ha="center", va="center",
             fontsize=9.5, color="#666666", multialignment="center")
 
-    ax.set_title("Salud del Inventario — 120 productos",
+    n_problema = n_exceso + n_bajo
+    ax.set_title(f"Salud del inventario — {n_problema} de 120 productos necesitan acción",
                  fontsize=11, fontweight="bold", color=AZUL_OSC, pad=14)
 
     leyenda = [mpatches.Patch(facecolor=c, label=f"{l}  ·  {n} SKUs")
@@ -328,59 +340,59 @@ def _panel_8020(ax, df):
             fontsize=9, color="#548235", fontweight="bold")
 
 
+def _panel_ranking(ax, top, valores, cmap, color_txt, titulo, xlabel):
+    """Ranking horizontal (barras ordenadas), coloreado por severidad con una escala
+    secuencial: a mayor monto, color más intenso. Etiqueta de valor al final de cada barra."""
+    vmin, vmax = valores.min(), valores.max()
+    rng = (vmax - vmin) or 1
+    colores = [cmap(0.42 + 0.50 * (v - vmin) / rng) for v in valores]
+
+    barras = ax.barh(top["sku"], valores / 1e3, color=colores,
+                     edgecolor="white", linewidth=0.6, height=0.64, zorder=2)
+    for bar, val in zip(barras, valores):
+        ax.text(bar.get_width() * 1.02, bar.get_y() + bar.get_height() / 2,
+                f"${val/1e3:,.0f}k", va="center", ha="left",
+                fontsize=8, color=color_txt, fontweight="bold")
+
+    ax.set_title(titulo, fontsize=11, fontweight="bold", color=AZUL_OSC, pad=10)
+    ax.set_xlabel(xlabel, fontsize=8.5, color="#666666")
+    ax.xaxis.set_major_formatter(
+        plt.FuncFormatter(lambda v, _: "$0" if v == 0 else f"${v:,.0f}k"))
+    ax.tick_params(axis="y", labelsize=8.5)
+    ax.tick_params(axis="x", labelsize=8)
+    ax.xaxis.grid(True, linestyle="--", alpha=0.35, zorder=0)
+    ax.set_axisbelow(True)
+    for sp in ["top", "right"]:
+        ax.spines[sp].set_visible(False)
+    ax.set_xlim(0, vmax / 1e3 * 1.20)
+
+
 def _panel_sobrestock(ax, df):
     top = (
         df[df["capital_inmovilizado"] > 0]
-        .nlargest(10, "capital_inmovilizado")[["sku", "clase", "capital_inmovilizado"]]
+        .nlargest(10, "capital_inmovilizado")[["sku", "capital_inmovilizado"]]
         .sort_values("capital_inmovilizado")
     )
-    cols  = [COLORES_CLASE.get(c, "#CCCCCC") for c in top["clase"]]
-    barras = ax.barh(top["sku"], top["capital_inmovilizado"] / 1e3,
-                     color=cols, edgecolor="none", height=0.6)
-
-    for bar, val in zip(barras, top["capital_inmovilizado"]):
-        ax.text(bar.get_width() + bar.get_width() * 0.02,
-                bar.get_y() + bar.get_height() / 2,
-                f"${val/1e3:,.0f}k", va="center", fontsize=7.5, color="#333333")
-
-    ax.set_title("Top 10 SKUs — Capital Inmovilizado en Sobrestock",
-                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=10)
-    ax.set_xlabel("Capital inmovilizado ($k ARS)", fontsize=8.5, color="#666666")
-    ax.tick_params(axis="y", labelsize=8)
-    ax.tick_params(axis="x", labelsize=8)
-    for sp in ["top", "right"]:
-        ax.spines[sp].set_visible(False)
-    ax.set_xlim(0, top["capital_inmovilizado"].max() / 1e3 * 1.22)
+    vals = top["capital_inmovilizado"].to_numpy()
+    _panel_ranking(
+        ax, top, vals, plt.cm.Oranges, "#8A4B00",
+        f"Capital atrapado — el Top 10 inmoviliza {_money(vals.sum())}",
+        "Capital inmovilizado (miles de $ ARS)",
+    )
 
 
 def _panel_quiebre(ax, df):
     top = (
         df[df["riesgo_ventas"] > 0]
-        .nlargest(10, "riesgo_ventas")[["sku", "clase", "riesgo_ventas", "bajo_rop"]]
+        .nlargest(10, "riesgo_ventas")[["sku", "riesgo_ventas"]]
         .sort_values("riesgo_ventas")
     )
-    cols  = [ROJO if br else AMARILLO for br in top["bajo_rop"]]
-    barras = ax.barh(top["sku"], top["riesgo_ventas"] / 1e3,
-                     color=cols, edgecolor="none", height=0.6)
-
-    for bar, val in zip(barras, top["riesgo_ventas"]):
-        ax.text(bar.get_width() + bar.get_width() * 0.02,
-                bar.get_y() + bar.get_height() / 2,
-                f"${val/1e3:,.0f}k", va="center", fontsize=7.5, color="#333333")
-
-    ax.set_title("Top 10 SKUs — Ventas en Riesgo por Quiebre de Stock",
-                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=10)
-    ax.set_xlabel("Valor de ventas en riesgo ($k ARS)", fontsize=8.5, color="#666666")
-    ax.tick_params(axis="y", labelsize=8)
-    ax.tick_params(axis="x", labelsize=8)
-    for sp in ["top", "right"]:
-        ax.spines[sp].set_visible(False)
-    ax.set_xlim(0, top["riesgo_ventas"].max() / 1e3 * 1.22)
-
-    leyenda = [mpatches.Patch(facecolor=ROJO, label="Bajo ROP (urgente)"),
-               mpatches.Patch(facecolor=AMARILLO, label="En riesgo")]
-    ax.legend(handles=leyenda, fontsize=8, loc="lower right",
-              framealpha=0.8, edgecolor="none")
+    vals = top["riesgo_ventas"].to_numpy()
+    _panel_ranking(
+        ax, top, vals, plt.cm.Reds, "#8B0000",
+        f"Riesgo de quiebre — {_money(vals.sum())} en ventas a reponer ya",
+        "Ventas en riesgo (miles de $ ARS)",
+    )
 
 
 def _panel_kpis(ax, impacto: dict, df: pd.DataFrame):
@@ -390,19 +402,19 @@ def _panel_kpis(ax, impacto: dict, df: pd.DataFrame):
 
     kpis = [
         ("Capital inmovilizado\nen sobrestock",
-         f"${impacto['capital_inmovilizado']/1e6:.1f}M",
+         _money(impacto['capital_inmovilizado']),
          "Liberable al ajustar política de compra\nde SKUs C-Z con sobrestock",
-         ROJO),
-        ("Ventas en riesgo\npor quiebres (inmediato)",
-         f"${impacto['riesgo_ventas']/1e6:.1f}M",
-         f"{impacto['skus_bajo_rop']} SKUs bajo ROP — reponer urgente\nProductos A-X de alto valor",
          NARANJA),
+        ("Ventas en riesgo\npor quiebres (inmediato)",
+         _money(impacto['riesgo_ventas']),
+         f"{impacto['skus_bajo_rop']} SKUs bajo ROP — reponer urgente\nProductos A-X de alto valor",
+         ROJO),
         ("Ahorro costos de pedido\ncon política EOQ (anual)",
-         f"${impacto['ahorro_pedidos_anual']/1e3:,.0f}k/año",
+         f"{_money(impacto['ahorro_pedidos_anual'])}/año",
          "EOQ reduce frecuencia de pedido en items\nde baja rotación — menos órdenes, mismo nivel",
          VERDE),
         ("Automatización\ncálculo mensual de stock",
-         f"${impacto['ahorro_tiempo_anual']/1e3:,.0f}k/año",
+         f"{_money(impacto['ahorro_tiempo_anual'])}/año",
          f"8h manuales/mes : 30s automatizado\n"
          f"{int(HORAS_MENSUAL*12)}h/año × ${COSTO_HORA:,.0f}/h analista",
          AZUL_MED),
