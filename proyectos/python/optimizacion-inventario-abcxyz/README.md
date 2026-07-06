@@ -61,9 +61,9 @@ El modelo hace cuatro cosas que el analista promedio no hace:
 
 | | X (estable) | Y (variable) | Z (errático) |
 |---|---|---|---|
-| **A (alto valor)** | 10 SKUs — prioridad máxima | 8 SKUs | 3 SKUs |
-| **B (medio)** | 10 SKUs | 9 SKUs | 2 SKUs |
-| **C (bajo valor)** | 6 SKUs | 34 SKUs | 38 SKUs |
+| **A (alto valor)** | 13 SKUs — prioridad máxima | 7 SKUs | 1 SKU |
+| **B (medio)** | 8 SKUs | 11 SKUs | 2 SKUs |
+| **C (bajo valor)** | 5 SKUs | 33 SKUs | 40 SKUs |
 
 > Los **AX** son los productos estrella: alta facturación, demanda predecible — los que más duele
 > quedarse sin stock. Los **CZ** son la "cola larga": bajo valor y demanda errática — donde se

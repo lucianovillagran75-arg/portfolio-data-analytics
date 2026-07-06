@@ -45,6 +45,21 @@ Inventario_FMCG_Portfolio.xlsx
 | Alertas automáticas activas | 0 | **4 tipos** | Quiebre/Muerto/Sobre/Crítico |
 | Clasificación ABC disponible | No | **Sí (automática)** | Priorización por percentil |
 
+> 💡 El capital identificado está expresado en **dólares (USD)**. Es una **estimación sobre datos simulados** del sector FMCG.
+
+---
+
+## 📈 Vista previa del panel (para verlo sin abrir Excel)
+
+Así se ve el tablero de control, con el resumen que un gerente mira de un vistazo:
+
+![Panel de Control de Inventario FMCG](./output/dashboard_inventario_fmcg.png)
+
+**Cómo se lee, en criollo:**
+- De 75 productos, **7 están por quedarse sin stock** (venta en riesgo) y **12 no rotan** (plata parada en el depósito).
+- El semáforo verde/amarillo/rojo dice, producto por producto, si hay que **comprar ya**, **frenar la compra** o **está OK**.
+- La clasificación **ABC** separa los productos que más facturan (donde nunca hay que quedarse sin stock) de la "cola larga" de bajo movimiento.
+
 ---
 
 ## 🔧 Fórmulas y técnicas utilizadas
@@ -81,6 +96,8 @@ Inventario_FMCG_Portfolio.xlsx
 | Archivo | Descripción |
 |---|---|
 | [`Inventario_FMCG_Portfolio.xlsx`](./Inventario_FMCG_Portfolio.xlsx) | Archivo principal con las 4 hojas |
+| [`generar_dashboard.py`](./generar_dashboard.py) | Genera la vista previa PNG leyendo el propio Excel (`python generar_dashboard.py`) |
+| [`output/dashboard_inventario_fmcg.png`](./output/dashboard_inventario_fmcg.png) | Vista previa del panel de control |
 | [`PASO_A_PASO.md`](./PASO_A_PASO.md) | Documentación del proceso de construcción |
 
 ---

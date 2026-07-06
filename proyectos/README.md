@@ -36,21 +36,23 @@ proyecto se aplica a un **sector** concreto de un negocio.
 <br>
 
 > **📦 Sistema de Control de Inventario FMCG** · `Excel` · _Logística y Cadena de Suministro_
-> 💰 $22.473 de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
+> 💰 USD 22.473 de capital identificado · −93 % tiempo de reportería — [Abrir →](./excel/logistica-inventario-fmcg/)
 
 > **📊 Panel de Paros, OEE y Mantenimiento Preventivo** · `Excel + VBA` · _Operaciones / Manufactura_
-> 💰 ~$8,6 M/año recuperables · OEE + Pareto de causas + macro de reporte — [Abrir →](./excel/gestion-paros-productividad-manufactura/)
+> 💰 ~$8,6 M ARS/año recuperables · OEE + Pareto de causas + macro de reporte — [Abrir →](./excel/gestion-paros-productividad-manufactura/)
 
 > **🗄️ Análisis de Rentabilidad Comercial** · `SQL` · _Comercial / Retail_
-> 💰 ~$2,0 M/año identificados — [Abrir →](./sql/rentabilidad-comercial-retail/)
+> 💰 ~$2,0 M ARS/año identificados — [Abrir →](./sql/rentabilidad-comercial-retail/)
 
 > **🐍 Automatización del Reporte Comercial + RFM** · `Python` · _Comercial / Retail_
-> 💰 ~$1,0 M/año (horas + retención) — [Abrir →](./python/automatizacion-reporte-comercial-rfm/)
+> 💰 ~$1,0 M ARS/año (horas + retención) — [Abrir →](./python/automatizacion-reporte-comercial-rfm/)
 
 > **🐍 Optimización de Inventario — Clasificación ABC-XYZ** · `Python` · _Logística y Cadena de Suministro_
-> 💰 ~$7,0M (capital liberado + ventas recuperadas + ahorro EOQ + automatización) — [Abrir →](./python/optimizacion-inventario-abcxyz/)
+> 💰 ~$7,0 M ARS (capital liberado + ventas recuperadas + ahorro EOQ + automatización) — [Abrir →](./python/optimizacion-inventario-abcxyz/)
 
 </details>
+
+> 💡 Cifras en **pesos argentinos (ARS)**, salvo el capital del proyecto FMCG (en **USD**). Todas son estimaciones sobre **datos sintéticos** con supuestos declarados en cada `informe.md`.
 
 ---
 *Última actualización: Julio 2026*

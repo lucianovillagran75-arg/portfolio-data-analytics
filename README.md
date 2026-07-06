@@ -1,9 +1,32 @@
-# 👋 Hola, soy Luciano Villagran
+# 👋 Hola, soy Luciano Villagrán
 
 **Analista de Datos | Excel · SQL · Python · Power BI · n8n | Tucumán, Argentina**
 
-Portfolio de proyectos de análisis de datos, automatización e inteligencia de negocio aplicados a distintos sectores: Comercial/Retail, Logística, Finanzas, RRHH y Operaciones.
-Cada proyecto está documentado con contexto de negocio, metodología y resultados medibles con impacto económico cuantificado.
+Convierto datos desordenados en **decisiones con números**: cuánto dinero se está perdiendo, dónde, y qué hacer para recuperarlo. Cada proyecto de este portfolio parte de un **problema real de una empresa** y termina con un **impacto medible en dinero o en horas de trabajo ahorradas**.
+
+<p align="center">
+  <img src="./proyectos/python/optimizacion-inventario-abcxyz/output/dashboard_inventario.png" alt="Ejemplo de dashboard: análisis de inventario con impacto económico" width="850">
+  <br>
+  <sub><i>Ejemplo real de entregable: panel de control de inventario que identifica ~$7,0 M ARS entre capital atrapado, ventas en riesgo y ahorros. (Proyecto de Optimización de Inventario)</i></sub>
+</p>
+
+---
+
+## 🧑‍💼 ¿Sos reclutador/a y no venís del mundo técnico? Leé esto primero
+
+No hace falta entender SQL, Python ni Power BI para evaluar este portfolio. Cada proyecto responde **una sola pregunta**: *"¿cuánta plata o cuánto tiempo le ahorré (o le generé) a la empresa?"*
+
+En criollo, esto es lo que hice en cada caso:
+
+| Proyecto | En una frase, sin tecnicismos | Beneficio |
+|---|---|---|
+| 📦 **Inventario FMCG** | Ordené el depósito de una distribuidora para que no falten los productos que más se venden ni sobren los que no rotan | Encontré **USD 22.473** de mercadería frenada y bajé el reporte de 5 h a 20 min |
+| 📊 **Paros y Mantenimiento** | Descubrí qué máquinas de una fábrica paran más y cuánto cuesta cada hora frenada | **~$8,6 M ARS/año** de producción recuperable |
+| 🗄️ **Rentabilidad Comercial** | Encontré productos que se vendían a pérdida y clientes que se estaban yendo sin que nadie lo notara | **~$2,0 M ARS/año** de margen recuperable |
+| 🐍 **Reporte Automático + Clientes** | Reemplacé un reporte que se hacía a mano cada mes y agrupé a los clientes para saber a quién retener | **~$1,0 M ARS/año** (tiempo + clientes retenidos) |
+| 🐍 **Optimización de Inventario** | Calculé cuánto comprar de cada producto para no gastar de más ni quedarme sin stock | **~$7,0 M ARS** entre capital y ventas |
+
+> 💡 **Cómo leer los números:** son **estimaciones sobre datos simulados** (inventados con criterio realista para poder mostrar el método sin usar información confidencial de ninguna empresa). Cada proyecto explica sus supuestos en un archivo `informe.md`. Las cifras están en **pesos argentinos (ARS)**, salvo el capital del proyecto FMCG, que está en **dólares (USD)**.
 
 ---
 
@@ -51,32 +74,32 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 
 > ### 📦 Sistema de Control de Inventario FMCG &nbsp;·&nbsp; `Excel`
 > **Sector:** Logística y Cadena de Suministro
-> Gestión de inventario de 75 SKUs que detecta stock muerto y quiebres inminentes.
-> 💰 **Impacto:** $22.473 de capital identificado · −93 % de tiempo de reportería
+> Gestión de inventario de 75 productos que detecta faltantes inminentes y mercadería sin rotación.
+> 💰 **Impacto:** USD 22.473 de capital identificado · −93 % de tiempo de reportería
 > 🔗 [Abrir proyecto →](./proyectos/excel/logistica-inventario-fmcg/)
 
 > ### 📊 Panel de Paros, OEE y Mantenimiento Preventivo &nbsp;·&nbsp; `Excel + VBA`
 > **Sector:** Operaciones / Manufactura
-> Panel de 4 hojas que calcula OEE, aplica Pareto de causas y automatiza el reporte mensual.
-> 💰 **Impacto:** ~$8,6 M/año recuperables · 64 % del downtime concentrado en 3 equipos
+> Panel de 4 hojas que mide la eficiencia de cada máquina, prioriza las 3 que más fallan y automatiza el reporte mensual.
+> 💰 **Impacto:** ~$8,6 M ARS/año recuperables · 64 % del tiempo parado concentrado en 3 equipos
 > 🔗 [Abrir proyecto →](./proyectos/excel/gestion-paros-productividad-manufactura/)
 
 > ### 🗄️ Análisis de Rentabilidad Comercial &nbsp;·&nbsp; `SQL`
 > **Sector:** Comercial / Retail
-> Detecta fugas de margen, clientes perdidos y brechas entre sucursales.
-> 💰 **Impacto:** ~$2,0 M/año identificados
+> Detecta productos vendidos a pérdida, clientes que se fueron y sucursales que rinden por debajo.
+> 💰 **Impacto:** ~$2,0 M ARS/año identificados
 > 🔗 [Abrir proyecto →](./proyectos/sql/rentabilidad-comercial-retail/)
 
 > ### 🐍 Automatización del Reporte Comercial + RFM &nbsp;·&nbsp; `Python`
 > **Sector:** Comercial / Retail
-> Reemplaza el reporte mensual manual y segmenta clientes (RFM) para priorizar retención.
-> 💰 **Impacto:** ~$1,0 M/año (horas ahorradas + retención)
+> Reemplaza el reporte mensual manual y agrupa clientes (RFM) para priorizar la retención.
+> 💰 **Impacto:** ~$1,0 M ARS/año (horas ahorradas + retención)
 > 🔗 [Abrir proyecto →](./proyectos/python/automatizacion-reporte-comercial-rfm/)
 
 > ### 🐍 Optimización de Inventario — Clasificación ABC-XYZ y Política de Stock &nbsp;·&nbsp; `Python`
 > **Sector:** Logística y Cadena de Suministro
-> Clasifica 120 SKUs en una matriz ABC-XYZ, calcula safety stock estadístico, punto de reorden y EOQ. Identifica capital inmovilizado en sobrestock y ventas en riesgo por quiebres.
-> 💰 **Impacto:** ~$7,0M (capital liberado + ventas recuperadas + ahorros EOQ + automatización)
+> Calcula, para cada uno de 120 productos, cuánto pedir y cuándo, para no gastar de más ni quedarse sin stock.
+> 💰 **Impacto:** ~$7,0 M ARS (capital liberado + ventas recuperadas + ahorros + automatización)
 > 🔗 [Abrir proyecto →](./proyectos/python/optimizacion-inventario-abcxyz/)
 
 </details>
@@ -85,15 +108,29 @@ Cada herramienta resuelve problemas reales en distintos **sectores** de un negoc
 
 ## 🚀 Proyecto destacado
 
-### 📦 Sistema de Control de Inventario — Distribuidora FMCG
-> Excel Avanzado · Logística · Cadena de Suministro
+### 🐍 Optimización de Inventario — Clasificación ABC-XYZ
+> Python · Logística y Cadena de Suministro
 
-Herramienta completa para gestión de inventario de 75 SKUs que detecta stock muerto, quiebres inminentes y oportunidades de reducción de costos.
+**El problema en una frase:** una distribuidora compraba "a ojo" y el resultado era el peor de los dos mundos — depósitos llenos de productos que casi nadie pide y faltantes justo de los que más se venden.
 
-**Resultados:** $22.473 en capital inmovilizado identificado · 7 quiebres de stock detectados · -93% tiempo de reportería
+**Lo que hice:** un modelo que calcula, para cada uno de los 120 productos, **cuánto pedir y en qué momento**, y que se actualiza solo cada mes en 30 segundos (antes: 8 horas de trabajo manual).
 
-[→ Ver proyecto](./proyectos/excel/logistica-inventario-fmcg/)
+**El resultado:**
+- 💰 **$1,1 M ARS** de capital atrapado en productos que sobran → liberable.
+- 🚨 **$2,2 M ARS** en ventas que se perdían por quedarse sin stock → recuperable.
+- 📉 **$3,5 M ARS/año** de ahorro comprando en lotes óptimos + **$0,27 M ARS/año** por automatizar el cálculo.
+- 🎯 **Impacto total estimado: ~$7,0 M ARS.**
+
+[→ Ver el proyecto completo, con dashboard y reporte en PDF](./proyectos/python/optimizacion-inventario-abcxyz/)
 
 ---
 
-*Stack: Excel · Python · SQL · Power BI · n8n*
+## 📬 Contacto
+
+- 📧 **Email:** lucianovillagran75@gmail.com
+- 💻 **GitHub:** [github.com/lucianovillagran75-arg](https://github.com/lucianovillagran75-arg)
+- 📍 **Ubicación:** San Miguel de Tucumán, Argentina · Disponibilidad inmediata
+
+---
+
+*Stack: Excel · Python · SQL · Power BI · n8n · Todos los proyectos usan datos sintéticos reproducibles (semilla fija), sin información confidencial de empresas reales.*
