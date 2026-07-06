@@ -17,6 +17,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import matplotlib.patheffects as pe
+from matplotlib.patches import FancyBboxPatch
 from matplotlib.gridspec import GridSpec
 from pathlib import Path
 
@@ -175,16 +177,16 @@ def generar_dashboard(df: pd.DataFrame, impacto: dict) -> None:
         fontsize=15, fontweight="bold", color=AZUL_OSC, y=0.98
     )
 
-    gs = GridSpec(3, 2, figure=fig, hspace=0.52, wspace=0.35,
+    gs = GridSpec(3, 2, figure=fig, hspace=0.60, wspace=0.30,
                   height_ratios=[1.3, 1.3, 0.7])
 
-    # -- Panel 1: Matriz ABC-XYZ heatmap --------------------------------------
+    # -- Panel 1: Salud del inventario (dónut semáforo) -----------------------
     ax1 = fig.add_subplot(gs[0, 0])
-    _panel_matrix(ax1, df)
+    _panel_salud(ax1, df)
 
-    # -- Panel 2: Pareto ABC ---------------------------------------------------
+    # -- Panel 2: Regla 80/20 — dónde está la facturación ---------------------
     ax2 = fig.add_subplot(gs[0, 1])
-    _panel_pareto(ax2, df)
+    _panel_8020(ax2, df)
 
     # -- Panel 3: Top 10 sobrestock --------------------------------------------
     ax3 = fig.add_subplot(gs[1, 0])
@@ -198,91 +200,132 @@ def generar_dashboard(df: pd.DataFrame, impacto: dict) -> None:
     ax5 = fig.add_subplot(gs[2, :])
     _panel_kpis(ax5, impacto, df)
 
+    # -- Marcos tipo tarjeta con borde de color semántico ---------------------
+    # (claro/azul = neutro-positivo · naranja = capital atrapado · rojo = urgente)
+    fig.canvas.draw()
+    _marco(fig, ax1, "#2E75B6")   # salud: neutro
+    _marco(fig, ax2, "#548235")   # facturación (dónde está el valor): positivo
+    _marco(fig, ax3, "#ED7D31")   # sobrestock: negativo (capital atrapado)
+    _marco(fig, ax4, "#C00000")   # quiebre: negativo (urgente)
+
     ruta = OUT / "dashboard_inventario.png"
     fig.savefig(ruta, dpi=140, bbox_inches="tight", facecolor="white")
     plt.close(fig)
     print(f"Dashboard guardado: {ruta}")
 
 
-def _panel_matrix(ax, df):
-    abc_cats = ["A", "B", "C"]
-    xyz_cats = ["X", "Y", "Z"]
-
-    ax.set_xlim(-0.5, 2.5)
-    ax.set_ylim(-0.5, 2.5)
-    ax.set_xticks([0, 1, 2])
-    ax.set_xticklabels(["X  (estable)", "Y  (variable)", "Z  (errático)"],
-                       fontsize=9, color="#444444")
-    ax.set_yticks([0, 1, 2])
-    ax.set_yticklabels(["C  (bajo valor)", "B  (medio)", "A  (alto valor)"],
-                       fontsize=9, color="#444444")
-    ax.set_title("Matriz ABC-XYZ — Clasificación de 120 SKUs",
-                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=10)
-    ax.set_xlabel("Variabilidad de demanda", fontsize=9, color="#666666")
-    ax.set_ylabel("Valor de facturación", fontsize=9, color="#666666")
-    for sp in ax.spines.values():
-        sp.set_visible(False)
-    ax.tick_params(length=0)
-
-    for xi, xy in enumerate(xyz_cats):
-        for yi, ab in enumerate(abc_cats):
-            y_pos  = 2 - yi
-            mask   = (df["abc"] == ab) & (df["xyz"] == xy)
-            n_skus = mask.sum()
-            rev    = df.loc[mask, "revenue_total"].sum()
-            color  = COLORES_MATRIX[(ab, xy)]
-            tc     = "white" if color in TEXTO_OSCURO else "#3D3D3D"
-
-            rect = plt.Rectangle((xi - 0.46, y_pos - 0.42), 0.92, 0.84,
-                                  facecolor=color, edgecolor="white", linewidth=2,
-                                  zorder=2)
-            ax.add_patch(rect)
-            ax.text(xi, y_pos + 0.14, f"{ab}{xy}", ha="center", va="center",
-                    fontsize=12, fontweight="bold", color=tc, zorder=3)
-            ax.text(xi, y_pos - 0.05, f"{n_skus} SKUs", ha="center", va="center",
-                    fontsize=8.5, color=tc, zorder=3)
-            ax.text(xi, y_pos - 0.23, f"${rev/1e6:.1f}M", ha="center", va="center",
-                    fontsize=7.5, color=tc, alpha=0.90, zorder=3)
-
-
-def _panel_pareto(ax, df):
-    pareto = (
-        df[["sku", "revenue_total", "pct_rev", "pct_acum", "abc"]]
-        .sort_values("revenue_total", ascending=False)
-        .reset_index(drop=True)
+def _marco(fig, ax, color, ml=0.020, mr=0.020, mb=0.034, mt=0.055):
+    """Dibuja una tarjeta (fondo blanco, borde de color y sombra) detrás del panel
+    para delimitarlo visualmente. Márgenes en fracción de figura (más arriba para
+    incluir el título del gráfico)."""
+    pos = ax.get_position()
+    x0, y0 = pos.x0 - ml, pos.y0 - mb
+    w, h   = pos.width + ml + mr, pos.height + mb + mt
+    card = FancyBboxPatch(
+        (x0, y0), w, h, transform=fig.transFigure,
+        boxstyle="round,pad=0,rounding_size=0.012",
+        facecolor="white", edgecolor=color, linewidth=2.4,
+        zorder=-1, clip_on=False,
+        mutation_aspect=fig.get_figheight() / fig.get_figwidth(),
     )
-    x    = range(len(pareto))
-    cols = [AZUL_OSC if a == "A" else (AZUL_MED if a == "B" else AZUL_CLAR)
-            for a in pareto["abc"]]
+    card.set_path_effects([pe.withSimplePatchShadow(
+        offset=(4, -4), shadow_rgbFace="#9AA6B2", alpha=0.28)])
+    fig.add_artist(card)
 
-    ax.bar(x, pareto["revenue_total"] / 1e6, color=cols, width=1.0, edgecolor="none")
-    ax2t = ax.twinx()
-    ax2t.plot(x, pareto["pct_acum"] * 100, color=NARANJA, linewidth=1.8, zorder=5)
-    ax2t.axhline(80, color=AZUL_OSC, linestyle="--", linewidth=0.9, alpha=0.7)
-    ax2t.axhline(95, color=AZUL_MED, linestyle="--", linewidth=0.9, alpha=0.7)
-    ax2t.set_ylabel("% Acumulado", fontsize=8.5, color=NARANJA)
-    ax2t.set_ylim(0, 105)
-    ax2t.tick_params(axis="y", colors=NARANJA, labelsize=8)
 
-    ax.set_title("Curva Pareto ABC — Concentración de Revenue",
-                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=10)
-    ax.set_xlabel("SKUs (ordenados por revenue)", fontsize=8.5, color="#666666")
-    ax.set_ylabel("Revenue total (M$)", fontsize=8.5, color=AZUL_OSC)
-    ax.set_xlim(-1, len(pareto))
-    ax.tick_params(axis="x", labelbottom=False, length=0)
-    ax.tick_params(axis="y", labelsize=8)
-    for sp in ["top", "right"]:
+def _panel_salud(ax, df):
+    """Dónut semáforo: qué proporción de los SKUs está sana vs con problemas.
+    Verde claro = saludable · Naranja = sobrestock · Rojo = riesgo de quiebre."""
+    n_bajo   = int(df["bajo_rop"].sum())
+    n_exceso = int((df["exceso_unidades"] > 0).sum())
+    n_sano   = len(df) - n_bajo - n_exceso
+
+    datos   = [n_sano, n_exceso, n_bajo]
+    labels  = ["Saludable", "Sobrestock", "Riesgo de quiebre"]
+    colores = ["#A9D18E", "#F4B183", "#FF6B6B"]   # verde claro · naranja · rojo
+
+    wedges, _ = ax.pie(
+        datos, colors=colores, startangle=90, counterclock=False,
+        wedgeprops=dict(width=0.42, edgecolor="white", linewidth=2.5),
+    )
+    # Etiqueta de cantidad sobre cada gajo con peso suficiente
+    for w, val in zip(wedges, datos):
+        if val == 0:
+            continue
+        ang = np.deg2rad((w.theta1 + w.theta2) / 2)
+        ax.text(0.79 * np.cos(ang), 0.79 * np.sin(ang), f"{val}",
+                ha="center", va="center", fontsize=11, fontweight="bold", color="#3D3D3D")
+
+    pct_sano = n_sano / len(df) * 100
+    ax.text(0, 0.10, f"{pct_sano:.0f}%", ha="center", va="center",
+            fontsize=30, fontweight="bold", color="#548235")
+    ax.text(0, -0.20, "del stock\nsaludable", ha="center", va="center",
+            fontsize=9.5, color="#666666", multialignment="center")
+
+    ax.set_title("Salud del Inventario — 120 productos",
+                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=14)
+
+    leyenda = [mpatches.Patch(facecolor=c, label=f"{l}  ·  {n} SKUs")
+               for c, l, n in zip(colores, labels, datos)]
+    ax.legend(handles=leyenda, fontsize=8.5, loc="center",
+              bbox_to_anchor=(0.5, -0.10), ncol=1, frameon=False)
+    ax.set_aspect("equal")
+
+
+def _panel_8020(ax, df):
+    """Regla 80/20 en formato gerencial: dos barras 100% comparando la porción de
+    PRODUCTOS vs la porción de FACTURACIÓN que aporta cada clase A/B/C."""
+    g = (df.groupby("abc")
+           .agg(n=("sku", "count"), rev=("revenue_total", "sum"))
+           .reindex(["A", "B", "C"]))
+    pct_n   = g["n"]   / g["n"].sum()   * 100
+    pct_rev = g["rev"] / g["rev"].sum() * 100
+
+    colores   = {"A": AZUL_OSC, "B": AZUL_MED, "C": AZUL_CLAR}
+    tc_claro  = {"A": "white",  "B": "white",  "C": "#3D3D3D"}
+
+    filas = [(1, pct_n), (0, pct_rev)]
+    for y, serie in filas:
+        izq = 0.0
+        for cls in ["A", "B", "C"]:
+            w = float(serie[cls])
+            ax.barh(y, w, left=izq, color=colores[cls], edgecolor="white",
+                    height=0.6, zorder=2)
+            if w >= 5:
+                ax.text(izq + w / 2, y, f"{w:.0f}%", ha="center", va="center",
+                        fontsize=10, fontweight="bold", color=tc_claro[cls], zorder=3)
+            izq += w
+
+    ax.set_xlim(0, 100)
+    ax.set_ylim(-1.5, 2.5)
+    ax.set_yticks([0, 1])
+    ax.set_yticklabels(["% de\nfacturación", "% de\nproductos"],
+                       fontsize=9.5, color="#444444")
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%"))
+    ax.tick_params(axis="x", labelsize=8)
+    ax.set_xticks([0, 20, 40, 60, 80, 100])
+    for sp in ["top", "right", "left"]:
         ax.spines[sp].set_visible(False)
+    ax.tick_params(axis="y", length=0)
 
-    n_a = (pareto["abc"] == "A").sum()
-    n_b = (pareto["abc"] == "B").sum()
+    n_a   = int(g.loc["A", "n"])
+    rev_a = float(pct_rev["A"])
+    ax.set_title("Regla 80/20 — Dónde está tu facturación",
+                 fontsize=11, fontweight="bold", color=AZUL_OSC, pad=14)
+
+    # Leyenda arriba (dentro del gráfico) y conclusión abajo (dentro del gráfico)
     leyenda = [
-        mpatches.Patch(facecolor=AZUL_OSC, label=f"A ({n_a} SKUs)"),
-        mpatches.Patch(facecolor=AZUL_MED, label=f"B ({n_b} SKUs)"),
-        mpatches.Patch(facecolor=AZUL_CLAR, label=f"C ({len(pareto)-n_a-n_b} SKUs)"),
+        mpatches.Patch(facecolor=AZUL_OSC,  label="A · alto valor"),
+        mpatches.Patch(facecolor=AZUL_MED,  label="B · valor medio"),
+        mpatches.Patch(facecolor=AZUL_CLAR, label="C · bajo valor"),
     ]
-    ax.legend(handles=leyenda, fontsize=8, loc="upper right",
-              framealpha=0.8, edgecolor="none")
+    ax.legend(handles=leyenda, fontsize=8.5, loc="upper center",
+              bbox_to_anchor=(0.5, 1.0), ncol=3, frameon=False)
+    ax.text(0.5, 0.055,
+            f"Los {n_a} productos de clase A ({pct_n['A']:.0f}% del catálogo) "
+            f"concentran el {rev_a:.0f}% de la facturación.",
+            transform=ax.transAxes, ha="center", va="center",
+            fontsize=9, color="#548235", fontweight="bold")
 
 
 def _panel_sobrestock(ax, df):
