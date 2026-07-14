@@ -1,0 +1,320 @@
+<title>Panel de Inventario ABC-XYZ — NorteLogix S.A.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --ground:#EAEEF0; --surface:#FFFFFF; --surface-2:#F5F8F9;
+    --ink:#13212A; --ink-soft:#5A6B75; --ink-faint:#8A99A1;
+    --line:#DBE3E7; --line-strong:#C7D2D8;
+    --brand:#0E6E78; --brand-ink:#0A555D;
+    --good:#2F9E68; --good-bg:#E6F4EC;
+    --warn:#DD8A2B; --warn-bg:#FBEEDD;
+    --crit:#D24545; --crit-bg:#FBE7E7;
+    --shadow:0 1px 2px rgba(19,33,42,.06),0 8px 24px rgba(19,33,42,.06);
+    --radius:14px;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#0C1317; --surface:#141E24; --surface-2:#1A262D;
+      --ink:#E7EEF1; --ink-soft:#96A6AF; --ink-faint:#6D7F88;
+      --line:#26343C; --line-strong:#33454E;
+      --brand:#43C1CB; --brand-ink:#7FD8DF;
+      --good:#46B77C; --good-bg:#15302A;
+      --warn:#E7A24C; --warn-bg:#372817;
+      --crit:#E86A6A; --crit-bg:#3A1E1E;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#EAEEF0; --surface:#FFFFFF; --surface-2:#F5F8F9;
+    --ink:#13212A; --ink-soft:#5A6B75; --ink-faint:#8A99A1;
+    --line:#DBE3E7; --line-strong:#C7D2D8;
+    --brand:#0E6E78; --brand-ink:#0A555D;
+    --good:#2F9E68; --good-bg:#E6F4EC; --warn:#DD8A2B; --warn-bg:#FBEEDD;
+    --crit:#D24545; --crit-bg:#FBE7E7;
+    --shadow:0 1px 2px rgba(19,33,42,.06),0 8px 24px rgba(19,33,42,.06);
+  }
+  :root[data-theme="dark"]{
+    --ground:#0C1317; --surface:#141E24; --surface-2:#1A262D;
+    --ink:#E7EEF1; --ink-soft:#96A6AF; --ink-faint:#6D7F88;
+    --line:#26343C; --line-strong:#33454E;
+    --brand:#43C1CB; --brand-ink:#7FD8DF;
+    --good:#46B77C; --good-bg:#15302A; --warn:#E7A24C; --warn-bg:#372817;
+    --crit:#E86A6A; --crit-bg:#3A1E1E;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font-family:var(--font);line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    font-variant-numeric:tabular-nums;
+  }
+  .wrap{max-width:1140px;margin:0 auto;padding:28px 20px 44px}
+
+  /* ---- Header ---- */
+  header.top{
+    display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 24px;box-shadow:var(--shadow);
+    border-top:3px solid var(--brand);
+  }
+  .brand{display:flex;align-items:center;gap:14px;min-width:0}
+  .mono{
+    flex:none;width:46px;height:46px;border-radius:11px;display:grid;place-items:center;
+    background:var(--brand);color:#fff;font-weight:700;font-size:15px;letter-spacing:.5px;
+  }
+  :root[data-theme="dark"] .mono,@media (prefers-color-scheme:dark){.mono{color:#08171a}}
+  .brand h1{margin:0;font-size:19px;font-weight:700;letter-spacing:-.2px;text-wrap:balance}
+  .brand p{margin:2px 0 0;font-size:13px;color:var(--ink-soft)}
+  .headline{text-align:right}
+  .headline .lab{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);font-weight:600}
+  .headline .val{font-size:34px;font-weight:800;letter-spacing:-1px;color:var(--brand);line-height:1.05}
+  .headline .val small{font-size:16px;font-weight:700;color:var(--ink-soft);letter-spacing:0}
+
+  /* ---- KPI strip ---- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+  .kpi{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:15px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:7px;
+  }
+  .kpi .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .kpi .name{font-size:12.5px;color:var(--ink-soft);font-weight:600;line-height:1.3}
+  .kpi .num{font-size:27px;font-weight:800;letter-spacing:-.6px}
+  .kpi .sub{font-size:11.5px;color:var(--ink-faint)}
+  .pill{font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+  .pill.warn{background:var(--warn-bg);color:var(--warn)} .num.warn{color:var(--warn)}
+  .pill.crit{background:var(--crit-bg);color:var(--crit)} .num.crit{color:var(--crit)}
+  .pill.good{background:var(--good-bg);color:var(--good)} .num.good{color:var(--good)}
+  .pill.brand{background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand-ink)} .num.brand{color:var(--brand-ink)}
+
+  /* ---- Panels ---- */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 20px;box-shadow:var(--shadow);
+  }
+  .card h2{margin:0 0 3px;font-size:15px;font-weight:700;letter-spacing:-.2px}
+  .card .cap{margin:0 0 16px;font-size:12.5px;color:var(--ink-soft)}
+
+  /* ---- Donut ---- */
+  .donut-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .donut{position:relative;flex:none;width:170px;height:170px}
+  .donut svg{transform:rotate(-90deg)}
+  .donut .center{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+  .donut .center .big{font-size:38px;font-weight:800;color:var(--good);letter-spacing:-1.5px;line-height:1}
+  .donut .center .cap2{font-size:11px;color:var(--ink-soft);margin-top:2px}
+  .legend{display:flex;flex-direction:column;gap:11px;min-width:150px}
+  .legend .li{display:flex;align-items:center;gap:9px;font-size:13px}
+  .legend .dot{width:11px;height:11px;border-radius:3px;flex:none}
+  .legend .li b{margin-left:auto;font-weight:700}
+  .legend .li span{color:var(--ink-soft)}
+
+  /* ---- 80/20 stacked ---- */
+  .stack{display:flex;flex-direction:column;gap:16px}
+  .stack .rowlab{font-size:12px;color:var(--ink-soft);margin-bottom:6px;font-weight:600}
+  .bar100{display:flex;height:34px;border-radius:8px;overflow:hidden;background:var(--surface-2)}
+  /* Segmentos A/B/C: colores fijos (no dependen del tema) → texto fijo por luminancia */
+  .seg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:12.5px;font-weight:700;min-width:0}
+  .seg.c{color:#13212A!important}   /* fondo C claro → texto oscuro en ambos temas */
+  .legend-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
+  .legend-row .li{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-soft)}
+  .concl{margin-top:16px;padding:11px 14px;border-radius:10px;background:var(--surface-2);
+    font-size:12.5px;color:var(--ink);border:1px solid var(--line)}
+  .concl b{color:var(--brand-ink)}
+
+  /* ---- Ranking bars ---- */
+  .rank{display:flex;flex-direction:column;gap:9px}
+  .rank .rr{display:grid;grid-template-columns:74px 1fr auto;align-items:center;gap:10px}
+  .rank .sku{font-size:12px;color:var(--ink-soft);font-weight:600}
+  .track{height:20px;background:var(--surface-2);border-radius:6px;overflow:hidden}
+  .fill{height:100%;border-radius:6px;transform-origin:left;transition:width .9s cubic-bezier(.2,.7,.2,1)}
+  .rank .amt{font-size:12.5px;font-weight:700;white-space:nowrap}
+  .foot-note{font-size:12px;color:var(--ink-soft);margin-top:14px}
+  .foot-note b{color:var(--ink)}
+
+  footer.pg{margin-top:22px;text-align:center;font-size:12px;color:var(--ink-faint);line-height:1.7}
+  footer.pg b{color:var(--ink-soft);font-weight:600}
+
+  @media (max-width:820px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .grid{grid-template-columns:1fr}
+    .headline{text-align:left}
+  }
+  @media (max-width:460px){
+    .kpis{grid-template-columns:1fr}
+    .rank .rr{grid-template-columns:64px 1fr auto}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .fill{transition:none!important}
+    *{animation:none!important}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="mono">NL</div>
+      <div>
+        <h1>Panel de Inventario — Análisis ABC-XYZ</h1>
+        <p>NorteLogix S.A. · distribuidora mayorista · 120 productos · demanda 2023–2024</p>
+      </div>
+    </div>
+    <div class="headline">
+      <div class="lab">Impacto total identificado</div>
+      <div class="val">$7,0 M <small>ARS</small></div>
+    </div>
+  </header>
+
+  <section class="kpis" aria-label="Indicadores económicos">
+    <div class="kpi">
+      <div class="row"><span class="name">Capital atrapado<br>en sobrestock</span><span class="pill warn">Liberable</span></div>
+      <div class="num warn">$1,1 M</div>
+      <div class="sub">30 productos con exceso sobre su política óptima</div>
+    </div>
+    <div class="kpi">
+      <div class="row"><span class="name">Ventas en riesgo<br>por quiebre</span><span class="pill crit">Urgente</span></div>
+      <div class="num crit">$2,2 M</div>
+      <div class="sub">8 productos por debajo del punto de reorden</div>
+    </div>
+    <div class="kpi">
+      <div class="row"><span class="name">Ahorro con<br>política EOQ</span><span class="pill good">Anual</span></div>
+      <div class="num good">$3,5 M<span style="font-size:14px">/año</span></div>
+      <div class="sub">Menos órdenes en ítems lentos, mismo servicio</div>
+    </div>
+    <div class="kpi">
+      <div class="row"><span class="name">Automatización<br>del cálculo</span><span class="pill brand">Anual</span></div>
+      <div class="num brand">$270 k<span style="font-size:14px">/año</span></div>
+      <div class="sub">De 8 h de trabajo manual a 30 segundos</div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <!-- Salud del inventario -->
+    <div class="card">
+      <h2>Salud del inventario</h2>
+      <p class="cap">38 de 120 productos necesitan acción</p>
+      <div class="donut-wrap">
+        <div class="donut">
+          <svg width="170" height="170" viewBox="0 0 170 170" role="img" aria-label="68% del stock saludable">
+            <circle cx="85" cy="85" r="62" fill="none" stroke="var(--surface-2)" stroke-width="20"></circle>
+            <circle class="arc" cx="85" cy="85" r="62" fill="none" stroke="var(--good)" stroke-width="20"
+              stroke-linecap="butt" stroke-dasharray="0 999" data-len="266.1"></circle>
+            <circle class="arc" cx="85" cy="85" r="62" fill="none" stroke="var(--warn)" stroke-width="20"
+              stroke-linecap="butt" stroke-dasharray="0 999" data-len="97.4" data-offset="266.1"></circle>
+            <circle class="arc" cx="85" cy="85" r="62" fill="none" stroke="var(--crit)" stroke-width="20"
+              stroke-linecap="butt" stroke-dasharray="0 999" data-len="26.0" data-offset="363.5"></circle>
+          </svg>
+          <div class="center"><div class="big">68%</div><div class="cap2">stock saludable</div></div>
+        </div>
+        <div class="legend">
+          <div class="li"><span class="dot" style="background:var(--good)"></span><span>Saludable</span><b>82</b></div>
+          <div class="li"><span class="dot" style="background:var(--warn)"></span><span>Sobrestock</span><b>30</b></div>
+          <div class="li"><span class="dot" style="background:var(--crit)"></span><span>Riesgo de quiebre</span><b>8</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Regla 80/20 -->
+    <div class="card">
+      <h2>Regla 80/20 — dónde está tu facturación</h2>
+      <p class="cap">Pocos productos concentran casi toda la caja</p>
+      <div class="stack">
+        <div>
+          <div class="rowlab">% de productos (catálogo)</div>
+          <div class="bar100">
+            <div class="seg" style="background:#0E5F6B;width:17.5%">18%</div>
+            <div class="seg" style="background:#2F8794;width:17.5%">17%</div>
+            <div class="seg c" style="background:#C4DDE1;width:65%">65%</div>
+          </div>
+        </div>
+        <div>
+          <div class="rowlab">% de la facturación</div>
+          <div class="bar100">
+            <div class="seg" style="background:#0E5F6B;width:80%">80%</div>
+            <div class="seg" style="background:#2F8794;width:15%">15%</div>
+            <div class="seg c" style="background:#C4DDE1;width:5%" title="C · bajo valor: 5%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="legend-row">
+        <div class="li"><span class="dot" style="width:11px;height:11px;border-radius:3px;background:#0E5F6B"></span>A · alto valor</div>
+        <div class="li"><span class="dot" style="width:11px;height:11px;border-radius:3px;background:#2F8794"></span>B · valor medio</div>
+        <div class="li"><span class="dot" style="width:11px;height:11px;border-radius:3px;background:#C4DDE1"></span>C · bajo valor</div>
+      </div>
+      <div class="concl">Los <b>21 productos de clase A</b> (18% del catálogo) concentran el <b>80% de la facturación</b>.</div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <!-- Capital atrapado -->
+    <div class="card">
+      <h2>Capital atrapado en sobrestock</h2>
+      <p class="cap">Top 8 productos — dónde está la plata inmovilizada</p>
+      <div class="rank" id="rank-cap"></div>
+      <div class="foot-note">El Top 10 inmoviliza <b>$725 k ARS</b> · reducir lotes de compra en ítems C.</div>
+    </div>
+
+    <!-- Riesgo de quiebre -->
+    <div class="card">
+      <h2>Riesgo de quiebre — reponer ya</h2>
+      <p class="cap">Top 8 productos por debajo del punto de reorden</p>
+      <div class="rank" id="rank-risk"></div>
+      <div class="foot-note"><b>$2,2 M ARS</b> en ventas en riesgo inmediato · priorizar A-X de alto valor.</div>
+    </div>
+  </section>
+
+  <footer class="pg">
+    <b>Análisis ABC-XYZ + política de inventario (safety stock · ROP · EOQ)</b> — construido en Python (pandas, numpy, matplotlib).<br>
+    Datos sintéticos reproducibles (semilla fija) · importes en pesos argentinos (ARS) · por Luciano Villagrán.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  // Donut arcs
+  var arcs = document.querySelectorAll(".donut .arc");
+  function drawDonut(){
+    arcs.forEach(function(a,i){
+      var len = parseFloat(a.dataset.len);
+      var off = parseFloat(a.dataset.offset||"0");
+      // position: negative dashoffset shifts start point along the circle
+      a.style.strokeDashoffset = (-off) + "";
+      var set = function(){ a.style.strokeDasharray = len + " 999"; };
+      if(reduce){ a.style.transition="none"; set(); }
+      else { a.style.transition="stroke-dasharray .9s cubic-bezier(.2,.7,.2,1) " + (i*0.12) + "s"; setTimeout(set, 60); }
+    });
+  }
+
+  // Ranking bars
+  var cap=[["SKU-050",115],["SKU-058",102],["SKU-047",99],["SKU-046",76],["SKU-051",69],["SKU-049",65],["SKU-053",56],["SKU-054",54]];
+  var risk=[["SKU-004",518],["SKU-005",515],["SKU-001",361],["SKU-002",296],["SKU-003",234],["SKU-006",104],["SKU-008",89],["SKU-007",63]];
+  function ar(n){return n.toLocaleString("de-DE");}
+  function build(id, data, kind){
+    var max = Math.max.apply(null, data.map(function(d){return d[1];}));
+    var host = document.getElementById(id);
+    data.forEach(function(d,i){
+      var t = d[1]/max; // 0..1
+      var color = kind==="cap"
+        ? "hsl(28 "+(55+t*25)+"% "+(62-t*24)+"%)"   // ámbar → naranja intenso
+        : "hsl(2 "+(58+t*22)+"% "+(66-t*24)+"%)";   // rojo claro → rojo intenso
+      var rr=document.createElement("div"); rr.className="rr";
+      rr.innerHTML='<span class="sku">'+d[0]+'</span>'+
+        '<div class="track"><div class="fill" style="width:0;background:'+color+'"></div></div>'+
+        '<span class="amt">$'+ar(d[1])+' k</span>';
+      host.appendChild(rr);
+      var fill=rr.querySelector(".fill");
+      var target=(d[1]/max*100).toFixed(1)+"%";
+      if(reduce){ fill.style.transition="none"; fill.style.width=target; }
+      else { setTimeout(function(){ fill.style.width=target; }, 120+i*70); }
+    });
+  }
+
+  function start(){ drawDonut(); build("rank-cap",cap,"cap"); build("rank-risk",risk,"risk"); }
+  if(document.readyState!=="loading") start(); else document.addEventListener("DOMContentLoaded",start);
+})();
+</script>
