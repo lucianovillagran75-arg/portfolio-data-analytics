@@ -10,6 +10,12 @@ Convierto datos desordenados en **decisiones con números**: cuánto dinero se e
   <sub><i>Ejemplo real de entregable: panel de control de inventario que identifica ~$7,0 M ARS entre capital atrapado, ventas en riesgo y ahorros. (Proyecto de Optimización de Inventario)</i></sub>
 </p>
 
+<p align="center">
+  <a href="https://lucianovillagran75-arg.github.io/portfolio-data-analytics/proyectos/python/optimizacion-inventario-abcxyz/dashboard_interactivo.html">
+    <img src="https://img.shields.io/badge/%E2%96%B6_Ver_dashboard_interactivo-0E6E78?style=for-the-badge&logoColor=white" alt="Ver dashboard interactivo">
+  </a>
+</p>
+
 ---
 
 ## 🧑‍💼 ¿Sos reclutador/a y no venís del mundo técnico? Leé esto primero

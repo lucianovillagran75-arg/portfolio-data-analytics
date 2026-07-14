@@ -11,6 +11,8 @@ que valida el proyecto es **el método**, no un caso real.
 
 ![Panel de inventario ABC-XYZ](./output/dashboard_inventario.png)
 
+▶ **[Ver la versión interactiva del panel](https://lucianovillagran75-arg.github.io/portfolio-data-analytics/proyectos/python/optimizacion-inventario-abcxyz/dashboard_interactivo.html)** — con tema claro/oscuro y animaciones (o abrí [`dashboard_interactivo.html`](./dashboard_interactivo.html) localmente).
+
 ---
 
 ## Cómo lo encaré
