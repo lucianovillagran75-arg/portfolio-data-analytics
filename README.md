@@ -5,15 +5,11 @@
 Convierto datos desordenados en **decisiones con números**: cuánto dinero se está perdiendo, dónde, y qué hacer para recuperarlo. Cada proyecto de este portfolio parte de un **problema real de una empresa** y termina con un **impacto medible en dinero o en horas de trabajo ahorradas**.
 
 <p align="center">
-  <img src="./proyectos/python/optimizacion-inventario-abcxyz/output/dashboard_inventario.png" alt="Ejemplo de dashboard: análisis de inventario con impacto económico" width="850">
-  <br>
-  <sub><i>Ejemplo real de entregable: panel de control de inventario que identifica ~$7,0 M ARS entre capital atrapado, ventas en riesgo y ahorros. (Proyecto de Optimización de Inventario)</i></sub>
-</p>
-
-<p align="center">
   <a href="https://lucianovillagran75-arg.github.io/portfolio-data-analytics/proyectos/python/optimizacion-inventario-abcxyz/dashboard_interactivo.html">
     <img src="https://img.shields.io/badge/%E2%96%B6_Ver_dashboard_interactivo-0E6E78?style=for-the-badge&logoColor=white" alt="Ver dashboard interactivo">
   </a>
+  <br>
+  <sub><i>Ejemplo real de entregable: un panel interactivo que identifica ~$7,0 M ARS entre capital atrapado, ventas en riesgo y ahorros. (Proyecto de Optimización de Inventario)</i></sub>
 </p>
 
 ---
