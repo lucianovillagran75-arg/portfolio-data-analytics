@@ -9,9 +9,15 @@ Lo armé sobre una distribuidora mayorista ficticia, **NorteLogix S.A.** (120 pr
 masivo, 24 meses de demanda). Los datos son sintéticos y reproducibles (semilla fija), así que lo
 que valida el proyecto es **el método**, no un caso real.
 
-![Panel de inventario ABC-XYZ](./output/dashboard_inventario.png)
+<p align="center">
+  <a href="https://lucianovillagran75-arg.github.io/portfolio-data-analytics/proyectos/python/optimizacion-inventario-abcxyz/dashboard_interactivo.html">
+    <img src="https://img.shields.io/badge/%E2%96%B6_Ver_dashboard_interactivo-0E6E78?style=for-the-badge&logoColor=white" alt="Ver dashboard interactivo">
+  </a>
+</p>
 
-▶ **[Ver la versión interactiva del panel](https://lucianovillagran75-arg.github.io/portfolio-data-analytics/proyectos/python/optimizacion-inventario-abcxyz/dashboard_interactivo.html)** — con tema claro/oscuro y animaciones (o abrí [`dashboard_interactivo.html`](./dashboard_interactivo.html) localmente).
+Panel ejecutivo con la salud del inventario, la regla 80/20 y los productos con capital atrapado o
+en riesgo de quiebre — con tema claro/oscuro y animaciones. También podés abrir
+[`dashboard_interactivo.html`](./dashboard_interactivo.html) localmente en el navegador.
 
 ---
 
